@@ -4,12 +4,12 @@ backend:
   branch: main
 
 media_folder: static/assets
-public_folder: /assets
+public_folder: static/assets
 
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "content/blog"
+    folder: "content/blog"cle
     create: true
     slug: "index"
     media_folder: ""
