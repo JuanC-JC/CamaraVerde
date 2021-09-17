@@ -9,7 +9,7 @@ public_folder: static/assets
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "content/blog"cle
+    folder: "content/blog"
     create: true
     slug: "index"
     media_folder: ""
