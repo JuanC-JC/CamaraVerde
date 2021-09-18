@@ -4,7 +4,7 @@ backend:
   branch: main
 
 media_folder: static/assets
-public_folder: /assets
+public_folder: /static/assets
 
 collections:
   - name: "blog"
@@ -12,8 +12,8 @@ collections:
     folder: "content/blog"
     create: true
     slug: "index"
-    media_folder: "static/assets"
-    public_folder: "static/assets"
+    media_folder: "assets"
+    public_folder: "assets"
     path: "{{title}}/index"
     editor:
       preview: true

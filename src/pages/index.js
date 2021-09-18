@@ -1,8 +1,16 @@
-import * as React from "react";
+import React from "react";
+import "../styles/global.scss";
+import Footer from "../components/Footer";
 
 // markup
 const IndexPage = () => {
-  return <div>pija camarita</div>;
+  return (
+    <>
+      <h2>Test</h2>
+
+      <Footer />
+    </>
+  );
 };
 
 export default IndexPage;
