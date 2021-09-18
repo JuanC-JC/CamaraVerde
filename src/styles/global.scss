@@ -1,14 +1,12 @@
 @import "./vars.scss";
 
 //gatsby-plugin-google-fonts allow Raleway and Nunito you dont need to import a file for the fonts
-
 //create in vars all colors, please dont use names as bloques botones or mapa for colors, use green-main, green-second, etc..
 
 * {
   box-sizing: border-box;
   margin: 0;
-  color: $black;
-  font-family: "Nunito";
+  font-family: $body-font;
 }
 
 #gatsby-focus-wrapper {
@@ -21,4 +19,55 @@
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $title-font;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 28px;
+
+  @media (min-width: 910px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-size: 22px;
+
+  @media (min-width: 910px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+
+  @media (min-width: 910px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 24px;
+  }
+}
+
+p {
+  font-size: 14px;
+
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
 }

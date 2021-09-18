@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "CamaraVerde",
+    title: "Camara Verde",
+    description: "",
+    author: "Camara Verde",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
@@ -37,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: ["Nunito","Raleway"],
+        fonts: ["Nunito", "Raleway"],
       },
     },
   ],
