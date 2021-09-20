@@ -1,8 +1,7 @@
 @import "./vars.scss";
-
+@import "./components/button.scss";
 //gatsby-plugin-google-fonts allow Raleway and Nunito you dont need to import a file for the fonts
 //create in vars all colors, please dont use names as bloques botones or mapa for colors, use green-main, green-second, etc..
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,6 +18,7 @@
 
 a {
   text-decoration: none;
+  // color: white;
 }
 
 h1,

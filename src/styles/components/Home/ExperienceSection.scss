@@ -1,0 +1,38 @@
+.experience {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+}
+
+.experience__carousel {
+  width: 90%;
+  overflow: hidden;
+
+  &ArrowRight {
+    display: none;
+  }
+  &ArrowLeft {
+    display: none;
+  }
+
+  &Items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 1200%;
+
+    img {
+      max-width: 340px; //temporal
+      padding: 0 15px;
+      width: calc(8.333%);
+      pointer-events: none;
+      object-fit: cover;
+    }
+  }
+}
