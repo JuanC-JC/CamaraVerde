@@ -7,8 +7,7 @@
   align-items: center;
   justify-content: space-between;
   position: sticky;
-  background-color: transparent;
-  // background-color: $main-green;
+  background-color: $main-green;
   top: 0;
   border-bottom: 1px solid $main-white;
   padding: 0 15px;
@@ -95,6 +94,7 @@
     padding: 0 25px;
     min-height: 85px;
     position: relative;
+    background-color: transparent;
     justify-content: flex-end;
 
     &__burguerMenu {
