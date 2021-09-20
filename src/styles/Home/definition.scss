@@ -1,0 +1,82 @@
+@import '../vars.scss';
+
+.c-definition{
+  width: 100%;
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column-reverse;
+
+
+  .definition__stripe{
+    width: 100%;
+    background-color: $light-brown;
+    height: 210px;  
+  }
+
+  .definition__content{
+    display: flex;
+    flex-direction: column;
+
+    .c-definition__text{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:40px;
+
+      .definition__background{
+          position: absolute;
+          top: 0px;
+          width: 100%;
+          // height: 380px;
+          max-width: 600px;
+          max-height: 500px;
+          // background: blue;
+
+
+          .d-background{
+            transform: translateX(-100px);
+          
+          }
+        } 
+  
+      .definition__text{
+        margin-top: 90px;
+        margin-bottom: 20px;
+        width: 80%;
+        max-width: 430px;
+        z-index:1;
+        color: white;
+  
+        h2{
+          margin-bottom: 20px;
+        }
+        
+      }
+
+    }
+
+    .definition__ilustration{
+      position: absolute;
+      right: 0px;
+      bottom: -40px;
+    }
+
+  }
+
+}
+
+  // @media (min-width:375px) {
+  //   .c-definition{
+  //     .definition__content{
+  //       .c-definition__text{
+  //         .definition__background{
+  //           .d-background{
+  //             transform: scale(1.1) translateX(-70px);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
