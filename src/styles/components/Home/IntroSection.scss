@@ -1,0 +1,164 @@
+@import "../../vars.scss";
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: clip;
+  width: 100%;
+  position: relative;
+  margin-bottom: 150px;
+
+  &__text {
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 480px;
+
+    br {
+      display: none;
+    }
+
+    &CompanyLogo {
+      display: flex;
+      margin-bottom: 20px;
+
+      img {
+        width: 120px;
+        display: none;
+      }
+
+      h1 {
+        color: $main-white;
+        font-weight: 900;
+      }
+    }
+
+    p {
+      color: $main-white;
+      max-width: 400px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 400px;
+
+    .button {
+      width: 115px;
+      margin: 10px;
+    }
+  }
+
+  &__backgroundMobile {
+    position: absolute;
+    width: 100%;
+    top: -50px;
+    z-index: -1;
+  }
+
+  &__backgroundDesktop {
+    display: none;
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+  }
+
+  &__ilustration {
+    margin-top: 30px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro {
+    &__backgroundMobile {
+      height: 450px;
+    }
+
+    &__text {
+      p {
+        margin-top: 20px;
+      }
+    }
+
+    &__buttons {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 910px) {
+  .intro {
+    height: 550px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__text {
+      text-align: left;
+      margin-left: 20px;
+
+      br {
+        display: block;
+      }
+
+      &CompanyLogo {
+        width: 100%;
+      }
+
+      img {
+        display: block;
+        margin-right: 20px;
+      }
+    }
+
+    &__buttons {
+      :nth-child(1),
+      :nth-child(2) {
+        display: none;
+      }
+
+      :nth-last-child(1) {
+        min-height: 40px;
+      }
+    }
+
+    &__backgroundMobile {
+      display: none;
+    }
+
+    &__backgroundDesktop {
+      display: block;
+      height: 600px;
+    }
+
+    &__ilustration {
+      margin-top: 100px;
+      width: 600px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    &__backgroundDesktop {
+      top: -85px;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .intro {
+    &__backgroundDesktop {
+      width: 100%;
+      height: auto;
+      max-height: 700px;
+    }
+  }
+}

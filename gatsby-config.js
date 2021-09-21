@@ -15,12 +15,6 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/icon.png",
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
@@ -39,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: ["Nunito", "Raleway"],
+        fonts: ["Nunito", "Raleway:700,900"],
       },
     },
   ],

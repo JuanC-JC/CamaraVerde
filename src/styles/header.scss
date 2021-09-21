@@ -1,0 +1,141 @@
+@import "./vars.scss";
+
+.header {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  background-color: $main-green;
+  top: 0;
+  border-bottom: 1px solid $main-white;
+  padding: 0 15px;
+  z-index: 1;
+
+  &__navigation {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 400ms;
+    z-index: 2;
+    top: 50px;
+    left: 0;
+    background-color: $main-green;
+    width: 100%;
+    padding: 0 50px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover::after {
+          animation: headerNav 500ms 10ms forwards;
+          content: "";
+          height: 2px;
+          background: #fff;
+          width: 0%;
+          position: absolute;
+          bottom: 0;
+        }
+
+        a {
+          font-family: $title-font;
+          font-size: 16px;
+          width: 100%;
+          padding: 10px 0;
+          cursor: pointer;
+          color: $main-white;
+        }
+      }
+    }
+
+    &--visibility {
+      max-height: 250px;
+      padding: 10px 0px;
+      transition: all 400ms;
+    }
+  }
+
+  &__desktopLogo {
+    display: None;
+  }
+
+  &__burguerMenu {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__buttons {
+    display: none;
+  }
+}
+
+@keyframes headerNav {
+  from {
+    width: 20%;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
+@media (min-width: 910px) {
+  .header {
+    padding: 0 25px;
+    min-height: 85px;
+    // position: relative;
+    // background-color: transparent;
+    justify-content: flex-end;
+
+    &__burguerMenu {
+      display: none;
+    }
+
+    &__mobileLogo {
+      display: none;
+    }
+
+    &__desktopLogo {
+      display: block;
+      position: absolute;
+      left: 25px;
+    }
+
+    &__navigation {
+      display: flex;
+      position: static;
+      width: auto;
+      min-height: 50px;
+      background-color: transparent;
+
+      ul {
+        width: auto;
+        display: flex;
+        align-items: center;
+        li {
+          a {
+            // font-size: 18px;
+            padding: 2px 15px;
+          }
+        }
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      .button:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}
