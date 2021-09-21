@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/components/Home/DefinitionSection.scss'
-import imageIntroduction from '../../images/ImageIntroduction.svg'
+import imageIntroduction from '../../images/imageIntroduction.svg';
 
 export default function Definition() {
   return (
@@ -8,7 +8,7 @@ export default function Definition() {
 
       <div className='c-definition__text'>
 
-        <img src={imageIntroduction} />
+        <img src={imageIntroduction} alt='background' />
 
         <div className='definition__text'>
           <h3>Lorem Ipsum Task</h3>
