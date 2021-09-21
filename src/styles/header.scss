@@ -89,12 +89,12 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 910px) {
   .header {
     padding: 0 25px;
     min-height: 85px;
-    position: relative;
-    background-color: transparent;
+    // position: relative;
+    // background-color: transparent;
     justify-content: flex-end;
 
     &__burguerMenu {
