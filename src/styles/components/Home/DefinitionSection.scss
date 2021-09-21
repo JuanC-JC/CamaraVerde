@@ -1,0 +1,98 @@
+@import "../../vars.scss";
+
+.c-definition {
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 210px;
+    background: rebeccapurple;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+
+    * {
+      color: white;
+    }
+
+    img {
+      width: 160%;
+      max-width: 500px;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .definition__text {
+      width: 75%;
+      max-width: 370px;
+      z-index: 3;
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .definition__ilustration {
+    position: relative;
+    display: flex;
+    z-index: 4;
+    justify-content: flex-end;
+    transform: translateY(-50px);
+  }
+}
+
+@media (min-width: 600px) {
+  .c-definition {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+    &__text {
+      width: 500px;
+    }
+
+    .definition__ilustration {
+      justify-content: flex-start;
+      transform: translateY(0);
+
+      svg {
+        width: 250px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 910px) {
+  .c-definition {
+    margin-top: 50px;
+    &::after {
+      top: calc(50% - 110px);
+    }
+
+    &__text {
+      width: 630px;
+      height: 480px;
+
+      img {
+        max-width: 620px;
+      }
+    }
+
+    .definition__ilustration {
+      svg {
+        width: 320px;
+        height: auto;
+      }
+    }
+  }
+}

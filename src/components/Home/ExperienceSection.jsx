@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../styles/components/Home/ExperienceSection.scss'
 
-import imgExperience1 from '../../images/Experience_1.png'
-import imgExperience2 from '../../images/Experience_2.png'
-import imgExperience3 from '../../images/Experience_3.png'
+import imgExperience1 from '../../images/Experience/Experience_1.png'
+import imgExperience2 from '../../images/Experience/Experience_2.png'
+import imgExperience3 from '../../images/Experience/Experience_3.png'
 
 // import Slider from './SliderCenter'
 

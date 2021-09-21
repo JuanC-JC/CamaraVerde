@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ExperienceSection from "../components/Home/ExperienceSection";
 import IntroSection from '../components/Home/IntroSection';
-import Definition from "../components/Home/definition";
+import DefinitionSection from "../components/Home/DefinitionSection";
 
 // markup
 const IndexPage = () => {
@@ -13,7 +13,7 @@ const IndexPage = () => {
       <Header />
 
       <IntroSection />
-      <Definition/>
+      <DefinitionSection />
       <ExperienceSection />
 
       <Footer />
