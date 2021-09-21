@@ -1,38 +1,25 @@
 import React from 'react';
 import '../../styles/Home/definition.scss'
+import imageIntroduction from '../../images/ImageIntroduction.svg'
 
 export default function Definition (){
   return(
     <section className='c-definition'>
 
-      <div className='definition__stripe'></div>
+      {/* <div className='definition__stripe'></div> */}
 
-      <div className= 'definition__content'>
+      <div className='c-definition__text'>
+        
+        <img src={imageIntroduction}/>
 
-        <div className='c-definition__text'>
-
-          <div className='definition__background'>
-
-            <svg 
-              className='d-background'
-              width="493" 
-              height="373" 
-              viewBox="0 0 493 373" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M106.799 321.869C59.8842 293.178 12.8156 250.458 2.90256 200.309C-7.01045 150.161 20.1844 93.1894 60.3569 55.5263C100.529 17.8632 154.258 0.163384 201.54 0.238484C249.449 0.363039 290.911 18.2625 346.731 29.9818C403.178 41.7506 473.358 47.2897 489.234 77.7969C505.063 108.91 465.915 165.547 442.236 217.92C418.604 269.687 410.346 318.402 380.529 344.693C350.711 370.984 299.914 375.507 251.134 370.438C201.729 365.32 154.341 350.609 106.799 321.869Z" fill="#498A42"/>
-            </svg>
-
-          </div>
-
-          <div className='definition__text'>
-            <h2>Lorem Ipsum Task</h2>   
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra integer tristique nibh nisl libero sed sit aenean. Suspendisse egestas erat vitae placerat egestas magna ipsum tortor et. Euismod leo nunc mauris sed suspendisse. Eget purus, sollicitudin amet ultricies in. Augue donec ut vitae, sagittis arcu.</p>
-          </div>
-       
+        <div className='definition__text'>
+          <h3>Lorem Ipsum Task</h3>   
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra integer tristique nibh nisl libero sed sit aenean. Suspendisse egestas erat vitae placerat egestas magna ipsum tortor et. Euismod leo nunc mauris sed suspendisse. Eget purus, sollicitudin amet ultricies in. Augue donec ut vitae, sagittis arcu.</p>
         </div>
 
-        <div className='definition__ilustration'>
+      </div>
+
+      <div className='definition__ilustration'>
           <svg width="153" height="248" viewBox="0 0 153 248" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.032 43.4232C14.5011 28.9425 30.0902 31.4953 40.8366 27.6157C51.5829 23.736 57.3002 13.5344 71.1985 18.8826C85.1685 24.5463 107.155 45.4995 114.72 63.9221C122.027 82.1398 114.841 97.5114 110.592 107.198C106.085 116.68 104.352 120.217 101.106 120.356C97.6961 120.234 92.8676 116.657 82.0999 116.253C71.239 115.903 54.5321 118.67 39.5594 103.933C24.6583 89.5125 11.8209 58.1088 13.032 43.4232Z" fill="#F6EAE6"/>
             <path d="M149.609 153.898V159.921C149.609 159.986 149.636 160.048 149.684 160.095C149.731 160.141 149.796 160.166 149.863 160.166C149.93 160.166 149.995 160.141 150.042 160.095C150.09 160.048 150.116 159.986 150.116 159.921V153.898C150.116 153.833 150.09 153.77 150.042 153.724C149.995 153.678 149.93 153.652 149.863 153.652C149.796 153.652 149.731 153.678 149.684 153.724C149.636 153.77 149.609 153.833 149.609 153.898Z" fill="#211919"/>
@@ -545,19 +532,8 @@ export default function Definition (){
           </svg>
         </div>
 
-      </div>
-
-
     </section>
   )
 }
 
 
-     {/* <svg 
-              className='d-background'
-              viewBox="0 0 625 509" 
-              xmlns="http://www.w3.org/2000/svg"> 
-              <path d="M145.224 421.765C89.1034 385.377 33.0633 331.467 22.0412 268.723C11.0191 205.98 44.9457 135.159 94.1807 88.6042C143.416 42.0498 208.646 20.587 265.752 21.2446C323.615 21.9714 373.353 44.8185 440.552 60.1191C508.506 75.4889 593.165 83.243 611.763 121.529C630.291 160.572 581.934 230.833 552.34 295.954C522.816 360.319 511.918 421.055 475.405 453.531C438.893 486.008 377.453 491.051 318.633 484.139C259.057 477.158 202.1 458.223 145.224 421.765Z" fill="#498A42"/>
-            </svg> */}
-           
-            
