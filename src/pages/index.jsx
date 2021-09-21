@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import ExperienceSection from "../components/Home/ExperienceSection";
 import IntroSection from '../components/Home/IntroSection';
 import DefinitionSection from "../components/Home/DefinitionSection";
+import RegionSection from "../components/Home/RegionSection";
 
 // markup
 const IndexPage = () => {
@@ -15,7 +16,7 @@ const IndexPage = () => {
       <IntroSection />
       <DefinitionSection />
       <ExperienceSection />
-
+      <RegionSection />
       <Footer />
     </>
   );
