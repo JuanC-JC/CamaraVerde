@@ -1,5 +1,5 @@
 import React from 'react';
-import imageODS from '../../images/imageODS.jpg'
+import imageODS from '../../images/imageObjetivosDesarollo.jpg'
 
 import '../../styles/components/Home/OdsSection.scss'
 
