@@ -98,7 +98,9 @@ export default function RegionSection() {
         <div className="region__info">
           <div className="info__text">
             <h3>{selectedDepartment.name}</h3>
-            <p className='preventResizeFont'>{selectedDepartment.info}</p>
+            <div className='info__parrafoInfo'>
+              <p className='preventResizeFont'>{selectedDepartment.info}</p>
+            </div>
           </div>
           <div className="info__grahpicsItems">
             {

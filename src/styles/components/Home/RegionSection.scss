@@ -14,6 +14,19 @@
     align-items: center;
     flex-direction: column;
     max-width: 340px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      display: block;
+      top: -20px;
+      left: 10px;
+      content: "";
+      background: url(../../../images/IconFolderMap.svg) no-repeat center center;
+      height: 50px;
+      width: 50px;
+      z-index: 2000;
+    }
 
     .info__text,
     .info__grahpicsItems {
@@ -23,40 +36,41 @@
 
     .info__text {
       width: 100%;
-      padding: 15px;
+      padding: 20px;
       height: 300px;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      // padding: 20px;
-      padding-top: 10px;
       align-items: center;
-
-      &::-webkit-scrollbar {
-        opacity: 0;
-        width: 5px;
-      }
-
-      &:hover {
-        &::-webkit-scrollbar {
-          opacity: 1;
-        }
-
-        &::-webkit-scrollbar-track {
-          background-color: transparent;
-          // border-radius: 5px;
-          // width: 10px;
-        }
-
-        &::-webkit-scrollbar-thumb {
-          background-color: $third-green;
-          border-radius: 5px;
-        }
-      }
 
       h3 {
         margin: 0;
         text-align: center;
         margin-bottom: 10px;
+      }
+
+      .info__parrafoInfo {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-height: 230px;
+        padding: 0 10px;
+
+        &::-webkit-scrollbar {
+          opacity: 0;
+          width: 5px;
+        }
+
+        &:hover {
+          &::-webkit-scrollbar {
+            opacity: 1;
+          }
+
+          &::-webkit-scrollbar-track {
+            background-color: transparent;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background-color: $third-green;
+            border-radius: 5px;
+          }
+        }
       }
 
       p {
@@ -136,7 +150,7 @@
 
     .map {
       margin-top: 0;
-      margin-left: 20px;
+      margin-left: 50px;
       max-width: 500px;
     }
   }
