@@ -9,12 +9,10 @@ import RegionSection from "../components/Home/RegionSection";
 import PartnersSection from "../components/Home/PartnersSection";
 import OdsSection from '../components/Home/OdsSection'
 
-// markup
 const IndexPage = () => {
   return (
     <>
       <Header />
-
       <IntroSection />
       <DefinitionSection />
       <ExperienceSection />
