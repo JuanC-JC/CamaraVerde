@@ -2,9 +2,13 @@ import React from "react";
 import "../styles/global.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ExperienceSection from "../components/Home/ExperienceSection";
 import IntroSection from '../components/Home/IntroSection';
 import DefinitionSection from "../components/Home/DefinitionSection";
+// import ExperienceSection from "../components/Home/ExperienceSection";
+import DonateSection from "../components/Home/donateSection";
+
+
+
 
 // markup
 const IndexPage = () => {
@@ -14,7 +18,9 @@ const IndexPage = () => {
 
       <IntroSection />
       <DefinitionSection />
-      <ExperienceSection />
+      {/* <ExperienceSection /> */}
+      <DonateSection/>
+
 
       <Footer />
     </>
