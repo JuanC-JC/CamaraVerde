@@ -116,6 +116,7 @@ export default function RegionSection() {
           departments={departments}
           setSelection={setSelection}
         />
+
       </div>
     </section>
   )

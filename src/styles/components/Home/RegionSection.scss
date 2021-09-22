@@ -87,6 +87,7 @@
       margin-top: 5px;
 
       .info__graphic {
+        cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -94,6 +95,10 @@
         width: 40px;
         background: $third-green;
         border-radius: 50%;
+
+        &:hover {
+          opacity: 0.7;
+        }
       }
     }
   }
@@ -144,22 +149,25 @@
 @media (min-width: 750px) {
   .region__container {
     flex-direction: row;
-    &__info {
-      max-width: 300px;
-    }
 
     .map {
       margin-top: 0;
-      margin-left: 50px;
+      margin-left: 20px;
       max-width: 500px;
+    }
+  }
+
+  .region {
+    &__info {
+      max-width: 320px;
     }
   }
 }
 
 @media (min-width: 1024px) {
   .region__container {
-    &__info {
-      max-width: 350px;
+    .map {
+      margin-left: 50px;
     }
   }
 }
