@@ -6,7 +6,7 @@ import IntroSection from '../components/Home/IntroSection';
 import DefinitionSection from "../components/Home/DefinitionSection";
 // import ExperienceSection from "../components/Home/ExperienceSection";
 import DonateSection from "../components/Home/donateSection";
-
+import NewSection from "../components/Home/NewSection";
 
 
 
@@ -20,7 +20,7 @@ const IndexPage = () => {
       <DefinitionSection />
       {/* <ExperienceSection /> */}
       <DonateSection/>
-
+      <NewSection/>
 
       <Footer />
     </>

@@ -1,0 +1,18 @@
+.c-new{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  background-color: blueviolet;
+
+  h2{
+    margin-bottom: 50px;
+  }
+
+  .news{
+    margin-bottom: 40px;
+  }
+
+}

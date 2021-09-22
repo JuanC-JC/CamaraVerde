@@ -47,6 +47,7 @@ h1 {
 
 h2 {
   font-size: 22px;
+  text-align: center;
 
   @media (min-width: 910px) {
     font-size: 28px;
@@ -75,4 +76,9 @@ p {
   @media (min-width: 1024px) {
     font-size: 16px;
   }
+}
+
+.date{
+  font-size: 12px;
+  font-style: italic;
 }
