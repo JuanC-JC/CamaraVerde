@@ -6,6 +6,22 @@ import photoNew from '../../images/Experience/Experience_1.png'
 
 const news = [
   { 
+    id:1,
+    date:'09 Ago 2021',
+    notification:true,
+    title:'Consectetur adipiscing elit.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vulputate egestas bibendum in odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vulputate egestas bibendum in odio.',
+    img: photoNew
+  },
+  { 
+    id:2,
+    date:'09 Ago 2021',
+    notification:false,
+    title:'Consectetur adipiscing elit.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vulputate egestas bibendum in odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vulputate egestas bibendum in odio.',    img: photoNew
+  },
+  { 
+    id:3,
     date:'09 Ago 2021',
     notification:true,
     title:'Consectetur adipiscing elit.',
@@ -13,20 +29,7 @@ const news = [
     img: photoNew
   },
   { 
-    date:'09 Ago 2021',
-    notification:false,
-    title:'Consectetur adipiscing elit.',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vulputate egestas bibendum in odio...',
-    img: photoNew
-  },
-  { 
-    date:'09 Ago 2021',
-    notification:false,
-    title:'Consectetur adipiscing elit.',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vulputate egestas bibendum in odio...',
-    img: photoNew
-  },
-  { 
+    id:4,
     date:'09 Ago 2021',
     notification:false,
     title:'Consectetur adipiscing elit.',
@@ -46,6 +49,8 @@ export default function NewSection (){
         {
           news.map( report =>
             <New
+              key={report.id}
+              id={report.id}
               img={report.img}
               date={report.date}
               title={report.title}

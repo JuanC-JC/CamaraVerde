@@ -1,14 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../../styles/components/Home/New.scss'
 
 export default function New (props){
 
-  const {date,title, img, text, notification} = props;
+  const {id,date,title, img, text, notification} = props;
 
 
 
   return(
-    <div className='new'>
+    <div className='new' id={`id_${id}`}>
 
       <img src={img} alt="" />
 
@@ -26,3 +26,5 @@ export default function New (props){
 }
 
 //TODO si le doy click a ver más me direcciona su respetiva página
+
+
