@@ -7,7 +7,7 @@
   overflow-x: clip;
   width: 100%;
   position: relative;
-  margin-bottom: 85px;
+  margin-bottom: $space-section-small;
 
   &__text {
     padding: 40px 20px 20px 20px;
@@ -71,7 +71,7 @@
   }
 
   &__ilustration {
-    margin-top: 30px;
+    // margin-top: 30px;
     width: 400px;
   }
 }
@@ -94,11 +94,20 @@
   }
 }
 
+
+@media (min-width:768px){
+  .intro{
+    margin-bottom: $space-section;
+  }
+}
+
 @media (min-width: 910px) {
   .intro {
     height: 550px;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: $space-section;
+
 
     &__text {
       text-align: left;

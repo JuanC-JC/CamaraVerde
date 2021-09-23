@@ -1,9 +1,12 @@
+@import '../../vars.scss';
+
 .partners {
   margin: 0 auto;
   width: 100%;
   padding: 0 20px;
-  margin-top: 85px;
   max-width: 1240px;
+  margin-bottom: $space-section-small;
+
 
   h2 {
     text-align: center;
@@ -30,6 +33,7 @@
 
 @media (min-width: 768px) {
   .partners {
+    margin-bottom: $space-section;
     .swiper {
       height: 150px;
     }

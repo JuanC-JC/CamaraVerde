@@ -3,12 +3,13 @@
 .c-definition {
   overflow: hidden;
   position: relative;
+  margin-bottom: $space-section-small;
 
   &::after {
     content: "";
     width: 100%;
     height: 210px;
-    background: rebeccapurple;
+    background: $light-brown;
     position: absolute;
     top: 50%;
     z-index: 1;
@@ -72,6 +73,11 @@
   }
 }
 
+@media (min-width:768px){
+  .c-definition{
+    margin-bottom: $space-section;
+  }
+}
 @media (min-width: 910px) {
   .c-definition {
     margin-top: 50px;

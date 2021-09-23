@@ -2,10 +2,11 @@
 
 .region {
   text-align: center;
-  margin-top: 85px;
+  margin-bottom: $space-section-small;
+  padding-top: 20px;
 
   h2 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   &__info {
@@ -167,6 +168,13 @@
     &__info {
       max-width: 320px;
     }
+  }
+}
+
+
+@media (min-width:768px){
+  .region{
+    margin-bottom: $space-section;
   }
 }
 

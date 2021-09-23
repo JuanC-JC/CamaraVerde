@@ -1,3 +1,5 @@
+@import '../../vars.scss';
+
 .ods {
   margin: 0 auto;
   display: flex;
@@ -6,8 +8,7 @@
   width: 100%;
   padding: 0 20px;
   max-width: 700px;
-  margin-top: 85px;
-  margin-bottom: 30px;
+  margin-bottom: $space-section-small;
 
   img {
     width: 100%;
@@ -18,5 +19,13 @@
   .button {
     margin: 0 auto;
     margin-top: 20px;
+  }
+}
+
+
+
+@media (min-width:768px){
+  .ods{
+    margin-bottom: $space-section;
   }
 }

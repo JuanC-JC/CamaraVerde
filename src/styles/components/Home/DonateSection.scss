@@ -1,3 +1,5 @@
+@import '../../vars.scss';
+
 
 .c-donate{
   width: 90%;
@@ -7,6 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: $space-section-small;
 
   &__definition{
     display: flex;
@@ -68,6 +71,13 @@
         height: 20%;
       }
     }
+  }
+}
+
+
+@media (min-width:768px){
+  .c-donate{
+    margin-bottom: $space-section;
   }
 }
 
