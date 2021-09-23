@@ -1,14 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper'
 
 import Cormacarena from '../../images/Partners/Cormacarena.png'
 import CamaraComercio from '../../images/Partners/CamaraComercio.png'
 
-
 import '../../styles/components/Home/PartnersSection.scss'
-
-SwiperCore.use([Pagination, Navigation, Autoplay])
 
 
 export default function PartnersSection() {
@@ -21,9 +17,12 @@ export default function PartnersSection() {
           "delay": 2500,
           "disableOnInteraction": false
         }}
-        slidesPerView={2}
+        slidesPerView={1}
         loop={true}
         breakpoints={{
+          480: {
+            slidesPerView: 2,
+          },
           760: {
             slidesPerView: 3,
           },

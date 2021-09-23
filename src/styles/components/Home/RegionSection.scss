@@ -25,7 +25,7 @@
       background: url(../../../images/IconFolderMap.svg) no-repeat center center;
       height: 50px;
       width: 50px;
-      z-index: 2000;
+      z-index: 1;
     }
 
     .info__text,
@@ -53,24 +53,30 @@
         padding: 0 10px;
 
         &::-webkit-scrollbar {
-          opacity: 0;
+          // background-color: $third-green;
+          // opacity: 0;
           width: 5px;
         }
 
-        &:hover {
-          &::-webkit-scrollbar {
-            opacity: 1;
-          }
-
-          &::-webkit-scrollbar-track {
-            background-color: transparent;
-          }
-
-          &::-webkit-scrollbar-thumb {
-            background-color: $third-green;
-            border-radius: 5px;
-          }
+        &::-webkit-scrollbar-thumb {
+          background-color: $third-green;
+          border-radius: 5px;
         }
+
+        // &:hover {
+        //   &::-webkit-scrollbar {
+        //     // opacity: 1;
+        //   }
+
+        //   &::-webkit-scrollbar-track {
+        //     // background-color: transparent;
+        //   }
+
+        //   &::-webkit-scrollbar-thumb {
+        //     background-color: $third-green;
+        //     border-radius: 5px;
+        //   }
+        // }
       }
 
       p {

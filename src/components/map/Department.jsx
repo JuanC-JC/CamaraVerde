@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 
 export default function DepartmentSVG({ id, handlerClick, path, selected }) {
+
+  const elemento = useRef(null)
+  const [box, setBox] = useState(null)
+
+
+  useEffect(() => {
+    setBox(elemento.current.getBBox())
+  }, [])
+
   return (
     <>
       <path
+        ref={elemento}
         id={id}
         onClick={handlerClick}
         d={path}
@@ -13,23 +23,73 @@ export default function DepartmentSVG({ id, handlerClick, path, selected }) {
 
       {
         selected &&
-
         <>
-
           <path
             id={'departmentClone'}
             d={path}
             fill="#00985F"
             stroke="white"
           />
-          {/* <svg width="270" height="153" viewBox="0 0 270 153" fill="none" xmlns="http://www.w3.org/2000/svg"> */}
-          {/* <path d="M0 2H197.588H265V148" stroke="#205033" stroke-width="3" />
-          <circle cx="265" cy="148" r="5" fill="#205033" /> */}
-          {/* </svg> */}
 
+          <DepartmentSelector box={box} />
         </>
       }
     </>
 
   );
 };
+
+
+const DepartmentSelector = ({ box }) => {
+
+  const elemento = useRef(null)
+  const [positions, setPositions] = useState({ x: 0, y: 0 })
+
+  // const handleResize = useCallback(() => {
+  //   console.log(type)
+  //   setType(window.innerWidth);
+  // }, [type]);
+
+  // useEffect(() => {
+
+  //   window.addEventListener('resize', handleResize)
+
+  //   return (() => window.removeEventListener('resize', handleResize))
+  // }, [])
+
+
+
+
+  // useEffect(() => {
+  //   if (elemento.current) {
+  //     document.querySelector('.map').appendChild(elemento.current)
+  //   }
+  // }, [])
+
+  // useEffect(() => {
+  //   console.log(elemento.current)
+  // })
+
+
+  useEffect(() => {
+    if (elemento.current) {
+      console.log(elemento.current)
+      setPositions({
+        x: box.x + (box.width / 2),
+        y: box.y + (box.height / 2 - 7)
+      })
+
+    }
+  }, [])
+
+  if (box) {
+    return (
+      <g ref={elemento}>
+        <circle cx={positions.x} cy={positions.y} r="7" fill="#205033" />
+        <path d={`M${positions.x},${positions.y} L${positions.x},${250} L${0},${250}`} stroke="#205033" strokeWidth='2' />
+      </g>
+    )
+  }
+
+  return null
+}

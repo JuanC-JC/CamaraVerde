@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-
-import imgExperience1 from '../../images/Experience/Experience_1.png'
+import imgExperience1 from '../../images/Experience/Experience_4.png'
 import imgExperience2 from '../../images/Experience/Experience_2.png'
 import imgExperience3 from '../../images/Experience/Experience_3.png'
 
@@ -23,7 +22,6 @@ export default function Experience() {
     const buttonNext = document.querySelector('.swiper-button-next')
     carousel.current.insertAdjacentElement('afterbegin', buttonPrev)
     carousel.current.insertAdjacentElement('beforeend', buttonNext)
-    //
   }, [])
 
   return (
@@ -35,10 +33,10 @@ export default function Experience() {
 
         <Swiper
           spaceBetween={50}
-          autoplay={{
-            "delay": 2500,
-            "disableOnInteraction": false
-          }}
+          // autoplay={{
+          //   "delay": 2500,
+          //   "disableOnInteraction": false
+          // }}
           loop={true}
           pagination={{
             "clickable": true
@@ -75,7 +73,7 @@ export default function Experience() {
 
       </div>
 
-      <button className='button button--orange'>Ver Proyectos</button>
+
     </section >
   );
 };
