@@ -125,6 +125,7 @@
 
 @media (min-width: 1024px) {
   .experience {
+    margin-bottom: $space-section-big;
     &::after {
       top: calc(50% - 100px + 40px);
     }

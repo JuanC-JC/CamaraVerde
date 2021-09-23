@@ -29,3 +29,9 @@
     margin-bottom: $space-section;
   }
 }
+
+@media (min-width:1024px) {
+  .ods{
+    margin-bottom: $space-section-big;
+  }
+}
