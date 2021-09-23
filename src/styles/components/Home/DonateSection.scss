@@ -3,8 +3,8 @@
 
 .c-donate{
   width: 90%;
-  max-width: 1064px;
-  margin: 30px auto;
+  max-width: 1030px;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,13 +27,16 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 20px 20px 25px;
+      // padding: 20px 20px 25px;
       h2{
-        margin-bottom: 35px;
+        margin-bottom: 30px;
       }
       p{
+        width: 90%;
         text-align: justify;
         margin-bottom: 25px;
+        line-height: 15px;
+
       }
     }
     

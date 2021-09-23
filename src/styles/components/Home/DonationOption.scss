@@ -5,7 +5,7 @@
   align-items: center;
   position: relative;
   min-width: 250px;
-  height: 340px;
+  height: 350px;
   margin-right: 10px;
   
   &__img{
@@ -61,9 +61,9 @@
 
 }
 
-@media(min-width:920px){
+@media(min-width:910px){
   .donationOption{
     min-width: 250px;
-    height: 440px;
+    height: 400px;
   }
 }
