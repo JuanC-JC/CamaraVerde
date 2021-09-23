@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import IntroSection from '../components/Home/IntroSection';
 import DefinitionSection from "../components/Home/DefinitionSection";
 import ExperienceSection from "../components/Home/ExperienceSection";
-import DonateSection from "../components/Home/donateSection";
+import DonateSection from "../components/Home/DonateSection";
 import NewsSection from "../components/Home/NewSection";
 import RegionSection from "../components/Home/RegionSection";
 import PartnersSection from "../components/Home/PartnersSection";
@@ -19,10 +19,10 @@ const IndexPage = () => {
       <Header />
       <IntroSection />
       <DefinitionSection />
-      <RegionSection /> 
+      <RegionSection />
       <ExperienceSection />
-      <DonateSection/>
-      <NewsSection/>
+      <DonateSection />
+      <NewsSection />
       <PartnersSection />
       <OdsSection />
       <Test />
