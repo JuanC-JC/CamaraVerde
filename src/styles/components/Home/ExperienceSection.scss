@@ -1,12 +1,13 @@
 @import '../../vars.scss';
 
-
-
+//Styles for experience section
 .experience {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 85px;
+  position: relative;
 
   h2 {
     margin-bottom: 40px;
@@ -16,32 +17,109 @@
   .carousel{
     margin-bottom: 50px;
   }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(
+      95deg,
+      rgba(32, 80, 51, 1) 0%,
+      rgba(182, 150, 94, 1) 100%
+    );
+    position: absolute;
+    top: calc(50% - 100px + 26px);
+  }
 }
 
+//styles for Experience carousel
+//> contains inside swiper component
+//> contains inside swiper buttons (Move from swiper to here)
 .experience__carousel {
   width: 90%;
-  overflow: hidden;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  // margin-bottom: 30px;
 
-  &ArrowRight {
+  //overwrite styles for swiper components
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: initial;
     display: none;
   }
-  &ArrowLeft {
-    display: none;
-  }
 
-  &Items {
-    width: 100%;
+  .swiper-slide {
     display: flex;
-    align-items: center;
-    height: 400px;
-    width: 1200%;
+    justify-content: center;
+  }
+}
 
-    img {
-      max-width: 340px; //temporal
-      padding: 0 15px;
-      width: calc(8.333%);
-      pointer-events: none;
-      object-fit: cover;
+//styles for card inside carousel
+// width of elements depends of (slides in view -> property of swiper component)
+// set max-width to prevent oversize images
+.experienceCard {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 350px;
+  max-width: 270px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+  }
+}
+
+@media (min-width: 425px) {
+  .experience__carousel {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: block;
+      min-width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: $main-white;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::after {
+        color: $main-black;
+        font-weight: bold;
+        font-size: 22px;
+      }
+    }
+
+    .swiper {
+      box-sizing: content-box;
+      margin: 0 20px;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .experience__carousel {
+    .swiper {
+      box-sizing: content-box;
+      margin: 0 50px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience {
+    &::after {
+      top: calc(50% - 100px + 40px);
     }
   }
 }
