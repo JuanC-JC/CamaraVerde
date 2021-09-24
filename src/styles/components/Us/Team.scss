@@ -1,0 +1,89 @@
+@import "../../vars.scss";
+
+.team {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  &__cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 290px));
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  h2 {
+    margin-bottom: 50px;
+  }
+}
+
+.cardTeam {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__imgContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &::after {
+      transition: all 300ms;
+    }
+
+    &:hover {
+      &::after {
+        max-height: 100%;
+      }
+
+      .cardTeam__title {
+        background-color: $light-green;
+      }
+    }
+
+    &::after {
+      content: "";
+      background: url(../../../images/Nosotros/branchBlack.svg) no-repeat center
+        center / contain;
+      max-height: 0%;
+      width: 80px;
+      height: 200px;
+      position: absolute;
+      bottom: 0;
+      right: -20px;
+    }
+  }
+
+  &__title {
+    cursor: pointer;
+    text-align: center;
+    background-color: $light-brown;
+    padding: 10px 25px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+    &:hover {
+      // background-color: $light-green;
+    }
+  }
+
+  &__text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .team {
+    h2 {
+      margin-bottom: 70px;
+    }
+  }
+}

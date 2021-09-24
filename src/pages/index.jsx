@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "../styles/global.scss";
+// import '../styles/pages/nosotros.scss'
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import IntroSection from '../components/Home/IntroSection';
@@ -25,7 +26,6 @@ const IndexPage = () => {
       <NewsSection />
       <PartnersSection />
       <OdsSection />
-      {/* <Test /> */}
       <Footer />
     </>
   );

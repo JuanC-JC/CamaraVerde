@@ -1,0 +1,53 @@
+.alcance {
+  display: grid;
+
+  justify-items: center;
+  column-gap: 20px;
+  gap: 40px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.alcanceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+
+  &__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    h2 {
+      margin: 20px 0;
+    }
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 700px) {
+  .alcance {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .alcanceCard {
+    &__img {
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
