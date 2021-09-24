@@ -2,7 +2,7 @@ import React from 'react';
 import New from './New';
 
 import '../../styles/components/Home/NewSection.scss';
-import photoNew from '../../images/Experience/bosque.jpg'
+import photoNew from '../../images/bosque.jpg'
 
 const news = [
   { 
