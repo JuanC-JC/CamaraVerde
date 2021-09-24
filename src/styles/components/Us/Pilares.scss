@@ -13,21 +13,26 @@
 
 //Tarjetas de pilares
 .pilarCard {
-  height: 190px;
+  height: 250px;
   width: 100%;
   position: relative;
   overflow: hidden;
   color: white;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 15px;
 
   &::after {
     position: absolute;
     top: 0;
+    left: 0;
     content: "";
     width: 100%;
     height: 100%;
     z-index: -1;
     opacity: 0.9;
+    transition: all 300ms;
   }
 
   img {
@@ -50,16 +55,27 @@
       margin-bottom: 10px;
     }
   }
+
+  .button {
+    margin: 0 auto;
+    width: 120px;
+    transition: all ease-in-out 300ms;
+  }
 }
 
 //Modificadores de color
 .pilarCard {
+  &--right {
+    &::after {
+      left: auto;
+      right: 0;
+    }
+  }
   &--red {
     &::after {
       background: linear-gradient(
         180deg,
-        rgba(223, 51, 30, 0) 27.46%,
-        rgba(223, 51, 30, 0) 27.47%,
+        rgba(223, 51, 30, 0.2) 27.47%,
         rgba(223, 51, 30, 0.47) 41.07%,
         #df331e 75.82%
       );
@@ -70,8 +86,7 @@
     &::after {
       background: linear-gradient(
         180deg,
-        rgba(223, 51, 30, 0) 27.46%,
-        rgba(247, 156, 39, 0) 27.47%,
+        rgba(247, 156, 39, 0.2) 27.47%,
         rgba(247, 156, 39, 0.47) 41.07%,
         rgba(247, 156, 39, 0.8) 75.82%
       );
@@ -82,8 +97,7 @@
     &::after {
       background: linear-gradient(
         180deg,
-        rgba(223, 51, 30, 0) 27.46%,
-        rgba(64, 125, 66, 0) 27.47%,
+        rgba(64, 125, 66, 0.2) 27.47%,
         rgba(64, 125, 66, 0.62) 47.87%,
         #407d42 100%
       );
@@ -93,21 +107,35 @@
 
 @media (min-width: 600px) {
   .pilarCard {
-    &__text {
-      justify-content: center;
-      max-width: 380px;
-      padding-left: 5%;
-    }
+    height: 220px;
+    flex-direction: row;
+    padding-bottom: 0;
 
-    &--right {
-      justify-content: flex-end;
+    &:hover {
+      .button {
+        transform: translateX(0);
+        opacity: 1;
+      }
 
       &::after {
-        transform: scaleX(-1);
+        width: 120%;
       }
+    }
+
+    &__text {
+      justify-content: center;
+      max-width: 480px;
+      padding: 25px;
+      padding-left: 4%;
+    }
+
+    .button {
+      opacity: 0;
+      transform: translateX(-200px);
     }
   }
 
+  //modificadores
   .pilarCard {
     &--red {
       &::after {
@@ -124,7 +152,7 @@
       &::after {
         background: linear-gradient(
           90.1deg,
-          rgba(247, 156, 39, 0.72) 40.49%,
+          rgba(247, 156, 39, 1) 40.49%,
           rgba(247, 156, 39, 0.4824) 75.54%,
           rgba(247, 156, 39, 0) 84.76%
         );
@@ -140,6 +168,34 @@
           rgba(64, 125, 66, 0) 91.05%
         );
       }
+    }
+
+    &--right {
+      flex-direction: row-reverse;
+      h3,
+      p {
+        text-align: right;
+      }
+
+      &::after {
+        transform: scaleX(-1);
+      }
+
+      .button {
+        transform: translateX(200px);
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .pilarCard {
+    &__text {
+      max-width: 500px;
+    }
+
+    &--right {
+      justify-content: flex-end;
     }
   }
 }
