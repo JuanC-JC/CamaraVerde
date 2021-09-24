@@ -7,7 +7,6 @@
   position: relative;
   
   width: 100%;
-  // max-width: 382px;
   box-shadow: 0px 4px 4px 0px #00000040;
 
   .notification{
@@ -21,7 +20,7 @@
 
   img{
     width: 100%;
-    height: 120px;
+    height: 130px;
     object-fit: cover;
   }
 
@@ -54,8 +53,22 @@
     }
   }
 
-  // &:hover{
-  //   filter:brightness(80%)
-  // }
+
 }
 
+@media (min-width:910px) {
+  .new{
+ 
+    .new__text{
+      padding: 15px;
+    }
+    p{
+      -webkit-line-clamp: 3;
+    }
+    img{
+      min-width: 150px;
+      height: 161px;
+    }
+    
+  }
+}

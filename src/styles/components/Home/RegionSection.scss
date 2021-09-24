@@ -179,8 +179,10 @@
 }
 
 @media (min-width: 1024px) {
-  .region__container {
+  .region{
     margin-bottom: $space-section-big;
+  }
+  .region__container {
     .map {
       margin-left: 50px;
     }
