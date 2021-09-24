@@ -7,11 +7,13 @@ export default function NewDescription (props){
 
   return(
     <section className='newDescription'>
-      {notification &&<h4 className='notification'>Convocatoria</h4>}
+      {notification &&<div className='notification'>Convocatoria</div>}
       <h2 className="newTitle">{title}</h2>
       <div className="date">{date}</div>
-      <img src={img} alt="" />
-      <p>{text}</p>
+      <p>
+        <img src={img} alt="" />
+        {text}
+      </p>
     </section>
   )
 }
