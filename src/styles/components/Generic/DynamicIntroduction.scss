@@ -205,3 +205,15 @@
     }
   }
 }
+
+@media (min-width: 1240px) {
+  .dynamicIntroduction {
+    &__text {
+      max-width: 600px;
+      h1 {
+        max-width: 600px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
