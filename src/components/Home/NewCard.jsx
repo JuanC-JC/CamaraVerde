@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../styles/components/Home/New.scss'
+import '../../styles/components/Home/NewCard.scss'
 
-export default function New (props){
+export default function NewCard (props){
 
   const {id,date,title, img, text, notification} = props;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import New from './New';
+import NewCard from './NewCard';
 
 import '../../styles/components/Home/NewSection.scss';
 import photoNew from '../../images/bosque.jpg'
@@ -49,7 +49,7 @@ export default function NewSection (){
       <div className='news'>
         {
           news.map( report =>
-            <New
+            <NewCard
               key={report.id}
               id={report.id}
               img={report.img}
