@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "../styles/global.scss";
-// import '../styles/pages/nosotros.scss'
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import IntroSection from '../components/Home/IntroSection';
 import DefinitionSection from "../components/Home/DefinitionSection";
 import ExperienceSection from "../components/Home/ExperienceSection";
@@ -17,7 +14,6 @@ const IndexPage = () => {
 
   return (
     <>
-      <Header />
       <IntroSection />
       <DefinitionSection />
       <RegionSection />
@@ -26,7 +22,6 @@ const IndexPage = () => {
       <NewsSection />
       <PartnersSection />
       <OdsSection />
-      <Footer />
     </>
   );
 };
