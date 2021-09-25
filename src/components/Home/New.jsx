@@ -13,7 +13,7 @@ export default function New (props){
       <img src={img} alt="" />
 
       <div className="new__text">
-          {notification &&<h4 className='notification'>Convocatoria</h4>}
+          {notification &&<div className='notification'>Convocatoria</div>}
           <div className="date">{date}</div>
           <h4>{title}</h4>
           <p>{text}</p>

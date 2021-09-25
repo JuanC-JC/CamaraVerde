@@ -1,6 +1,9 @@
 .newDescription{
+  display: flex;
+  flex-direction: column;
   margin: 30px auto;
   width: 90%;
+  max-width: 1030px;
 
   .notification{
     margin-bottom: 20px;
@@ -17,8 +20,35 @@
 
   img{
     width: 100%;
-    height: 230px;
+    max-width: 450px;
+    height: 40%;
+    
     //TODO revisar la imagen
     object-fit: fill;
+    margin-bottom: 30px;
+    float: none;
+  }
+  p{
+    text-align: justify;
+  }
+}
+
+
+@media (min-width:530px) {
+  .newDescription{
+    float: right  ;
+    img{
+      max-width: 300px;
+      margin: 0px 0px 20px 20px;
+      float: right;
+    }
+  }
+}
+
+@media (min-width:768px) {
+  .newDescription{
+    img{
+      max-width: 400px;
+    }
   }
 }
