@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../styles/components/Home/DefinitionSection.scss'
-import background from '../../images/Home/backgroundDefinition.svg';
 import { StaticImage } from 'gatsby-plugin-image';
+import background from '../../images/Home/backgroundDefinition.svg';
 
+import '../../styles/components/Home/DefinitionSection.scss'
 
 //TODO: COLOCAR EL NOMBRE DEL AVE EN EL ALT 
 //TODO: OPTIMIZAR TAMAÑO DEL AVE, VERIFICAR COLORES | DIMENSION | DISEÑO
