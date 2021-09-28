@@ -21,7 +21,7 @@
   img{
     width: 100%;
     max-width: 450px;
-    height: 40%;
+    height: 250px;
     
     //TODO revisar la imagen
     object-fit: fill;
@@ -49,6 +49,14 @@
   .newDescription{
     img{
       max-width: 400px;
+    }
+  }
+}
+
+@media (min-width:910px) {
+  .newDescription{
+    img{
+      margin: 0 0 20px 30px;
     }
   }
 }

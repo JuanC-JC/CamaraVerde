@@ -1,0 +1,21 @@
+.documentDescription{
+  width: 90%;
+  max-width: 1030px;
+  margin: 0 auto;
+  margin-top: 40px;
+  & > p{
+    margin-bottom: 30px;
+  }
+  .documents{
+ 
+    .document{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+      svg{
+        margin-right: 10px;
+        align-self: center;
+      }
+    }
+  }
+}
