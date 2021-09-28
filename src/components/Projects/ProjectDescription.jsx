@@ -1,13 +1,20 @@
 import React from 'react';
 import '../../styles/components/Project/ProjectDescription.scss';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css'
-// import 'swiper/css/bundle'
-// import "swiper/css/navigation"
+import SwiperCore, { Navigation } from 'swiper'
+
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+SwiperCore.use([Navigation]);
 
 
 export default function ProjectDescription (props){
   const {title, date, text, galeria, team}=props
+
   return(
     <div className='projectDescription'>
       <div className='date'>{date}</div>
@@ -24,6 +31,7 @@ export default function ProjectDescription (props){
             spaceBetween={50}
             loop={true}
             navigation={true}
+            className='mySwiper'
             breakpoints={{
               760: {
                 slidesPerView: 2,
@@ -33,17 +41,18 @@ export default function ProjectDescription (props){
               }
             }}
           >
-            {/* {
+            {
             galeria.map((img,index)=>{
-              <SwiperSlide>                
-                <img src={img} alt="" />
+              return (
+              <SwiperSlide
+                key={index
+              }>                
+                <img src={img} alt=""/>
               </SwiperSlide>
+              )
             })
           }
-       */}
-          <SwiperSlide>hello1</SwiperSlide>
-          <SwiperSlide>hello2</SwiperSlide>
-          <SwiperSlide>hello3</SwiperSlide>
+
 
           </Swiper>
 

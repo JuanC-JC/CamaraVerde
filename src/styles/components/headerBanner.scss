@@ -32,6 +32,12 @@
       background: rgba(51, 86, 68, 0.8);
   }
 
+  &--light-orange:after{
+    content:'';
+      position: absolute;
+      inset: 0 0 0 0 ;
+      background: rgba(178, 148, 93, 0.5);;
+  }
 } 
 
 @media (min-width:768px){

@@ -4,12 +4,12 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import HeaderBanner from '../components/Headerbanner';
 import ProjectDescription from '../components/Projects/ProjectDescription'
+
 //estilos e imagenes
 import '../styles/global.scss';
 import experience_1 from '../images/Experience/Experience_1.png'
 import experience_2 from '../images/Experience/Experience_2.png'
 import experience_3 from '../images/Experience/Experience_3.png'
-import experience_4 from '../images/Experience/Experience_4.png'
 import newsFund from '../images/headerBanner_2.jpg'
 
 
@@ -22,7 +22,7 @@ const project =  {
     experience_1,
     experience_2,
     experience_3,
-    experience_4
+    experience_2
   ],
   team: [
     {
@@ -51,7 +51,7 @@ const ProjectPage = ()=>{
 
       <HeaderBanner 
         img ={newsFund}
-        title= {'Projectos'} 
+        title= {'Proyectos'} 
         color={'dark-green'}
       />
 
