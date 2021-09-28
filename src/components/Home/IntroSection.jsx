@@ -1,6 +1,6 @@
 import React from 'react';
-import pajaros from '../../images/birdsHome.png';
-import iconDesktop from '../../images/iconDesktop.svg';
+import iconCV from '../../images/General/iconCV.svg';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import '../../styles/components/Home/IntroSection.scss'
 
@@ -32,7 +32,8 @@ export default function IntroSection() {
 
         <div className="intro__textCompanyLogo">
 
-          <img src={iconDesktop} alt="icono camara verde amazorinoquia" />
+
+          <img src={iconCV} alt="icono camara verde amazorinoquia" />
 
           <h1>Cámara <br /> verde  de la <br /> Amazorinoquia</h1>
         </div>
@@ -46,8 +47,11 @@ export default function IntroSection() {
       </div>
 
 
-
-      <img className='intro__ilustration' src={pajaros} alt="" />
+      <StaticImage
+        className='intro__ilustration'
+        src='../../images/Home/ilustrationJaguar.png'
+        placeholder='tracedSVG'
+        alt='ilustracion jaguar' />
     </section>
   );
 };

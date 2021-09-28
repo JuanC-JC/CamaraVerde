@@ -7,7 +7,6 @@ import '../styles/pages/Companies.scss'
 
 export default function Companies() {
   return (
-
     <main className='companies'>
       <Introduction />
       <HelpUs />

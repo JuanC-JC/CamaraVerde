@@ -64,17 +64,13 @@
     .definition__ilustration {
       justify-content: flex-start;
       transform: translateY(0);
-
-      svg {
-        width: 250px;
-        height: auto;
-      }
+      max-width: 320px;
     }
   }
 }
 
-@media (min-width:768px){
-  .c-definition{
+@media (min-width: 768px) {
+  .c-definition {
     margin-bottom: $space-section;
   }
 }
@@ -95,16 +91,13 @@
     }
 
     .definition__ilustration {
-      svg {
-        width: 320px;
-        height: auto;
-      }
+      max-width: 600px;
     }
   }
 }
 
-@media (min-width:1024px) {
-  .c-definition{
+@media (min-width: 1024px) {
+  .c-definition {
     margin-bottom: $space-section-big;
   }
 }

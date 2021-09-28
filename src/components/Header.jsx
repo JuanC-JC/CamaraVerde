@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link, navigate } from 'gatsby'
-import mobileLogo from '../images/mobileLogo.png'
-import desktopLogo from '../images/desktopLogo.png'
-import burguerMenu from '../images/burguerMenu.png'
+import mobileLogo from '../images/Header/mobileLogo.png'
+import desktopLogo from '../images/Header/desktopLogo.png'
+import burguerMenu from '../images/Header/burguerMenu.png'
 
 import '../styles/header.scss'
 
