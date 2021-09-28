@@ -15,11 +15,13 @@ export default function Pilares() {
 
         <div className="pilarCard__text">
           <h3>5-Igualdad de genero</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dapibus sed ac condimentum non. Sed sem turpis euismod viverra
-            nam ut in in vitae.
+          <p>Vestibulum id auctor in integer. Facilisi at varius eros integer non nibh id euismod.
+            Luctus nunc sed nibh in vitae venenatis sit porttitor. Enim erat sed eget nulla vitae gravida.
+            Urna, id suspendisse id nibh non dignissim accumsan.
           </p>
         </div>
 
+        <button class='button button--white'>Ver mas</button>
       </div>
 
       <div className="pilarCard pilarCard--yellow pilarCard--right">
@@ -33,6 +35,7 @@ export default function Pilares() {
           </p>
         </div>
 
+        <button class='button button--white'>Ver mas</button>
       </div>
 
       <div className="pilarCard pilarCard--green">
@@ -46,6 +49,7 @@ export default function Pilares() {
           </p>
         </div>
 
+        <button class='button button--white'>Ver mas</button>
       </div>
     </section>
   );

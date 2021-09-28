@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 export default function DepartmentSVG({ id, handlerClick, path, selected }) {
 
@@ -39,57 +39,43 @@ export default function DepartmentSVG({ id, handlerClick, path, selected }) {
   );
 };
 
-
+// TODO: Optimizar este render :c
 const DepartmentSelector = ({ box }) => {
 
   const elemento = useRef(null)
   const [positions, setPositions] = useState({ x: 0, y: 0 })
 
-  // const handleResize = useCallback(() => {
-  //   console.log(type)
-  //   setType(window.innerWidth);
-  // }, [type]);
-
-  // useEffect(() => {
-
-  //   window.addEventListener('resize', handleResize)
-
-  //   return (() => window.removeEventListener('resize', handleResize))
-  // }, [])
-
-
-
-
-  // useEffect(() => {
-  //   if (elemento.current) {
-  //     document.querySelector('.map').appendChild(elemento.current)
-  //   }
-  // }, [])
-
-  // useEffect(() => {
-  //   console.log(elemento.current)
-  // })
-
 
   useEffect(() => {
-    if (elemento.current) {
-      console.log(elemento.current)
+    console.log('rendered', box, elemento)
+    if (box && elemento.current) {
+      console.log('insert')
+      document.querySelector('.map').appendChild(elemento.current)
+    }
+  }, [box])
+
+  useEffect(() => {
+
+    if (box) {
       setPositions({
         x: box.x + (box.width / 2),
-        y: box.y + (box.height / 2 - 7)
+        y: box.y + (box.height / 2 - 10),
       })
-
     }
-  }, [])
+  }, [box])
 
-  if (box) {
-    return (
-      <g ref={elemento}>
-        <circle cx={positions.x} cy={positions.y} r="7" fill="#205033" />
-        <path d={`M${positions.x},${positions.y} L${positions.x},${250} L${0},${250}`} stroke="#205033" strokeWidth='2' />
-      </g>
-    )
-  }
 
-  return null
+  return (
+    <g id='svgPointerMap' ref={elemento}>
+
+      {
+        positions.x > 0 &&
+        <>
+          <circle cx={positions.x} cy={positions.y} r="7" fill="#205033" />
+          <path d={`M${positions.x},${positions.y} L${positions.x},${100} L${0},${100}`} stroke="#205033" strokeWidth='2' />
+        </>
+      }
+    </g>
+  )
+
 }

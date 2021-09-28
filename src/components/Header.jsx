@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import mobileLogo from '../images/mobileLogo.png'
 import desktopLogo from '../images/desktopLogo.png'
 import burguerMenu from '../images/burguerMenu.png'
@@ -19,17 +19,17 @@ export default function Header() {
   return (
     <header className='header'>
 
-      <img className='header__mobileLogo' src={mobileLogo} alt='Logo camara verde' />
+      <Link to='/'><img className='header__mobileLogo' src={mobileLogo} alt='Logo camara verde' /></Link>
 
-      <img className='header__desktopLogo' src={desktopLogo} alt='Logo camara verde' />
+      <img onClick={() => navigate('/')} className='header__desktopLogo' src={desktopLogo} alt='Logo camara verde' />
 
       <nav className={`header__navigation ${isOpenMenuMobile && 'header__navigation--visibility'}`}>
         <ul>
           <li>
-            <Link to='#Nosotros'>Nosotros</Link>
+            <Link to='/nosotros'>Nosotros</Link>
           </li>
           <li>
-            <Link to='#Nosotros' >Empresarios Verdes</Link>
+            <Link to='/empresas' >Empresarios Verdes</Link>
           </li>
           <li>
             <Link to='#Nosotros'>Tienda</Link>

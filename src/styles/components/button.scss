@@ -21,6 +21,11 @@
     background-color: $main-orange;
   }
 
+  &--white {
+    background-color: $main-white;
+    color: $main-green;
+  }
+
   &--outline {
     background: transparent;
     border: 1px solid white;
