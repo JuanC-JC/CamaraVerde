@@ -11,9 +11,21 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        extensions: [`.md`, `.mdx`],
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "content",
+        path: `${__dirname}/content`,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
