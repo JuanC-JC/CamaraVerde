@@ -1,7 +1,6 @@
-@import '../../vars.scss';
+@import "../../vars.scss";
 
-
-.c-donate{
+.c-donate {
   width: 90%;
   max-width: 1030px;
   margin: 40px auto;
@@ -11,91 +10,95 @@
   align-items: center;
   margin-bottom: $space-section-small;
 
-  &__definition{
+  &__definition {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
 
-    .definition__image{
+    .definition__image {
       display: none;
     }
 
-    .definition__text{
+    .definition__text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      // padding: 20px 20px 25px;
-      h2{
+      h2 {
         margin-bottom: 30px;
       }
-      p{
+      p {
         width: 90%;
         text-align: justify;
         margin-bottom: 25px;
         line-height: 15px;
-
       }
     }
-    
   }
 
-  &__options{
+  &__options {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding-top: 30px;
-    h3{
+    h3 {
       text-align: center;
       margin-bottom: 25px;
     }
-    .donate__options{
+    .donate__options {
       width: 100%;
       display: flex;
       flex-direction: row;
       overflow-x: scroll;
-    }
-  }
-}
+      padding-bottom: 5px;
 
-@media (min-width:650px){
-  .c-donate{
-    
-    &__definition{
-      flex-direction: row;
+      &::-webkit-scrollbar {
+        background-color: $light-green;
+        height: 8px;
+      }
 
-      .definition__image{
-        display: block;
-        width: 50%;
-        height: 20%;
+      &::-webkit-scrollbar-thumb {
+        background-color: $third-green;
+        border-radius: 2px;
       }
     }
   }
 }
 
+@media (min-width: 650px) {
+  .c-donate {
+    &__definition {
+      flex-direction: row;
 
-@media (min-width:768px){
-  .c-donate{
+      .definition__image {
+        display: block;
+        min-width: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .c-donate {
     margin-bottom: $space-section;
   }
 }
 
-@media (min-width:920px){
-  .c-donate{
-    &__options{
-      .donate__options{
+@media (min-width: 920px) {
+  .c-donate {
+    &__options {
+      .donate__options {
         max-width: 1030px;
       }
     }
   }
 }
 
-@media (min-width:1024px) {
-  .c-donate{
+@media (min-width: 1024px) {
+  .c-donate {
     margin-bottom: $space-section-big;
   }
 }

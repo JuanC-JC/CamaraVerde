@@ -1,4 +1,4 @@
-@import '../../vars.scss';
+@import "../../vars.scss";
 
 .ods {
   margin: 0 auto;
@@ -7,7 +7,7 @@
   align-items: center;
   width: 100%;
   padding: 0 20px;
-  max-width: 700px;
+  max-width: 750px;
   margin-bottom: $space-section-small;
 
   img {
@@ -22,16 +22,14 @@
   }
 }
 
-
-
-@media (min-width:768px){
-  .ods{
+@media (min-width: 768px) {
+  .ods {
     margin-bottom: $space-section;
   }
 }
 
-@media (min-width:1024px) {
-  .ods{
+@media (min-width: 1024px) {
+  .ods {
     margin-bottom: $space-section-big;
   }
 }

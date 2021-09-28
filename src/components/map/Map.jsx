@@ -15,9 +15,15 @@ const Map = ({ selected, setSelection, departments }) => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <Country />
-
       {
-        departments.map((department) => <DepartmentSVG handlerClick={setSelection} key={department.name} id={department.name} path={department.path} selected={department.name == selected.name} />
+        departments.map((department) => (
+          <DepartmentSVG
+            handlerClick={setSelection}
+            key={department.name}
+            id={department.name}
+            path={department.path}
+            selected={department.name == selected.name} />
+        )
         )
       }
 

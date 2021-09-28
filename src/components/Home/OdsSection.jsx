@@ -1,5 +1,5 @@
 import React from 'react';
-import imageODS from '../../images/imageObjetivosDesarollo.jpg'
+import imageODS from '../../images/Home/imageObjetivosDesarollo.jpg'
 import { Link } from 'gatsby'
 import '../../styles/components/Home/OdsSection.scss'
 
