@@ -12,9 +12,9 @@ import '../styles/global.scss';
 export default function StorePage (){
   return(
     <>
-      <Header/>
+      {/* <Header/> */}
       <Store/>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   )
 }
