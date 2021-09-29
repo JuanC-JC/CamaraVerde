@@ -5,7 +5,7 @@ import background from '../../images/Home/backgroundDefinition.svg';
 import '../../styles/components/Home/DefinitionSection.scss'
 
 //TODO: COLOCAR EL NOMBRE DEL AVE EN EL ALT 
-//TODO: OPTIMIZAR TAMAÑO DEL AVE, VERIFICAR COLORES | DIMENSION | DISEÑO
+//TODO: VERIFICAR COLORES | DIMENSION | DISEÑO
 export default function Definition() {
   return (
     <section className='c-definition'>

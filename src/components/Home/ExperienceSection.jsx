@@ -13,6 +13,7 @@ import '../../styles/components/Home/ExperienceSection.scss'
 
 SwiperCore.use([Pagination, Navigation, Autoplay])
 
+//TODO AGREGAR BOTON VER PROYECTOS
 export default function Experience() {
 
   const carousel = useRef(null);
@@ -29,7 +30,6 @@ export default function Experience() {
       <h2 className="experience__title">Experiencia</h2>
 
       <div ref={carousel} className="experience__carousel">
-
 
         <Swiper
           spaceBetween={50}
@@ -69,9 +69,29 @@ export default function Experience() {
               <h3>Lorem Ipsum dolor sit ameth</h3>
             </div>
           </SwiperSlide>
+          <SwiperSlide>
+            <div className='experienceCard'>
+              <img src={imgExperience2} alt="" />
+              <h3>Lorem Ipsum dolor sit ameth</h3>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='experienceCard'>
+              <img src={imgExperience2} alt="" />
+              <h3>Lorem Ipsum dolor sit ameth</h3>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='experienceCard'>
+              <img src={imgExperience2} alt="" />
+              <h3>Lorem Ipsum dolor sit ameth</h3>
+            </div>
+          </SwiperSlide>
         </Swiper>
 
       </div>
+
+      <button className="button button--orange">Ver Proyectos</button>
 
 
     </section >

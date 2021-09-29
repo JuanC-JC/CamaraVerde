@@ -1,13 +1,8 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image';
 
 import DonationOption from './DonationOption';
-
-//imagenes
-import donationOne from '../../images/Donation/donacion.png';
-import donationTwo from '../../images/Donation/donation1.png';
-import donationThree from '../../images/Donation/donation2.png';
-import donationFour from '../../images/Donation/donation3.png';
 
 import '../../styles/components/Home/DonateSection.scss';
 
@@ -16,33 +11,48 @@ const donationOptions = [
     id: '1',
     title: 'Afiliate',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
-    img: donationOne,
+    urlImg: 'imageDonation01',
     textBotton: 'Inscribete'
   },
   {
     id: '2',
     title: 'Dona',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
-    img: donationTwo,
+    urlImg: 'imageDonation02',
     textBotton: 'Inscribete'
   },
   {
     id: '3',
     title: 'Voluntariado',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
-    img: donationThree,
+    urlImg: 'imageDonation03',
     textBotton: 'Inscribete'
   },
   {
     id: '4',
     title: 'Ideas verdes',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
-    img: donationFour,
+    urlImg: 'imageDonation04',
     textBotton: 'Inscribete'
   }
 ]
 
 export default function DonateSection() {
+
+  const { donationImgs: { images } } = useStaticQuery(graphql`
+    query Images {
+      donationImgs: allFile(filter: {absolutePath: {regex: "/images/Donation/"}}) {
+        images: nodes {
+          name
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED)
+          }
+        }
+      }
+    }
+  `)
+
+
   return (
     <section className='c-donate'>
 
@@ -69,13 +79,20 @@ export default function DonateSection() {
 
         <div className='donate__options'>
           {
-            donationOptions.map((option, index) =>
-              <DonationOption
-                key={option.id}
-                title={option.title}
-                paragraph={option.paragraph}
-                img={option.img}
-                textBotton={option.textBotton} />)
+            donationOptions.map((option, index) => {
+              const image = images.find(image => image.name == option.urlImg)
+
+              return (
+                <DonationOption
+                  img={image}
+                  key={option.id}
+                  title={option.title}
+                  paragraph={option.paragraph}
+                  textBotton={option.textBotton} />
+              )
+            })
+
+
           }
         </div>
       </div>

@@ -1,4 +1,4 @@
-@import '../../vars.scss';
+@import "../../vars.scss";
 
 //Styles for experience section
 .experience {
@@ -13,10 +13,6 @@
   h2 {
     margin-bottom: 50px;
     color: $main-green;
-  }
-  
-  .carousel{
-    margin-bottom: 50px;
   }
 
   &::after {
@@ -41,7 +37,7 @@
   max-width: 1100px;
   display: flex;
   align-items: center;
-  // margin-bottom: 30px;
+  margin-bottom: 20px;
 
   //overwrite styles for swiper components
   .swiper-button-prev,
@@ -117,8 +113,8 @@
   }
 }
 
-@media (min-width:768px){
-  .experience{
+@media (min-width: 768px) {
+  .experience {
     margin-bottom: $space-section;
   }
 }
