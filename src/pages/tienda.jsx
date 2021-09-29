@@ -1,7 +1,5 @@
 import React from 'react';
 //componentes
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import Store from '../components/Store/Store'
 
 //estilos e imagenes

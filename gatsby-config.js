@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "Camara Verde",
+    title: "Cámara Verde de la Amazorinoquía",
     description: "",
     author: "Camara Verde",
   },
@@ -36,5 +36,15 @@ module.exports = {
         fonts: ["Nunito", "Raleway:700,900"],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'React go',
+        short_name: 'Reactgo',
+        start_url: '/',
+        display: 'standalone',
+        icon: 'src/images/camaraverde.png',
+      },
+    }
   ],
 };
