@@ -8,12 +8,16 @@ import NewsSection from "../components/Home/NewSection";
 import RegionSection from "../components/Home/RegionSection";
 import PartnersSection from "../components/Home/PartnersSection";
 import OdsSection from '../components/Home/OdsSection'
+import SEO from '../components/Seo'
+
+import image from '../images/DonateBackground.png'
 
 
 const IndexPage = () => {
 
   return (
     <>
+      <SEO title={'Camara verde Amazorinoquía'} meta={{ 'og:image': image }} />
       <IntroSection />
       <DefinitionSection />
       <RegionSection />

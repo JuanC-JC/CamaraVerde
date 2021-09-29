@@ -49,7 +49,7 @@ export default function IntroSection() {
 
       <StaticImage
         className='intro__ilustration'
-        src='../../images/Home/ilustrationJaguar-min.png'
+        src='../../images/Home/ilustrationJaguar.png'
         placeholder='blurred'
         alt='ilustracion jaguar' />
     </section>

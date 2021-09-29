@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Camara Verde",
-    description: "",
+    siteUrl: "https://camaraverde.netlify.app/",
+    title: "Camara Verde Amazorinoquía",
+    description:
+      "La fundacion camara verde de amazorinoquia, promueve mecanismos para aumentar la capacidad de conversacion, proteccion y gestion eficaz en relacion con el cambio climático en la Amazorinoquía ",
     author: "Camara Verde",
   },
   plugins: [
@@ -22,17 +23,17 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "content",
-        path: `${__dirname}/content`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
         name: "images",
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "content",
+        path: "./content/",
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
