@@ -2,8 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import testImage from '../../static/images/donateBackground.png'
 
-function SEO({ description, lang, meta, title }) {
+export default function Seo({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -12,11 +13,15 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            image
           }
         }
       }
     `
   );
+
+  console.log(testImage)
+  console.log(site.siteMetadata)
 
   const metaDescription = description || site.siteMetadata.description;
 
@@ -25,7 +30,7 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={site.siteMetadata.title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
@@ -34,7 +39,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           property: `og:description`,
@@ -60,22 +65,24 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `og:image`,
+          content: site.siteMetadata.image
+        }
       ].concat(meta)}
     />
   );
 }
 
-SEO.defaultProps = {
+Seo.defaultProps = {
   lang: `es`,
   meta: [],
   description: ``,
 };
 
-SEO.propTypes = {
+Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
 };
-
-export default SEO;

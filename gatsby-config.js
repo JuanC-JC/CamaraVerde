@@ -5,6 +5,7 @@ module.exports = {
     description:
       "La fundacion camara verde de amazorinoquia, promueve mecanismos para aumentar la capacidad de conversacion, proteccion y gestion eficaz en relacion con el cambio climático en la Amazorinoquía ",
     author: "Camara Verde",
+    image: "/static/images/donateBackground.png",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
@@ -30,7 +31,7 @@ module.exports = {
     },
     {
       resolve: "gatsby-source-filesystem",
-      options: {
+      options: {git 
         name: "content",
         path: "./content/",
       },
