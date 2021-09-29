@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import testImage from '../../static/images/donateBackground.png'
 
 export default function Seo({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -12,11 +13,15 @@ export default function Seo({ description, lang, meta, title }) {
             title
             description
             author
+            image
           }
         }
       }
     `
   );
+
+  console.log(testImage)
+  console.log(site.siteMetadata)
 
   const metaDescription = description || site.siteMetadata.description;
 
