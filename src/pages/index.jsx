@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
-import "../styles/global.scss";
+import React from "react";
 import IntroSection from '../components/Home/IntroSection';
 import DefinitionSection from "../components/Home/DefinitionSection";
 import ExperienceSection from "../components/Home/ExperienceSection";
@@ -8,16 +7,17 @@ import NewsSection from "../components/Home/NewSection";
 import RegionSection from "../components/Home/RegionSection";
 import PartnersSection from "../components/Home/PartnersSection";
 import OdsSection from '../components/Home/OdsSection'
-import SEO from '../components/Seo'
+import Seo from '../components/Seo'
 
-import image from '../images/DonateBackground.png'
+// import image from '../images/DonateBackground.png'
+import "../styles/global.scss";
 
 
 const IndexPage = () => {
 
   return (
     <>
-      <SEO title={'Camara verde Amazorinoquía'} meta={{ 'og:image': image }} />
+      <Seo />
       <IntroSection />
       <DefinitionSection />
       <RegionSection />
