@@ -72,11 +72,10 @@ collections:
           widget: "list",
           field: { label: "Image", name: "image", widget: "image" },
         }
-      - {
-          label: "Team",
-          name: "team",
-          widget: "list",
+      -   label: "Categories"
+          name: "categories"
+          widget: "list"
           fields:
-            - { label: "Nombre", name: "nombre", widget: "string" }
-            # - { label: "Cargo", name: "cargo", widget: "string" }
-        }
+            - { label: Title, name: title, widget: string }
+            - { label: "Body", name: "body", widget: "markdown" }
+        
