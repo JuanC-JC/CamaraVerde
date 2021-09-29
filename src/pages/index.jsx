@@ -15,6 +15,8 @@ import "../styles/global.scss";
 
 const IndexPage = () => {
 
+
+
   return (
     <>
       <Seo />

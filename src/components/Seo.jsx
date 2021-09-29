@@ -25,7 +25,7 @@ export default function Seo({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={site.siteMetadata.title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
@@ -34,7 +34,7 @@ export default function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           property: `og:description`,
@@ -60,6 +60,10 @@ export default function Seo({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `og:image`,
+          content: site.siteMetadata.image
+        }
       ].concat(meta)}
     />
   );
