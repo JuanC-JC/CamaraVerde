@@ -4,6 +4,9 @@ import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 import testImage from '../../static/images/donateBackground.png'
 
+
+
+//Referencia del elemeneto /images/donateBackground.png'
 export default function Seo({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -14,6 +17,7 @@ export default function Seo({ description, lang, meta, title }) {
             description
             author
             image
+            siteUrl
           }
         }
       }
@@ -67,7 +71,7 @@ export default function Seo({ description, lang, meta, title }) {
         },
         {
           name: `og:image`,
-          content: site.siteMetadata.image
+          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
         }
       ].concat(meta)}
     />
