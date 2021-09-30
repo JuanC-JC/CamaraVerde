@@ -45,7 +45,7 @@ export default function DonateSection() {
         images: nodes {
           name
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED)
+            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
           }
         }
       }
@@ -91,8 +91,6 @@ export default function DonateSection() {
                   textBotton={option.textBotton} />
               )
             })
-
-
           }
         </div>
       </div>
