@@ -27,33 +27,55 @@ collections:
           field: { label: "Image", name: "image", widget: "image" },
         }
       - { label: "Body", name: "body", widget: "markdown" }
+  
+  - name: "noticias"
+    label: "Noticias"
+    folder: "content/noticias"
+    create: true
+    slug: "index"
+    media_folder: "assets"
+    public_folder: "assets"
+    path: "{{title}}/index"
+    editor:
+      preview: true
+    fields:
+      - { label: "Convocatoria", name: "convocatoria", widget: "boolean", default: false }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "date", format: 'MMM Do YY' }
+      
+      - {
+          label: "Gallery",
+          name: "galleryImages",
+          widget: "list",
+          field: { label: "Image", name: "image", widget: "image" },
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
 
-  # - name: "experiencia"
-  #   label: "Post"
-  #   folder: "content/experiencia"
-  #   create: true
-  #   slug: "index"
-  #   media_folder: "assets"
-  #   public_folder: "assets"
-  #   path: "{{title}}/index"
-  #   editor:
-  #     preview: true
-  #   fields:
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Publish Date", name: "date", widget: "datetime" }
-  #     - { label: "Description", name: "description", widget: "text" }
-  #     - { label: "Body", name: "body", widget: "markdown" }
-  #     - {
-  #         label: "Gallery",
-  #         name: "galleryImages",
-  #         widget: "list",
-  #         field: { label: "Image", name: "image", widget: "image" },
-  #       }
-  #     - {
-  #         label: "Team",
-  #         name: "team",
-  #         widget: "list",
-  #         field: {
-  #           label: "Name", name: "name", widget: "String" ,
-  #           label: "Job", name: "job", widget: "String" },
-  #       }
+  - name: "experiencia"
+    label: "Experiencia"
+    folder: "content/experiencia"
+    create: true
+    slug: "index"
+    media_folder: "assets"
+    public_folder: "assets"
+    path: "{{title}}/index"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Gallery",
+          name: "galleryImages",
+          widget: "list",
+          field: { label: "Image", name: "image", widget: "image" },
+        }
+      -   label: "Categories"
+          name: "categories"
+          widget: "list"
+          fields:
+            - { label: Title, name: title, widget: string }
+            - { label: "Body", name: "body", widget: "markdown" }
+        

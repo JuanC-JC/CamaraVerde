@@ -32,7 +32,7 @@ export default function Header() {
             <Link to='/empresas' >Empresarios Verdes</Link>
           </li>
           <li>
-            <Link to='#Nosotros'>Tienda</Link>
+            <Link to='/tienda'>Tienda</Link>
           </li>
         </ul>
       </nav>

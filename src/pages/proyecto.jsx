@@ -1,7 +1,5 @@
 import React from 'react';
 //componentes
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import HeaderBanner from '../components/Headerbanner';
 import ProjectDescription from '../components/Projects/ProjectDescription'
 
@@ -47,7 +45,6 @@ const project =  {
 const ProjectPage = ()=>{
   return(
     <>
-      <Header/>
 
       <HeaderBanner 
         img ={newsFund}
@@ -65,7 +62,6 @@ const ProjectPage = ()=>{
     />
 
 
-      <Footer/>
     </>
   )
 }

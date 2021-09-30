@@ -1,0 +1,16 @@
+.c-store{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .store-text{
+    width: 70%;
+    h2{
+      font-size: 40px;
+      font-weight: normal;
+    }
+    p{
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}

@@ -1,7 +1,5 @@
 import React from 'react';
 //componentes
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import HeaderBanner from '../components/Headerbanner';
 import DocumentDescription from '../components/Documents/DocumentsDescription';
 //estilos e imagenes
@@ -14,7 +12,6 @@ import newsFund from '../images/headerBanner_3.jpg';
 const NewPage = ()=>{
   return(
     <>
-      <Header/>
 
       <HeaderBanner 
         img ={newsFund}
@@ -24,7 +21,6 @@ const NewPage = ()=>{
 
       <DocumentDescription></DocumentDescription>
 
-      <Footer/>
     </>
   )
 }
