@@ -10,7 +10,7 @@ export default function Alcance() {
       <div className="alcanceCard">
         <div className="alcanceCard__img">
           <img src={MisionIcon} alt="" />
-          <h2>Mision</h2>
+          <h2>Misión</h2>
         </div>
         <p idclassName="alcanceCard__text">
           Promover mecanismos para aumentar la capacidad en la conservación, protección, planificación y gestión eficaz en relación con
@@ -20,7 +20,7 @@ export default function Alcance() {
       <div className="alcanceCard">
         <div className="alcanceCard__img">
           <img src={VisionIcon} alt="" />
-          <h2>Vision</h2>
+          <h2>Visión</h2>
         </div>
         <p idclassName="alcanceCard__text">
           Ser una organización referente y canal prioritario para la mejora continua en la cultura, la educación, la sensibilización y la capacidad
