@@ -14,11 +14,12 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #a4e97a;
+    background-color: #83d554;
   }
 
   &--small {
-    min-height: 30px;
+    min-height: 35px;
+    font-size: 16px;
   }
 
   &--orange {
