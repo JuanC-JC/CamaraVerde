@@ -47,9 +47,7 @@ const DepartmentSelector = ({ box }) => {
 
 
   useEffect(() => {
-    console.log('rendered', box, elemento)
     if (box && elemento.current) {
-      console.log('insert')
       document.querySelector('.map').appendChild(elemento.current)
     }
   }, [box])

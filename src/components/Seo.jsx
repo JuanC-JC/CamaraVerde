@@ -24,9 +24,6 @@ export default function Seo({ description, lang, meta, title }) {
     `
   );
 
-  console.log(testImage)
-  console.log(site.siteMetadata)
-
   const metaDescription = description || site.siteMetadata.description;
 
   return (

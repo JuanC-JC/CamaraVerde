@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../styles/components/Home/DonationOption.scss'
-import { useStaticQuery, graphql } from 'gatsby'
-import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 export default function DonationOption(props) {
   const { title, paragraph, img, textBotton } = props
