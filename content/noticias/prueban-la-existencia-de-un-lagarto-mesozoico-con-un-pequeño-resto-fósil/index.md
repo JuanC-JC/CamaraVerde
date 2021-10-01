@@ -4,6 +4,7 @@ title: Prueban la existencia de un lagarto mesozoico con un pequeño resto fósi
 date: Sep 27th 21
 galleryImages:
   - assets/diseño-sin-título.png
+content: Test de informacion
 ---
 <!--StartFragment-->
 
