@@ -40,58 +40,43 @@ const news = [
   },
 ]
 
-
-
 export default function NewSection() {
 
-  const {files:{nodos}} = useStaticQuery(graphql`
-  query getNews {
-    files: allMdx(filter: {fileAbsolutePath: {regex: "/noticias/"}}, limit: 4) {
-      nodos: nodes {
-        id
-        data: frontmatter {
-          convocatoria
-          date
-          title
-          content
-          galleryImages {
-            childImageSharp {
-              gatsbyImageData
+  const {files:{data}} = useStaticQuery(graphql`
+    query getNews {
+      files: allMdx(
+        filter: {fileAbsolutePath: {regex: "/noticias/"}}
+        limit: 4
+        sort: {fields: frontmatter___date}
+      ) {
+        data: nodes {
+          id
+          data: frontmatter {
+            convocatoria
+            date
+            title
+            content
+            galleryImages {
+              childImageSharp {
+                gatsbyImageData(width: 900)
+              }
             }
           }
         }
       }
     }
-  }
   `)
-
-  const data = nodos
-
-  console.log(data)
 
   return (
     <section className='c-new'>
 
       <h2>Noticias</h2>
-      <div onClick={()=>{console.log(news)}} className='news'>
-        {/* {
-          news.map( report =>
-            <NewCard
-              key={report.id}
-              id={report.id}
-              img={data.data.galleryImages[0]}
-              date={report.date}
-              title={report.title}
-              text={report.text}
-              notification={report.notification}
-            />
-          )
-        } */}
+      <div className='news'>
         {
           data.map( (report,index) =>
             <NewCard
               key={report.id}
-              id={index+1}
+              id={report.id}
               img={report.data.galleryImages}
               date={report.data.date}
               title={report.data.title}
@@ -106,6 +91,3 @@ export default function NewSection() {
     </section>
   )
 }
-
-//TODO: TE VOY A MATAR OPR COLOCAR ESE SISTEMA DE INDICE, SABIENDO
-//QUE PUEDES HACER SELECTORES COMO FIRST-CHILD O NTH-CHILD() EN CSS

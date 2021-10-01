@@ -19,7 +19,7 @@
     margin-bottom: 20px;
   }
 
-  img {
+  &__img {
     width: 100%;
     max-width: 450px;
     height: 250px;
@@ -28,7 +28,8 @@
     margin-bottom: 30px;
     float: none;
   }
-  p {
+
+  .content {
     text-align: justify;
   }
 }
@@ -36,7 +37,7 @@
 @media (min-width: 530px) {
   .newDescription {
     float: right;
-    img {
+    &__img {
       max-width: 300px;
       margin: 0px 0px 20px 20px;
       float: right;
@@ -46,7 +47,7 @@
 
 @media (min-width: 768px) {
   .newDescription {
-    img {
+    &__img {
       max-width: 400px;
     }
   }
@@ -54,7 +55,7 @@
 
 @media (min-width: 910px) {
   .newDescription {
-    img {
+    &__img {
       margin: 0 0 20px 30px;
     }
   }
