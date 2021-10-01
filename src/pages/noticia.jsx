@@ -17,9 +17,6 @@ const noticias = {
 };
 
 
-
-
-
 const NewPage = () => {
   return (
     <>

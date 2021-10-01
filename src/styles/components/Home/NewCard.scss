@@ -1,7 +1,7 @@
 @import '../../vars.scss';
 
 
-.new{
+.newCard{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -54,9 +54,9 @@
 }
 
 @media (min-width:910px) {
-  .new{
+  .newCard{
  
-    .new__text{
+    &__text{
       padding: 15px;
     }
     p{

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'gatsby'
 import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 import '../../styles/components/Home/NewCard.scss'
 
@@ -7,24 +8,24 @@ export default function NewCard (props){
   const {id,date,title, img, text, notification} = props;
 
   return(
-    <div className='new' id={`id_${id}`}>
+    <div className='newCard'>
       
       {
         img &&      
         <GatsbyImage 
-          className='new__img'
+          className='newCard__img'
           image={getImage(img[0])} 
           alt='imagen de noticia'
         />
       }
 
 
-      <div className="new__text">
-          {notification &&<div className='notification'>Convocatoria</div>}
+      <div className="newCard__text">
+          {notification && <div className='notification'>Convocatoria</div>}
           <div className="date">{date}</div>
           <h4>{title}</h4>
           <p>{text}</p>
-          <div className='more'>Ver más</div>
+          <Link to={`/noticias/${id}`}><div className='more'>Ver más</div></Link>
       </div>
 
     </div>
