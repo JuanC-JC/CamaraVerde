@@ -2,6 +2,8 @@
 convocatoria: true
 title: Convacatoria de testeo
 date: Oct 01 21
+galleryImages:
+  - assets/diseño-sin-título.png
 content: >-
   “Tuve la suerte de ver este pequeño fósil, de poco más de un centímetro, que
   había pasado más de 30 años en un cajón repleto de huesos fragmentarios. A

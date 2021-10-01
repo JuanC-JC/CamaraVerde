@@ -46,13 +46,14 @@ export default function NewSection() {
 
   const {files:{nodos}} = useStaticQuery(graphql`
   query getNews {
-    files: allMdx(filter: {fileAbsolutePath: {regex: "/noticias/"}}) {
+    files: allMdx(filter: {fileAbsolutePath: {regex: "/noticias/"}}, limit: 4) {
       nodos: nodes {
         id
         data: frontmatter {
           convocatoria
           date
           title
+          content
           galleryImages {
             childImageSharp {
               gatsbyImageData
@@ -64,7 +65,7 @@ export default function NewSection() {
   }
   `)
 
-  const data = nodos.concat(nodos)[0]
+  const data = nodos
 
   console.log(data)
 
@@ -73,7 +74,7 @@ export default function NewSection() {
 
       <h2>Noticias</h2>
       <div onClick={()=>{console.log(news)}} className='news'>
-        {
+        {/* {
           news.map( report =>
             <NewCard
               key={report.id}
@@ -85,6 +86,19 @@ export default function NewSection() {
               notification={report.notification}
             />
           )
+        } */}
+        {
+          data.map( (report,index) =>
+            <NewCard
+              key={report.id}
+              id={index+1}
+              img={report.data.galleryImages}
+              date={report.data.date}
+              title={report.data.title}
+              text={report.data.content}
+              notification={report.convocatoria}
+            />
+          )
         }
       </div>
       <button className='button button--orange'>Ver más noticias</button>
@@ -92,3 +106,6 @@ export default function NewSection() {
     </section>
   )
 }
+
+//TODO: TE VOY A MATAR OPR COLOCAR ESE SISTEMA DE INDICE, SABIENDO
+//QUE PUEDES HACER SELECTORES COMO FIRST-CHILD O NTH-CHILD() EN CSS

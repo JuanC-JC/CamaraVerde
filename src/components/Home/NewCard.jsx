@@ -6,15 +6,18 @@ export default function NewCard (props){
 
   const {id,date,title, img, text, notification} = props;
 
-  console.log(img)
-
   return(
     <div className='new' id={`id_${id}`}>
       
-      <GatsbyImage 
-        className='new__img'
-        image={getImage(img)} 
-        alt='imagen de noticia'/>
+      {
+        img &&      
+        <GatsbyImage 
+          className='new__img'
+          image={getImage(img[0])} 
+          alt='imagen de noticia'
+        />
+      }
+
 
       <div className="new__text">
           {notification &&<div className='notification'>Convocatoria</div>}
