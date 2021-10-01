@@ -27,7 +27,7 @@ collections:
           field: { label: "Image", name: "image", widget: "image" },
         }
       - { label: "Body", name: "body", widget: "markdown" }
-  
+
   - name: "noticias"
     label: "Noticias"
     folder: "content/noticias"
@@ -39,15 +39,20 @@ collections:
     editor:
       preview: true
     fields:
-      - { label: "Convocatoria", name: "convocatoria", widget: "boolean", default: false }
+      - {
+          label: "Convocatoria",
+          name: "convocatoria",
+          widget: "boolean",
+          default: false,
+        }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime"}
-      
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+
       - {
           label: "Gallery",
           name: "galleryImages",
           widget: "list",
-          field: { label: "Image", name: "image", widget: "image" }
+          field: { label: "Image", name: "image", widget: "image" },
         }
       - { label: "Contenido", name: "content", widget: "text" }
 
@@ -62,20 +67,18 @@ collections:
     editor:
       preview: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "date" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime" }
+      - { label: "Contenido", name: "content", widget: "text" }
       - {
-          label: "Gallery",
+          label: "Imagenes",
           name: "galleryImages",
           widget: "list",
-          field: { label: "Image", name: "image", widget: "image" },
+          field: { label: "Imagen", name: "image", widget: "image" },
         }
-      -   label: "Categories"
-          name: "categories"
-          widget: "list"
-          fields:
-            - { label: Title, name: title, widget: string }
-            - { label: "Body", name: "body", widget: "markdown" }
-        
+      - label: "Equipo de trabajo"
+        name: "team"
+        widget: "list"
+        fields:
+          - { label: "Nombre", name: "name", widget: "string" }
+          - { label: "Cargo", name: "job", widget: "string" }
