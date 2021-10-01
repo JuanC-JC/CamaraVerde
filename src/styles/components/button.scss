@@ -2,7 +2,7 @@
 
 .button {
   outline: none;
-  background-color: $light-green;
+  background-color: #74c946;
   min-height: 40px;
   display: flex;
   justify-content: center;
@@ -13,12 +13,19 @@
   border: none;
   cursor: pointer;
 
+  &:hover {
+    background-color: $light-green;
+  }
+
   &--small {
-    min-height: 30px;
+    min-height: 35px;
   }
 
   &--orange {
     background-color: $main-orange;
+    &:hover {
+      background-color: #e96c45;
+    }
   }
 
   &--white {
@@ -29,5 +36,15 @@
   &--outline {
     background: transparent;
     border: 1px solid white;
+
+    &:hover {
+      background-color: #9bd879;
+    }
+  }
+}
+
+@media (min-width: 910px) {
+  .button {
+    font-size: 16px;
   }
 }
