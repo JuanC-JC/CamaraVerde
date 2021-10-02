@@ -2,8 +2,8 @@
 convocatoria: false
 title: "La vida marina que afectó la lava "
 date: 2021-10-02T00:40:18.201Z
-imagen: https://www.ecoticias.com/userfiles/extra/BYAC_159.jpg
-content: >+
+imagen: assets/descarga.jpg
+content: >
   Después de varios días de erupción, la colada de lava que emerge del volcán de
   Cumbre Vieja llegó finalmente al mar la noche del pasado martes, lo que no
   solo provocó grandes nubes de vapor de agua y la emisión de gases tóxicos,
