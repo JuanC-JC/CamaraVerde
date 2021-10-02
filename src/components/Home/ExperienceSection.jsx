@@ -13,7 +13,6 @@ import '../../styles/components/Home/ExperienceSection.scss'
 
 SwiperCore.use([Pagination, Navigation, Autoplay])
 
-//TODO AGREGAR BOTON VER PROYECTOS
 export default function Experience() {
 
   const carousel = useRef(null);
@@ -91,9 +90,26 @@ export default function Experience() {
 
       </div>
 
-      <button className="button button--orange">Ver Proyectos</button>
+      <button className="button button--orange">Ver más Proyectos</button>
 
 
     </section >
   );
 };
+
+
+// query getNews {
+//   files: allMdx(filter: {fileAbsolutePath: {regex: "/experiencia/"}}) {
+//     nodos: nodes {
+//       id
+//       data: frontmatter {
+//         title
+//         galleryImages {
+//           childImageSharp {
+//             gatsbyImageData
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

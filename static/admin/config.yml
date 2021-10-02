@@ -70,6 +70,7 @@ collections:
           name: "galleryImages",
           widget: "list",
           min: 2,
+          max: 5,
           field:
             {
               label: "Imagen",
