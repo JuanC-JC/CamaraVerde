@@ -12,9 +12,7 @@ import Seo from '../components/Seo'
 // import image from '../images/DonateBackground.png'
 import "../styles/global.scss";
 
-
 const IndexPage = () => {
-
 
   return (
     <>

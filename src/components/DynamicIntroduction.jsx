@@ -1,8 +1,10 @@
 import React from 'react';
+import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 
 import '../styles/components/Generic/DynamicIntroduction.scss';
 
-export default function DynamicIntroduction({ title, imagePath, image, text, left }) {
+export default function DynamicIntroduction({ title, imagePath, image, text, left, gtImage }) {
+
   return (
     <section className={`dynamicIntroduction ${left && 'dynamicIntroduction--left'}`}>
 
@@ -17,9 +19,9 @@ export default function DynamicIntroduction({ title, imagePath, image, text, lef
         }
         <defs>
           <linearGradient id="paint0_linear" x1="685.5" y1="36.5" x2="511.5" y2="352" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#427843" />
-            <stop offset="0.505208" stop-color="#548D4C" />
-            <stop offset="1" stop-color="#75B45B" />
+            <stop stopColor="#427843" />
+            <stop offset="0.505208" stopColor="#548D4C" />
+            <stop offset="1" stopColor="#75B45B" />
           </linearGradient>
         </defs>
 
@@ -37,25 +39,26 @@ export default function DynamicIntroduction({ title, imagePath, image, text, lef
         </defs>
 
         <image xlinkHref={imagePath} alt="" />
+
       </svg>
 
       <div className="dynamicIntroduction__infoContainer">
         <div className="dynamicIntroduction__text">
-
-          {/* <h1>Cámara Verde <br /> amazorinoquia</h1> */}
           <h1>{title}</h1>
           <p>{text}</p>
         </div>
 
+
+
         <div className='dynamicIntroduction__img'>
-          <img src={image} alt='Imagen acerca de nosotros' />
+          <GatsbyImage
+            image={getImage(gtImage)}
+            alt='Imagen acerca de nosotros'
+            className='img'
+          />
         </div>
       </div>
 
     </section>
   );
 };
-
-
-<svg width="660" height="459" viewBox="0 0 660 459" fill="none" xmlns="http://www.w3.org/2000/svg">
-</svg>
