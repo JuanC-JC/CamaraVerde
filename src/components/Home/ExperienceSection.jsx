@@ -57,7 +57,7 @@ export default function Experience() {
           //   "delay": 2500,
           //   "disableOnInteraction": false
           // }}
-          loop={true}
+          // loop={true}
           pagination={{
             "clickable": true
           }}
@@ -99,30 +99,8 @@ export default function Experience() {
               <h3>Lorem Ipsum dolor sit ameth</h3>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className='experienceCard'>
-              <img src={imgExperience3} alt="" />
-              <h3>Lorem Ipsum dolor sit ameth</h3>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='experienceCard'>
-              <img src={imgExperience2} alt="" />
-              <h3>Lorem Ipsum dolor sit ameth</h3>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='experienceCard'>
-              <img src={imgExperience2} alt="" />
-              <h3>Lorem Ipsum dolor sit ameth</h3>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='experienceCard'>
-              <img src={imgExperience2} alt="" />
-              <h3>Lorem Ipsum dolor sit ameth</h3>
-            </div>
-          </SwiperSlide>
+
+
         </Swiper>
 
       </div>

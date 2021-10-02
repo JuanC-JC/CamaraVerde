@@ -2,11 +2,7 @@ import React from 'react';
 import '../styles/footer.scss';
 
 import logo from '../images/icons/logoColor.png';
-import iconFacebook from '../images/icons/iconFacebook.svg';
-import iconTwitter from '../images/icons/iconTwitter.svg';
-import iconLinkedin from '../images/icons/iconLinkedin.svg';
-import iconInstagram from '../images/icons/iconInstagram.svg';
-import iconYoutube from '../images/icons/iconYoutube.svg';
+
 
 export default function Footer() {
 
