@@ -1,4 +1,6 @@
 import React, { useRef, useEffect } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import { getSrc } from 'gatsby-plugin-image'
 import imgExperience1 from '../../images/Experience/Experience_4.png'
 import imgExperience2 from '../../images/Experience/Experience_2.png'
 import imgExperience3 from '../../images/Experience/Experience_3.png'
@@ -17,12 +19,31 @@ export default function Experience() {
 
   const carousel = useRef(null);
 
+  const { files: { data } } = useStaticQuery(graphql`
+    query getExperience {
+      files: allMdx(filter: {fileAbsolutePath: {regex: "/experiencia/"}}) {
+        data: nodes {
+          id
+          data: frontmatter {
+            title
+            galleryImages {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
   useEffect(() => {
     const buttonPrev = document.querySelector('.swiper-button-prev')
     const buttonNext = document.querySelector('.swiper-button-next')
     carousel.current.insertAdjacentElement('afterbegin', buttonPrev)
     carousel.current.insertAdjacentElement('beforeend', buttonNext)
   }, [])
+
 
   return (
     <section className='experience'>
@@ -50,6 +71,22 @@ export default function Experience() {
             }
           }}
         >
+          {
+            data.map(experience => {
+
+              return (
+                <SwiperSlide
+                  key={experience.id}>
+                  <div className='experienceCard'>
+                    <img src={getSrc(experience.data.galleryImages[0])} alt="" />
+                    <h3>{experience.data.title}</h3>
+                  </div>
+                </SwiperSlide>
+              )
+            }
+
+            )
+          }
           <SwiperSlide>
             <div className='experienceCard'>
               <img src={imgExperience1} alt="" />
@@ -98,18 +135,4 @@ export default function Experience() {
 };
 
 
-// query getNews {
-//   files: allMdx(filter: {fileAbsolutePath: {regex: "/experiencia/"}}) {
-//     nodos: nodes {
-//       id
-//       data: frontmatter {
-//         title
-//         galleryImages {
-//           childImageSharp {
-//             gatsbyImageData
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+

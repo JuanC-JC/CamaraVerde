@@ -7,9 +7,6 @@ export default function NewCard(props) {
 
   const { id, date, title, img, text, notification } = props;
 
-
-  console.log('imagen', img)
-
   return (
     <div className='newCard'>
 
