@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 import '../../styles/components/Project/ProjectDescription.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,14 +13,14 @@ import 'swiper/css/navigation';
 SwiperCore.use([Navigation]);
 
 
-export default function ProjectDescription (props){
-  const {title, date, text, galeria, team}=props
+export default function ProjectDescription(props) {
+  const { title, date, content, galleryImages, team } = props
 
-  return(
+  return (
     <div className='projectDescription'>
       <div className='date'>{date}</div>
       <h2>{title}</h2>
-      <p>{text}</p>
+      <p>{content}</p>
 
       <div className='c-gallery'>
 
@@ -42,35 +43,34 @@ export default function ProjectDescription (props){
             }}
           >
             {
-            galeria.map((img,index)=>{
-              return (
-              <SwiperSlide
-                key={index
-              }>                
-                <img src={img} alt=""/>
-              </SwiperSlide>
-              )
-            })
-          }
+              galleryImages.map((img, index) => {
+                return (
+                  <SwiperSlide
+                    key={index}>
+                    <GatsbyImage image={getImage(img)} alt={`imagen ${title}`} />
+                  </SwiperSlide>
+                )
+              })
+            }
 
 
           </Swiper>
 
         </div>
-        
+
       </div>
 
       <div className='c-team'>
         <h3>Ficha Tecnica</h3>
-        
+
         <div className='c-team-names'>
           {
-            team.map(person=>
+            team.map(person =>
               <div className='person'>
                 <div className='team-name'>{person.name}</div>
                 <div className='team-job'>{person.job}</div>
               </div>
-              )
+            )
           }
         </div>
       </div>
@@ -79,4 +79,4 @@ export default function ProjectDescription (props){
 
     </div>
   )
-} 
+}
