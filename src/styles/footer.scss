@@ -79,6 +79,9 @@
       cursor: pointer;
       width: 24px;
       height: 24px;
+      path {
+        fill: #343434;
+      }
       &:hover path {
         fill: $light-green;
       }
