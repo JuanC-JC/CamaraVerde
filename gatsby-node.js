@@ -1,45 +1,48 @@
-const path = require('path')
+const path = require("path");
 
-exports.createPages = async({graphql,actions})=>{
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
 
-  const {createPage} = actions
+  const newsTemplate = path.resolve(`src/templates/newsTemplate.jsx`);
 
-  const Template = path.resolve(`src/templates/newsTemplate.jsx`)
-
-  const result = await graphql(`
+  const newsQuery = await graphql(`
     query getNews {
-      files: allMdx(
-        filter: {fileAbsolutePath: {regex: "/noticias/"}}) {
+      files: allMdx(filter: { fileAbsolutePath: { regex: "/noticias/" } }) {
         nodos: nodes {
           id
-          slug
           data: frontmatter {
             convocatoria
             date
             title
             content
-            galleryImages {
+            image {
               childImageSharp {
-                gatsbyImageData(width:980)
+                gatsbyImageData
               }
             }
           }
         }
       }
     }
-  `)
+  `);
 
-  if(result.errors){
-    throw result.errors
+  // const experienceQuery = await graphql(`
+
+  // `)
+
+  if (newsQuery.errors) {
+    throw newsQuery.errors;
   }
 
-  const {data:{files}} = result
-  
-  files.nodos.forEach(element=>{
+  const {
+    data: { files },
+  } = newsQuery;
+
+  files.nodos.forEach((element) => {
     createPage({
-      path:`noticias/${element.id}`,
-      component:Template,
+      path: `noticias/${element.id}`,
+      component: newsTemplate,
       context: element,
-    })
-  })
-}
+    });
+  });
+};

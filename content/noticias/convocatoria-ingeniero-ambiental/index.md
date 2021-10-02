@@ -2,9 +2,7 @@
 convocatoria: true
 title: Convocatoria ingeniero ambiental
 date: 2021-10-01T20:13:49.176Z
-galleryImages:
-  - assets/9.png
-  - assets/2.png
+image: assets/9.png
 content: >-
   La Corte Suprema de Justicia se resolvió uno de los proceso judiciales por
   parapolítica más esperados en el país. Luego de haber arrancado con las

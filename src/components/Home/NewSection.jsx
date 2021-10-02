@@ -1,6 +1,6 @@
 import React from 'react';
 import NewCard from './NewCard';
-import {useStaticQuery, graphql} from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 import '../../styles/components/Home/NewSection.scss';
 import photoNew from '../../images/bosque.jpg'
@@ -42,7 +42,7 @@ const news = [
 
 export default function NewSection() {
 
-  const {files:{data}} = useStaticQuery(graphql`
+  const { files: { data } } = useStaticQuery(graphql`
     query getNews {
       files: allMdx(
         filter: {fileAbsolutePath: {regex: "/noticias/"}}
@@ -56,7 +56,7 @@ export default function NewSection() {
             date
             title
             content
-            galleryImages {
+            image {
               childImageSharp {
                 gatsbyImageData(width: 900)
               }
@@ -73,11 +73,11 @@ export default function NewSection() {
       <h2>Noticias</h2>
       <div className='news'>
         {
-          data.map( (report,index) =>
+          data.map(report =>
             <NewCard
               key={report.id}
               id={report.id}
-              img={report.data.galleryImages}
+              img={report.data.image}
               date={report.data.date}
               title={report.data.title}
               text={report.data.content}
