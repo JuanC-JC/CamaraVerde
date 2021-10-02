@@ -43,29 +43,27 @@ const news = [
 export default function NewSection() {
 
   const { files: { data } } = useStaticQuery(graphql`
-    query getNews {
-      files: allMdx(
-        filter: {fileAbsolutePath: {regex: "/noticias/"}}
-        limit: 4
-        sort: {fields: frontmatter___date}
-      ) {
-        data: nodes {
-          id
-          data: frontmatter {
-            convocatoria
-            date(formatString: "MMMM DD, YYYY")
-            title
-            content
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 900)
-              }
+  query getNews {
+    files: allMdx(
+      filter: {fileAbsolutePath: {regex: "/noticias/"}}
+      limit: 4
+    ) {
+      data: nodes {
+        id
+        data: frontmatter {
+          convocatoria
+          date(formatString: "MMMM DD, YYYY")
+          title
+          content
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 900)
             }
           }
         }
       }
-  }
-  
+    }
+}
   `)
 
   return (
