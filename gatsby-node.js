@@ -7,17 +7,21 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const newsQuery = await graphql(`
     query getNews {
-      files: allMdx(filter: { fileAbsolutePath: { regex: "/noticias/" } }) {
-        nodos: nodes {
+      files: allMdx(
+        filter: { fileAbsolutePath: { regex: "/noticias/" } }
+        limit: 4
+        sort: { fields: frontmatter___date }
+      ) {
+        data: nodes {
           id
           data: frontmatter {
             convocatoria
-            date
+            date(formatString: "MMMM DD, YYYY")
             title
             content
             image {
               childImageSharp {
-                gatsbyImageData
+                gatsbyImageData(width: 900)
               }
             }
           }

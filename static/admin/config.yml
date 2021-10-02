@@ -45,8 +45,8 @@ collections:
           widget: "boolean",
           default: false,
         }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime" }
 
       - { label: "Imagen", name: "image", choose_url: false, widget: "image" }
       - { label: "Contenido", name: "content", widget: "text" }
@@ -70,7 +70,13 @@ collections:
           name: "galleryImages",
           widget: "list",
           min: 2,
-          field: { label: "Imagen", name: "image", widget: "image" },
+          field:
+            {
+              label: "Imagen",
+              name: "image",
+              choose_url: false,
+              widget: "image",
+            },
         }
       - label: "Equipo de trabajo"
         name: "team"

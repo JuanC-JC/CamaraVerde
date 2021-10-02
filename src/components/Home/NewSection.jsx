@@ -53,7 +53,7 @@ export default function NewSection() {
           id
           data: frontmatter {
             convocatoria
-            date
+            date(formatString: "MMMM DD, YYYY")
             title
             content
             image {
@@ -64,7 +64,8 @@ export default function NewSection() {
           }
         }
       }
-    }
+  }
+  
   `)
 
   return (
