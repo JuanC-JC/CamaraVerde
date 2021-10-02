@@ -48,7 +48,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
 
-      - { label: "Imagen", name: "imagen", widget: "image" }
+      - { label: "Imagen", name: "image", choose_url: false, widget: "image" }
       - { label: "Contenido", name: "content", widget: "text" }
 
   - name: "experiencia"
