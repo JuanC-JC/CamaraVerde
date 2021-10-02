@@ -51,9 +51,10 @@
       justify-content: space-evenly;
       padding: 5px 0;
 
-      svg {
+      .iconFooter {
         cursor: pointer;
-        &:hover path {
+        width: 24px;
+        &:hover {
           fill: $light-green;
         }
       }
