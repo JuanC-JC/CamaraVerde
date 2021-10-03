@@ -25,7 +25,7 @@
       rgba(182, 150, 94, 1) 100%
     );
     position: absolute;
-    top: calc(50% - 100px + 26px);
+    top: calc(50% - 100px + 16px);
   }
 }
 
@@ -155,7 +155,7 @@
   .experience {
     margin-bottom: $space-section-big;
     &::after {
-      top: calc(50% - 100px + 40px);
+      top: calc(50% - 100px + 27px);
     }
   }
 }

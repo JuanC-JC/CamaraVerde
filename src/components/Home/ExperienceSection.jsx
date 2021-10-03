@@ -1,8 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import imgExperience1 from '../../images/Experience/Experience_4.png'
-import imgExperience2 from '../../images/Experience/Experience_2.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper'
@@ -63,7 +61,7 @@ export default function Experience() {
           spaceBetween={50}
           loop={true}
           pagination={{
-            "clickable": true
+            "clickable": false
           }}
           navigation={true}
           breakpoints={{
