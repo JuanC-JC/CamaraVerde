@@ -20,7 +20,10 @@ export default function Experience() {
 
   const { files: { data } } = useStaticQuery(graphql`
     query getExperience {
-      files: allMdx(filter: {fileAbsolutePath: {regex: "/experiencia/"}}) {
+      files: allMdx(
+        filter: {fileAbsolutePath: {regex: "/experiencia/"}}
+        limit: 6
+      ) {
         data: nodes {
           id
           data: frontmatter {
