@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import NewCard from './NewCard';
 import { useStaticQuery, graphql } from 'gatsby';
 import '../../styles/components/Home/NewSection.scss';
@@ -49,7 +50,7 @@ export default function NewSection() {
           )
         }
       </div>
-      <button className='button button--orange'>Ver más noticias</button>
+      <Link to='http://facebook.com' className='button button--orange'>Ver más noticias</Link>
 
     </section>
   )
