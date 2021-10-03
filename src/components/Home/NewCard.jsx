@@ -24,7 +24,7 @@ export default function NewCard(props) {
         <div className="date">{date}</div>
         <h4>{title}</h4>
         <p>{text}</p>
-        <Link to={`/noticias/${id}`}><div className='more'>Leer más</div></Link>
+        <Link to={`/noticia/${id}`}><div className='more'>Leer más</div></Link>
       </div>
 
     </div>
