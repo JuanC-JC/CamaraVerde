@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image';
 
@@ -72,7 +73,7 @@ export default function DonateSection() {
         <div className="definition__text">
           <h2>¿Te gustaría ayudarnos?</h2>
           <p>Al igual que tú, muchas personas alrededor del mundo buscan una solución para proteger la vida silvestre, detener la deforestación, promover energías renovables y empoderar a las comunidades para la conservación de sus recursos. Puedes hacer parte de esta comunidad de más de 6 millones de miembros en 100 países.</p>
-          <button className='button button--orange'>Realiza una donación</button>
+          <Link to='http://facebook.com/' className='button button--orange'>Realiza una donación</Link>
         </div>
 
       </div>
