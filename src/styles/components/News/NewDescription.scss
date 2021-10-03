@@ -46,8 +46,7 @@
 
     .published{
       display: flex;
-      flex-direction: row;
-      align-content: center;
+      align-items: center;
       margin-bottom: 15px;
       
       p{
@@ -60,9 +59,14 @@
       }
 
       .postLink{
-        font-size: 14px;
-        margin-left: 5px;
+        margin-left: 10px;
+        color: black;
+
+        &:hover{
+          color: $light-green;
+        }
       }
+
     }
 
     .share {

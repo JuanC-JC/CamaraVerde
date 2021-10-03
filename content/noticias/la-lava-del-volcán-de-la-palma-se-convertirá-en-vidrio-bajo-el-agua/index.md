@@ -54,4 +54,7 @@ content: "El encuentro entre lava y el mar de La Palma está generando algo más
   hidroclastos. Otra de las piedras que se forman son las hialoclastitas,
   también aglomeraciones, pero de materiales más vidriosos, que recuerdan a la
   obsidiana, aunque sin tanto brillo."
+post:
+  name: El espectador
+  link: https://www.elespectador.com/investigacion/pandora-papers-las-facturas-a-nombre-del-director-de-la-dian/
 ---

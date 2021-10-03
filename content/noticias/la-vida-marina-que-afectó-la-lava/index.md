@@ -38,4 +38,7 @@ content: >
   todas las especies se recuperarán al mismo ritmo. “Gracias a los estudios
   realizados tras la erupción de El Hierro, sabemos que unas especies tardan más
   en recuperarse que otras”, señala el investigador de la UL
+post:
+  name: Laura Amaya
+  link: 
 ---

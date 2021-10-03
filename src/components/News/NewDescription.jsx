@@ -2,12 +2,18 @@ import React from 'react';
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 
+import {translateDate} from '../../utils/index'
+
 import '../../styles/components/News/NewDescription.scss'
+
+
 
 export default function NewDescription(props) {
   const { date, title, img, text, notification, authorPost, linkPost } = props
 
   const newText = text.split('\n\n')
+
+  const newDate = translateDate(date)
 
   return (
     <section className='newDescription'>
@@ -16,7 +22,7 @@ export default function NewDescription(props) {
 
       <h2 className="newTitle">{title}</h2>
 
-      <div className="date">{date}</div>
+      <div className="date">{newDate}</div>
 
       <GatsbyImage className='newDescription__img' image={getImage(img)} alt={`imagen ${title}`} />
 
@@ -37,7 +43,15 @@ export default function NewDescription(props) {
 
         <div className="published">
           <p>Publicado por:</p>
-          {linkPost  ?<Link className='postLink'to='' target='_blank'>{authorPost}</Link> :<p className='authorPost'>{authorPost}</p>}
+          {
+          linkPost  ?
+            <Link className='postLink'to={linkPost} target='_blank'>
+              <p>{authorPost}</p>
+            </Link> 
+            :
+            <p className='authorPost'>
+              {authorPost}
+              </p>}
         </div>
 
         <div className='share'>
