@@ -1,12 +1,12 @@
 import React from 'react';
 import {graphql, useStaticQuery} from 'gatsby'
 
+import MainImage from '../images/Nosotros/backgroundNosotros.png'
 import DynamicIntroduction from '../components/DynamicIntroduction'
 import Alcance from '../components/Us/Alcance'
 import Pilares from '../components/Us/Pilares'
 import Team from '../components/Us/Team'
 
-import MainImage from '../images/Nosotros/mainImage.png'
 
 import '../styles/pages/Us.scss'
 
@@ -14,7 +14,7 @@ export default function UsPage() {
 
   const {file:{image}} = useStaticQuery(graphql`
   query getMainImageIntroduction {
-    file(relativePath: {eq: "Nosotros/mainImage.png"}) {
+    file(relativePath: {eq: "Nosotros/backgroundNosotros.png"}) {
       image: childImageSharp {
         gatsbyImageData(placeholder: BLURRED)
       }
