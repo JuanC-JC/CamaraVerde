@@ -16,4 +16,11 @@ content: >-
 galleryImages:
   - assets/lomalinda-02.jpeg
   - assets/lomalinda.jpeg
+team:
+  - name: aidy roa
+    job: directora
+  - name: jesica betancur
+    job: relaciones
+  - name: isabela jimenez
+    job: desarrolladora
 ---

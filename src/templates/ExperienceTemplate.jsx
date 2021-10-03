@@ -1,7 +1,7 @@
 import React from 'react';
 //componentes
 import HeaderBanner from '../components/Headerbanner';
-import ProjectDescription from '../components/Projects/ProjectDescription'
+import ProjectDescription from '../components/Projects/ExperienceDescription'
 import newsFund from '../images/headerBanner_2.jpg'
 
 const ExperiencePage = (props) => {
@@ -14,7 +14,7 @@ const ExperiencePage = (props) => {
 
       <HeaderBanner
         img={newsFund}
-        title={'Proyectos'}
+        title={'Experiencia'}
         color={'dark-green'}
       />
 

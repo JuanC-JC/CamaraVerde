@@ -13,7 +13,7 @@ export default function NewDescription(props) {
       <div className="date">{date}</div>
       <div className='content'>
         <GatsbyImage className='newDescription__img' image={getImage(img)} alt={`imagen ${title}`} />
-        {text}
+        <p>{text}</p>
       </div>
     </section>
   )

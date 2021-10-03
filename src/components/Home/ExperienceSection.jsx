@@ -1,9 +1,8 @@
 import React, { useRef, useEffect } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { getSrc } from 'gatsby-plugin-image'
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import imgExperience1 from '../../images/Experience/Experience_4.png'
 import imgExperience2 from '../../images/Experience/Experience_2.png'
-import imgExperience3 from '../../images/Experience/Experience_3.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper'
@@ -53,11 +52,7 @@ export default function Experience() {
 
         <Swiper
           spaceBetween={50}
-          // autoplay={{
-          //   "delay": 2500,
-          //   "disableOnInteraction": false
-          // }}
-          // loop={true}
+          loop={true}
           pagination={{
             "clickable": true
           }}
@@ -78,8 +73,9 @@ export default function Experience() {
                 <SwiperSlide
                   key={experience.id}>
                   <div className='experienceCard'>
-                    <img src={getSrc(experience.data.galleryImages[0])} alt="" />
+                    <GatsbyImage className='experienceCard__img' image={getImage(experience.data.galleryImages[0])} alt="" />
                     <h3>{experience.data.title}</h3>
+                    <Link to={`experiencia/${experience.id}`} className='button'>Ver mas</Link>
                   </div>
                 </SwiperSlide>
               )
@@ -89,13 +85,13 @@ export default function Experience() {
           }
           <SwiperSlide>
             <div className='experienceCard'>
-              <img src={imgExperience1} alt="" />
+              <img className='experienceCard__img' src={imgExperience1} alt="" />
               <h3>Lorem Ipsum dolor sit ameth</h3>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='experienceCard'>
-              <img src={imgExperience2} alt="" />
+              <img className='experienceCard__img' src={imgExperience2} alt="" />
               <h3>Lorem Ipsum dolor sit ameth</h3>
             </div>
           </SwiperSlide>
@@ -105,7 +101,7 @@ export default function Experience() {
 
       </div>
 
-      <button className="button button--orange">Ver más Proyectos</button>
+      <button className="button button--orange">Más Proyectos</button>
 
 
     </section >

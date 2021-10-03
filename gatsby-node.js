@@ -3,7 +3,7 @@ const path = require("path");
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const newsTemplate = path.resolve(`src/templates/newsTemplate.jsx`);
+  const newsTemplate = path.resolve(`src/templates/NewsTemplate.jsx`);
   const experienceTemplate = path.resolve(
     `src/templates/ExperienceTemplate.jsx`
   );

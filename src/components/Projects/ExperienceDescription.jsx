@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 SwiperCore.use([Navigation]);
 
 
-export default function ProjectDescription(props) {
+export default function ExperienceDescription(props) {
   const { title, date, content, galleryImages, team } = props
 
   return (
@@ -38,7 +38,7 @@ export default function ProjectDescription(props) {
                 slidesPerView: 2,
               },
               1024: {
-                slidesPerView: 3,
+                slidesPerView: 2,
               }
             }}
           >
@@ -47,7 +47,7 @@ export default function ProjectDescription(props) {
                 return (
                   <SwiperSlide
                     key={index}>
-                    <GatsbyImage image={getImage(img)} alt={`imagen ${title}`} />
+                    <GatsbyImage className='experience__img' image={getImage(img)} alt={`imagen ${title}`} />
                   </SwiperSlide>
                 )
               })
