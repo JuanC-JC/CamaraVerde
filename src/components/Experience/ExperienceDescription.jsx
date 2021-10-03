@@ -15,11 +15,25 @@ SwiperCore.use([Navigation]);
 export default function ExperienceDescription(props) {
   const { title, date, content, galleryImages, team } = props
 
+  const newContent = content.split('\n\n')
+
   return (
     <div className='experienceDescription'>
       <div className='date'>{date}</div>
       <h2>{title}</h2>
-      <p>{content}</p>
+
+      <div className='content'>
+        
+        {newContent.map(parrafo=>(
+          <>
+            <p>
+              {parrafo}
+            </p>
+            <br/>
+          </>
+        ))}
+        
+      </div>
 
       <div className='c-gallery'>
 
@@ -78,4 +92,5 @@ export default function ExperienceDescription(props) {
 
     </div>
   )
+
 }

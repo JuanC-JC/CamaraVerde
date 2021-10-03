@@ -6,6 +6,8 @@ import '../../../styles/components/News/New/NewDescription.scss'
 export default function NewDescription(props) {
   const { date, title, img, text, notification } = props
 
+  const newText = text.split('\n\n')
+
   return (
     <section className='newDescription'>
 
@@ -17,7 +19,18 @@ export default function NewDescription(props) {
 
       <GatsbyImage className='newDescription__img' image={getImage(img)} alt={`imagen ${title}`} />
 
-      <p className='content'>{text}</p>
+      <div className='content'>
+        
+        {newText.map(parrafo=>(
+          <>
+            <p>
+              {parrafo}
+            </p>
+            <br/>
+          </>
+        ))}
+        
+      </div>
 
       <div className='share'>
         <p>Compartir: </p>

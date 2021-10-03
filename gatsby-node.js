@@ -79,7 +79,6 @@ exports.createPages = async ({ graphql, actions }) => {
     data: { experienceFiles },
   } = experienceQuery;
 
-  console.log(experienceFiles)
 
   experienceFiles.nodos.forEach((element) => {
     createPage({

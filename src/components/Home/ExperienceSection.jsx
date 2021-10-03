@@ -39,12 +39,15 @@ export default function Experience() {
     }
   `)
 
+  //bug visual mientras copio y saco los botones de aca..
   useEffect(() => {
     const buttonPrev = document.querySelector('.swiper-button-prev')
     const buttonNext = document.querySelector('.swiper-button-next')
     carousel.current.insertAdjacentElement('afterbegin', buttonPrev)
     carousel.current.insertAdjacentElement('beforeend', buttonNext)
-  }, [])
+
+    console.log('test')
+  })
 
 
   return (
