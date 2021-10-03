@@ -36,4 +36,8 @@ content: >-
 
 
   Este estudio, publicado con el título “Unexpected new lizard from the Late Cretaceous of southern South America sheds light on Gondwanan squamate diversity”, puede ser consultado de manera virtual.
+
+post:
+  name: El espectador
+  link: https://www.elespectador.com/investigacion/pandora-papers-las-facturas-a-nombre-del-director-de-la-dian/
 ---

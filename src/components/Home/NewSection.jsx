@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import NewCard from './NewCard';
 import { useStaticQuery, graphql } from 'gatsby';
 import '../../styles/components/Home/NewSection.scss';
-
+import {translateDate} from '../../utils'
 
 export default function NewSection() {
 
@@ -42,7 +42,7 @@ export default function NewSection() {
               key={report.id}
               id={report.id}
               img={report.data.image}
-              date={report.data.date}
+              date={translateDate(report.data.date)}
               title={report.data.title}
               text={report.data.content}
               notification={report.data.convocatoria}

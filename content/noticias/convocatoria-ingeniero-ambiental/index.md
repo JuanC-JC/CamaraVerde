@@ -19,4 +19,7 @@ content: >-
 
 
   Según dice el reciente fallo de condena, los nexos con el paramilitarismo no culminaron ahí. Ramos siguió teniendo relación cuando fungió como gobernador de Antioquia.
+post:
+  name: Juan camilo Ibañez
+  link: 
 ---

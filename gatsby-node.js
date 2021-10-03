@@ -18,6 +18,10 @@ exports.createPages = async ({ graphql, actions }) => {
             date(formatString: "MMMM DD, YYYY")
             title
             content
+            post {
+              link
+              name
+            }
             image {
               childImageSharp {
                 gatsbyImageData(width: 900)

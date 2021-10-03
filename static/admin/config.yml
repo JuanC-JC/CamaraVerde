@@ -50,6 +50,12 @@ collections:
 
       - { label: "Imagen", name: "image", choose_url: false, widget: "image" }
       - { label: "Contenido", name: "content", widget: "string" }
+      - label: "Autor de publicación"
+        name: "post"
+        widget: "object"
+        fields:
+          - { label: "Autor", name: "name", widget: "string" }
+          - { label: "Link de la publicación", name: "link", widget: "string", required: false }
 
   - name: "experiencia"
     label: "Experiencia"
