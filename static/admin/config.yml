@@ -49,7 +49,7 @@ collections:
       - { label: "Fecha de publicación", name: "date", widget: "datetime" }
 
       - { label: "Imagen", name: "image", choose_url: false, widget: "image" }
-      - { label: "Contenido", name: "content", widget: "text" }
+      - { label: "Contenido", name: "content", widget: "markdown" }
 
   - name: "experiencia"
     label: "Experiencia"
@@ -64,7 +64,7 @@ collections:
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha de publicación", name: "date", widget: "datetime" }
-      - { label: "Contenido", name: "content", widget: "text" }
+      - { label: "Contenido", name: "content", widget: "markdown" }
       - {
           label: "Imagenes",
           name: "galleryImages",
