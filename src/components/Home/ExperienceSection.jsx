@@ -18,7 +18,7 @@ export default function Experience() {
 
   const carousel = useRef(null);
 
-  const { files: { data } } = useStaticQuery(graphql`
+  let { files: { data } } = useStaticQuery(graphql`
     query getExperienceFiles {
       files: allMdx(
         filter: {fileAbsolutePath: {regex: "/experiencias/"}}
@@ -39,15 +39,18 @@ export default function Experience() {
     }
   `)
 
+  data = data.concat(data)
+
   //bug visual mientras copio y saco los botones de aca..
   useEffect(() => {
     const buttonPrev = document.querySelector('.swiper-button-prev')
     const buttonNext = document.querySelector('.swiper-button-next')
+
+    buttonPrev.classList.add('visibility')
+    buttonNext.classList.add('visibility')
     carousel.current.insertAdjacentElement('afterbegin', buttonPrev)
     carousel.current.insertAdjacentElement('beforeend', buttonNext)
-
-    console.log('test')
-  })
+  }, [])
 
 
   return (
@@ -73,11 +76,11 @@ export default function Experience() {
           }}
         >
           {
-            data.map(experience => {
+            data.map((experience, index) => {
 
               return (
                 <SwiperSlide
-                  key={experience.id}>
+                  key={experience.id + index}>
                   <div className='experienceCard'>
                     <GatsbyImage className='experienceCard__img' image={getImage(experience.data.galleryImages[0])} alt="" />
                     <h3>{experience.data.title}</h3>
@@ -89,7 +92,7 @@ export default function Experience() {
 
             )
           }
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className='experienceCard'>
               <img className='experienceCard__img' src={imgExperience1} alt="" />
               <h3>Lorem Ipsum dolor sit ameth</h3>
@@ -100,7 +103,7 @@ export default function Experience() {
               <img className='experienceCard__img' src={imgExperience2} alt="" />
               <h3>Lorem Ipsum dolor sit ameth</h3>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
 
         </Swiper>
