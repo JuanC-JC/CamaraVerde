@@ -1,36 +1,11 @@
-import React from 'react'
-import HeaderBanner from '../components/Headerbanner'
-import NewDescription from '../components/News/NewDescription'
-import newsFund from '../images/headerBanner_1.jpg';
+import React from 'react';
 
-const NewPage = (props) => {
+export default function NewsTemplate(props) {
 
-  const { pageContext } = props
-
-  const { data } = pageContext
   console.log(props)
-
   return (
-    <>
-
-      <HeaderBanner
-        img={newsFund}
-        title={'Noticias'}
-        color={'light-green'}
-      />
-
-      <NewDescription
-        key={data.id}
-        date={data.date}
-        notification={data.convocatoria}
-        title={data.title}
-        text={data.content}
-        img={data.image}
-        authorPost = {data.post.name}
-        linkPost = {data.post.link}
-      />
-    </>
-  )
-}
-
-export default NewPage;
+    <div className=''>
+      Oliwis
+    </div>
+  );
+};
