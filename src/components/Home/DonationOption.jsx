@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'gatsby'
 import '../../styles/components/Home/DonationOption.scss'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 export default function DonationOption(props) {
-  const { title, paragraph, img, textBotton } = props
+  const { title, paragraph, img, link, textBotton } = props
 
   return (
     <div className='donationOption'>
@@ -13,7 +14,7 @@ export default function DonationOption(props) {
         className='donationOption__img' />
       <h3>{title}</h3>
       <p>{paragraph}</p>
-      <button className='button button--outline'>{textBotton}</button>
+      <Link className='button button--outline' to={link}>{textBotton}</Link>
     </div>
   )
 }

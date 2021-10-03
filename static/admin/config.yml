@@ -27,7 +27,7 @@ collections:
           field: { label: "Image", name: "image", widget: "image" },
         }
       - { label: "Body", name: "body", widget: "markdown" }
-  
+
   - name: "noticias"
     label: "Noticias"
     folder: "content/noticias"
@@ -37,18 +37,18 @@ collections:
     public_folder: "assets"
     path: "{{title}}/index"
     editor:
-      preview: true
+      preview: false
     fields:
-      - { label: "Convocatoria", name: "convocatoria", widget: "boolean", default: false }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime"}
-      
       - {
-          label: "Gallery",
-          name: "galleryImages",
-          widget: "list",
-          field: { label: "Image", name: "image", widget: "image" }
+          label: "Convocatoria",
+          name: "convocatoria",
+          widget: "boolean",
+          default: false,
         }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime" }
+
+      - { label: "Imagen", name: "image", choose_url: false, widget: "image" }
       - { label: "Contenido", name: "content", widget: "text" }
 
   - name: "experiencia"
@@ -60,22 +60,30 @@ collections:
     public_folder: "assets"
     path: "{{title}}/index"
     editor:
-      preview: true
+      preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "date" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime" }
+      - { label: "Contenido", name: "content", widget: "text" }
       - {
-          label: "Gallery",
+          label: "Imagenes",
           name: "galleryImages",
           widget: "list",
-          field: { label: "Image", name: "image", widget: "image" },
+          min: 3,
+          max: 6,
+          field:
+            {
+              label: "Imagen",
+              name: "image",
+              choose_url: false,
+              widget: "image",
+            },
         }
-      -   label: "Categories"
-          name: "categories"
-          widget: "list"
-          fields:
-            - { label: Title, name: title, widget: string }
-            - { label: "Body", name: "body", widget: "markdown" }
-        
+      - label: "Equipo de trabajo"
+        name: "team"
+        widget: "list"
+        min: 3
+        max: 5
+        fields:
+          - { label: "Nombre", name: "name", widget: "string" }
+          - { label: "Cargo", name: "job", widget: "string" }

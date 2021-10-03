@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image';
 
@@ -12,28 +13,32 @@ const donationOptions = [
     title: 'Afiliate',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
     urlImg: 'imageDonation01',
-    textBotton: 'Inscribete'
+    textBotton: 'Inscribete',
+    link: 'http://facebook.com'
   },
   {
     id: '2',
     title: 'Dona',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
     urlImg: 'imageDonation02',
-    textBotton: 'Inscribete'
+    textBotton: 'Inscribete',
+    link: 'http://facebook.com'
   },
   {
     id: '3',
     title: 'Voluntariado',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
     urlImg: 'imageDonation03',
-    textBotton: 'Inscribete'
+    textBotton: 'Inscribete',
+    link: 'http://facebook.com'
   },
   {
     id: '4',
     title: 'Ideas verdes',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
     urlImg: 'imageDonation04',
-    textBotton: 'Inscribete'
+    textBotton: 'Inscribete',
+    link: 'http://facebook.com'
   }
 ]
 
@@ -68,7 +73,7 @@ export default function DonateSection() {
         <div className="definition__text">
           <h2>¿Te gustaría ayudarnos?</h2>
           <p>Al igual que tú, muchas personas alrededor del mundo buscan una solución para proteger la vida silvestre, detener la deforestación, promover energías renovables y empoderar a las comunidades para la conservación de sus recursos. Puedes hacer parte de esta comunidad de más de 6 millones de miembros en 100 países.</p>
-          <button className='button button--orange'>Realiza una donación</button>
+          <Link to='http://facebook.com/' className='button button--orange'>Realiza una donación</Link>
         </div>
 
       </div>
@@ -79,7 +84,7 @@ export default function DonateSection() {
 
         <div className='donate__options'>
           {
-            donationOptions.map((option, index) => {
+            donationOptions.map((option) => {
               const image = images.find(image => image.name == option.urlImg)
 
               return (
@@ -88,7 +93,8 @@ export default function DonateSection() {
                   key={option.id}
                   title={option.title}
                   paragraph={option.paragraph}
-                  textBotton={option.textBotton} />
+                  textBotton={option.textBotton}
+                  link={option.link} />
               )
             })
           }

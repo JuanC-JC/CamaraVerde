@@ -1,45 +1,89 @@
-const path = require('path')
+const path = require("path");
 
-exports.createPages = async({graphql,actions})=>{
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
 
-  const {createPage} = actions
+  const newsTemplate = path.resolve(`src/templates/NewsTemplate.jsx`);
+  const experienceTemplate = path.resolve(
+    `src/templates/ExperienceTemplate.jsx`
+  );
 
-  const Template = path.resolve(`src/templates/newsTemplate.jsx`)
-
-  const result = await graphql(`
+  const newsQuery = await graphql(`
     query getNews {
-      files: allMdx(
-        filter: {fileAbsolutePath: {regex: "/noticias/"}}) {
+      newsFiles: allMdx(filter: { fileAbsolutePath: { regex: "/noticias/" } }) {
         nodos: nodes {
           id
-          slug
           data: frontmatter {
             convocatoria
-            date
+            date(formatString: "MMMM DD, YYYY")
             title
             content
-            galleryImages {
+            image {
               childImageSharp {
-                gatsbyImageData(width:980)
+                gatsbyImageData(width: 900)
               }
             }
           }
         }
       }
     }
-  `)
+  `);
 
-  if(result.errors){
-    throw result.errors
+  const experienceQuery = await graphql(`
+    query getExperience {
+      experienceFiles: allMdx(
+        filter: { fileAbsolutePath: { regex: "/experiencia/" } }
+      ) {
+        nodos: nodes {
+          id
+          data: frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            content
+            team {
+              job
+              name
+            }
+            galleryImages {
+              childImageSharp {
+                gatsbyImageData(width: 900)
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  if (newsQuery.errors) {
+    throw newsQuery.errors;
   }
 
-  const {data:{files}} = result
-  
-  files.nodos.forEach(element=>{
+  if (experienceQuery.errors) {
+    throw experienceQuery.errors;
+  }
+
+  const {
+    data: { newsFiles },
+  } = newsQuery;
+
+  newsFiles.nodos.forEach((element) => {
     createPage({
-      path:`noticias/${element.id}`,
-      component:Template,
+      path: `noticias/${element.id}`,
+      component: newsTemplate,
       context: element,
-    })
-  })
-}
+    });
+  });
+
+  const {
+    data: { experienceFiles },
+  } = experienceQuery;
+
+  experienceFiles.nodos.forEach((element) => {
+    createPage({
+      path: `experiencia/${element.id}`,
+      component: experienceTemplate,
+      context: element,
+    });
+  });
+};

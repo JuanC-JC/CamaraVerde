@@ -34,7 +34,7 @@
       margin-bottom: 30px;
     }
 
-    button {
+    .button {
       display: none;
     }
 
@@ -51,8 +51,8 @@
         margin-bottom: 10px;
       }
 
-      button {
-        display: block;
+      .button {
+        display: flex;
       }
     }
   }

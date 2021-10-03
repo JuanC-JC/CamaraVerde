@@ -1,7 +1,8 @@
 import React, { useRef, useEffect } from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import imgExperience1 from '../../images/Experience/Experience_4.png'
 import imgExperience2 from '../../images/Experience/Experience_2.png'
-import imgExperience3 from '../../images/Experience/Experience_3.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper'
@@ -13,10 +14,30 @@ import '../../styles/components/Home/ExperienceSection.scss'
 
 SwiperCore.use([Pagination, Navigation, Autoplay])
 
-//TODO AGREGAR BOTON VER PROYECTOS
 export default function Experience() {
 
   const carousel = useRef(null);
+
+  const { files: { data } } = useStaticQuery(graphql`
+    query getExperience {
+      files: allMdx(
+        filter: {fileAbsolutePath: {regex: "/experiencia/"}}
+        limit: 6
+      ) {
+        data: nodes {
+          id
+          data: frontmatter {
+            title
+            galleryImages {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
 
   useEffect(() => {
     const buttonPrev = document.querySelector('.swiper-button-prev')
@@ -24,6 +45,7 @@ export default function Experience() {
     carousel.current.insertAdjacentElement('afterbegin', buttonPrev)
     carousel.current.insertAdjacentElement('beforeend', buttonNext)
   }, [])
+
 
   return (
     <section className='experience'>
@@ -33,10 +55,6 @@ export default function Experience() {
 
         <Swiper
           spaceBetween={50}
-          // autoplay={{
-          //   "delay": 2500,
-          //   "disableOnInteraction": false
-          // }}
           loop={true}
           pagination={{
             "clickable": true
@@ -51,49 +69,47 @@ export default function Experience() {
             }
           }}
         >
+          {
+            data.map(experience => {
+
+              return (
+                <SwiperSlide
+                  key={experience.id}>
+                  <div className='experienceCard'>
+                    <GatsbyImage className='experienceCard__img' image={getImage(experience.data.galleryImages[0])} alt="" />
+                    <h3>{experience.data.title}</h3>
+                    <Link to={`experiencia/${experience.id}`} className='button'>Ver mas</Link>
+                  </div>
+                </SwiperSlide>
+              )
+            }
+
+            )
+          }
           <SwiperSlide>
             <div className='experienceCard'>
-              <img src={imgExperience1} alt="" />
+              <img className='experienceCard__img' src={imgExperience1} alt="" />
               <h3>Lorem Ipsum dolor sit ameth</h3>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='experienceCard'>
-              <img src={imgExperience2} alt="" />
+              <img className='experienceCard__img' src={imgExperience2} alt="" />
               <h3>Lorem Ipsum dolor sit ameth</h3>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className='experienceCard'>
-              <img src={imgExperience3} alt="" />
-              <h3>Lorem Ipsum dolor sit ameth</h3>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='experienceCard'>
-              <img src={imgExperience2} alt="" />
-              <h3>Lorem Ipsum dolor sit ameth</h3>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='experienceCard'>
-              <img src={imgExperience2} alt="" />
-              <h3>Lorem Ipsum dolor sit ameth</h3>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='experienceCard'>
-              <img src={imgExperience2} alt="" />
-              <h3>Lorem Ipsum dolor sit ameth</h3>
-            </div>
-          </SwiperSlide>
+
+
         </Swiper>
 
       </div>
 
-      <button className="button button--orange">Ver Proyectos</button>
+      <button className="button button--orange">Más Proyectos</button>
 
 
     </section >
   );
 };
+
+
+
