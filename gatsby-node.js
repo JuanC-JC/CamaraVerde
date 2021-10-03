@@ -79,11 +79,13 @@ exports.createPages = async ({ graphql, actions }) => {
     data: { experienceFiles },
   } = experienceQuery;
 
-  experienceFiles.nodos.forEach((element) => {
-    createPage({
-      path: `experiencia/${element.id}`,
-      component: experienceTemplate,
-      context: element,
-    });
-  });
+  console.log(experienceFiles)
+
+  // experienceFiles.nodos.forEach((element) => {
+  //   createPage({
+  //     path: `experiencia/${element.id}`,
+  //     component: experienceTemplate,
+  //     context: element,
+  //   });
+  // });
 };
