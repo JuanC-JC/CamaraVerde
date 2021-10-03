@@ -1,7 +1,7 @@
 import React from 'react';
 //componentes
 import HeaderBanner from '../components/Headerbanner';
-import ProjectDescription from '../components/Projects/ExperienceDescription'
+import ExperienceDescription from '../components/experience/ExperienceDescription'
 import newsFund from '../images/headerBanner_2.jpg'
 
 const ExperiencePage = (props) => {
@@ -18,7 +18,7 @@ const ExperiencePage = (props) => {
         color={'dark-green'}
       />
 
-      <ProjectDescription
+      <ExperienceDescription
         key={data.id}
         date={data.date}
         title={data.title}

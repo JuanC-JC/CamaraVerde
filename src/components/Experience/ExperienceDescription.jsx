@@ -1,6 +1,6 @@
 import React from 'react';
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
-import '../../styles/components/Project/ProjectDescription.scss';
+import '../../styles/components/Experience/ExperienceDescription.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper'
@@ -17,7 +17,7 @@ export default function ExperienceDescription(props) {
   const { title, date, content, galleryImages, team } = props
 
   return (
-    <div className='projectDescription'>
+    <div className='experienceDescription'>
       <div className='date'>{date}</div>
       <h2>{title}</h2>
       <p>{content}</p>

@@ -1,6 +1,6 @@
 @import "../../vars.scss";
 
-.projectDescription {
+.experienceDescription {
   width: 90%;
   max-width: 1030px;
   margin: 0 auto;
@@ -73,7 +73,7 @@
 }
 
 @media (min-width: 768px) {
-  .projectDescription {
+  .experienceDescription {
     .c-team {
       &-names {
         margin: 0 auto;
