@@ -83,12 +83,20 @@ p {
 .date {
   font-size: 12px;
   font-style: italic;
+  @media (min-width: 910px) {
+    font-size: 14px;
+  }
 }
 
-.notification{
-  width: 102px;
+.notification {
+  // width: 102px;
   font-size: 14px;
   font-weight: bold;
   padding: 5px 10px;
-  background: #D1342A;
+  color: white;
+  background: #d1342a;
+  @media (min-width: 910px) {
+    padding: 5px 15px;
+    font-size: 16px;
+  }
 }

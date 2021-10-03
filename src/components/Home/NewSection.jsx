@@ -45,7 +45,7 @@ export default function NewSection() {
               date={report.data.date}
               title={report.data.title}
               text={report.data.content}
-              notification={report.convocatoria}
+              notification={report.data.convocatoria}
             />
           )
         }
