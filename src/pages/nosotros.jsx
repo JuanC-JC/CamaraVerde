@@ -1,11 +1,13 @@
 import React from 'react';
 import {graphql, useStaticQuery} from 'gatsby'
+
 import DynamicIntroduction from '../components/DynamicIntroduction'
 import Alcance from '../components/Us/Alcance'
 import Pilares from '../components/Us/Pilares'
 import Team from '../components/Us/Team'
 
 import MainImage from '../images/Nosotros/mainImage.png'
+
 import '../styles/pages/Us.scss'
 
 export default function UsPage() {
