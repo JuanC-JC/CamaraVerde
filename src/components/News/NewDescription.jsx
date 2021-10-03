@@ -1,7 +1,7 @@
 import React from 'react';
 import { getImage, GatsbyImage, getSrc } from 'gatsby-plugin-image'
 
-import '../../../styles/components/News/New/NewDescription.scss'
+import '../../styles/components/News/NewDescription.scss'
 
 export default function NewDescription(props) {
   const { date, title, img, text, notification } = props
@@ -20,16 +20,16 @@ export default function NewDescription(props) {
       <GatsbyImage className='newDescription__img' image={getImage(img)} alt={`imagen ${title}`} />
 
       <div className='content'>
-        
-        {newText.map(parrafo=>(
+
+        {newText.map(parrafo => (
           <>
             <p>
               {parrafo}
             </p>
-            <br/>
+            <br />
           </>
         ))}
-        
+
       </div>
 
       <div className='share'>

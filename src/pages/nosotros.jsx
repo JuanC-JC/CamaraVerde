@@ -1,5 +1,5 @@
 import React from 'react';
-import {graphql, useStaticQuery} from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 
 import MainImage from '../images/Nosotros/backgroundNosotros.png'
 import DynamicIntroduction from '../components/DynamicIntroduction'
@@ -12,22 +12,22 @@ import '../styles/pages/Us.scss'
 
 export default function UsPage() {
 
-  const {file:{image}} = useStaticQuery(graphql`
-  query getMainImageIntroduction {
-    file(relativePath: {eq: "Nosotros/backgroundNosotros.png"}) {
-      image: childImageSharp {
-        gatsbyImageData(placeholder: BLURRED)
+  const { file: { image } } = useStaticQuery(graphql`
+    query {
+      file(relativePath: {eq: "Nosotros/backgroundNosotros.png"}) {
+        image: childImageSharp {
+          gatsbyImageData(placeholder: BLURRED)
+        }
       }
     }
-  }
-`)
+  `)
 
   return (
 
     <main className='us'>
       <DynamicIntroduction
         imagePath={MainImage}
-        gtImage = {image}
+        gtImage={image}
         title={`Cámara Verde de la Amazorinoquía`}
         text={`
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque risus penatibus facilisi gravida.Consectetur vitae lacinia orci, 

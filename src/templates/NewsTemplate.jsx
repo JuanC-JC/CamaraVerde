@@ -1,6 +1,6 @@
 import React from 'react'
 import HeaderBanner from '../components/Headerbanner'
-import NewDescription from '../components/Noticias/New/NewDescription'
+import NewDescription from '../components/News/NewDescription'
 import newsFund from '../images/headerBanner_1.jpg';
 
 const NewPage = (props) => {

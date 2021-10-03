@@ -1,5 +1,5 @@
 import React from 'react';
-import {GatsbyImage, getImage} from 'gatsby-plugin-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 import '../styles/components/Generic/DynamicIntroduction.scss';
 
