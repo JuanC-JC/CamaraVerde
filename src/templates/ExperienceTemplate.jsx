@@ -1,7 +1,7 @@
 import React from 'react';
 //componentes
 import HeaderBanner from '../components/Headerbanner';
-import ExperienceDescription from '../components/experience/ExperienceDescription'
+import ExperienceDescription from '../components/Experience/ExperienceDescription'
 import newsFund from '../images/headerBanner_2.jpg'
 
 const ExperiencePage = (props) => {

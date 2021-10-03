@@ -8,7 +8,7 @@ import '../../styles/components/Home/NewSection.scss';
 export default function NewSection() {
 
   const { files: { data } } = useStaticQuery(graphql`
-    query getNews {
+    query getNewsFiles {
       files: allMdx(
         filter: {fileAbsolutePath: {regex: "/noticias/"}}
         limit: 4

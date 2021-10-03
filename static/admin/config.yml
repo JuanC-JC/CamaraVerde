@@ -53,7 +53,7 @@ collections:
 
   - name: "experiencia"
     label: "Experiencia"
-    folder: "content/experiencia"
+    folder: "content/experiencias"
     create: true
     slug: "index"
     media_folder: "assets"

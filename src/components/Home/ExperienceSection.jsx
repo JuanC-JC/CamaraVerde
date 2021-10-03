@@ -19,9 +19,9 @@ export default function Experience() {
   const carousel = useRef(null);
 
   const { files: { data } } = useStaticQuery(graphql`
-    query getExperience {
+    query getExperienceFiles {
       files: allMdx(
-        filter: {fileAbsolutePath: {regex: "/experiencia/"}}
+        filter: {fileAbsolutePath: {regex: "/experiencias/"}}
         limit: 6
       ) {
         data: nodes {

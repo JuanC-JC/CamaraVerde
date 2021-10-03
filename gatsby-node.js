@@ -3,9 +3,9 @@ const path = require("path");
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const newsTemplate = path.resolve(`src/templates/NewsTemplate.jsx`);
+  const newsTemplate = path.resolve(`src/templates/newsTemplate.jsx`);
   const experienceTemplate = path.resolve(
-    `src/templates/ExperienceTemplate.jsx`
+    `src/templates/experienceTemplate.jsx`
   );
 
   const newsQuery = await graphql(`
@@ -32,7 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const experienceQuery = await graphql(`
     query getExperience {
       experienceFiles: allMdx(
-        filter: { fileAbsolutePath: { regex: "/experiencia/" } }
+        filter: { fileAbsolutePath: { regex: "/experiencias/" } }
       ) {
         nodos: nodes {
           id
