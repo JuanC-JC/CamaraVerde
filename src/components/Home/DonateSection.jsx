@@ -12,28 +12,32 @@ const donationOptions = [
     title: 'Afiliate',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
     urlImg: 'imageDonation01',
-    textBotton: 'Inscribete'
+    textBotton: 'Inscribete',
+    link: 'http://facebook.com'
   },
   {
     id: '2',
     title: 'Dona',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
     urlImg: 'imageDonation02',
-    textBotton: 'Inscribete'
+    textBotton: 'Inscribete',
+    link: 'http://facebook.com'
   },
   {
     id: '3',
     title: 'Voluntariado',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
     urlImg: 'imageDonation03',
-    textBotton: 'Inscribete'
+    textBotton: 'Inscribete',
+    link: 'http://facebook.com'
   },
   {
     id: '4',
     title: 'Ideas verdes',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
     urlImg: 'imageDonation04',
-    textBotton: 'Inscribete'
+    textBotton: 'Inscribete',
+    link: 'http://facebook.com'
   }
 ]
 
@@ -79,7 +83,7 @@ export default function DonateSection() {
 
         <div className='donate__options'>
           {
-            donationOptions.map((option, index) => {
+            donationOptions.map((option) => {
               const image = images.find(image => image.name == option.urlImg)
 
               return (
@@ -88,7 +92,8 @@ export default function DonateSection() {
                   key={option.id}
                   title={option.title}
                   paragraph={option.paragraph}
-                  textBotton={option.textBotton} />
+                  textBotton={option.textBotton}
+                  link={option.link} />
               )
             })
           }
