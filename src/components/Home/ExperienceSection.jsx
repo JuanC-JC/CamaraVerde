@@ -82,7 +82,7 @@ export default function Experience() {
                   <div className='experienceCard'>
                     <GatsbyImage className='experienceCard__img' image={getImage(experience.data.galleryImages[0])} alt="" />
                     <h3>{experience.data.title}</h3>
-                    <Link to={`experiencia/${experience.id}`} className='button'>Ver mas</Link>
+                    <Link to={`experiencia/${experience.id}`} className='button button--small'>Ver mas</Link>
                   </div>
                 </SwiperSlide>
               )
