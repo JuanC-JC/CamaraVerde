@@ -7,7 +7,6 @@ import newsFund from '../images/headerBanner_2.jpg'
 const ExperiencePage = (props) => {
   const { pageContext } = props
   const { data } = pageContext
-  console.log(data)
 
   return (
     <>

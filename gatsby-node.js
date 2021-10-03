@@ -69,7 +69,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   newsFiles.nodos.forEach((element) => {
     createPage({
-      path: `noticias/${element.id}`,
+      path: `noticia/${element.id}`,
       component: newsTemplate,
       context: element,
     });

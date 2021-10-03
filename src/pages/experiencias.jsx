@@ -42,40 +42,10 @@ const usePagination = ({elements = [], activePage=1, initPageView = 1,  pagesPer
 
 export default function Experiencies ({location}) {
 
-  useEffect(()=>{
-    console.log('inicializando',location)
-  },location)
-
-
   const params = new URLSearchParams(location.search);
   const page = params.get('page');
   
   const test = usePagination({activePage:page})
-
-  console.log(page)
-
-
-  // const [statePagination,setStatePagination] = useState({
-
-  // })
-
-  //calcular cuantas paginas necesito... /si voy a mostrar 6
-  //length // 6 -> 2 paginas por ejemplo
-
-  //pagina actual 
-
-  //numero de paginas en vista - 3
-
-  //numero de pagina inicial
-
-  //cambia el estado de la pagina actual, debo re renderizar (componentes) 
-
-  // << 1 2 3 >> 
-
-  //al seleccionar un bloque siguiente ? cambiar al menor valor del bloque?
-
-  //  anterior << 4 5 6 >> siguiente
-
 
     return (
     <div className='experiences'>
