@@ -34,32 +34,73 @@
 
   .content {
     text-align: justify;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
-  .share {
+
+  &__share{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-self: end;
-    .iconFooter {
-      cursor: pointer;
-      width: 30px;
-      height: 30px;
-      margin-left: 5px;
-      path {
-        fill: #343434;
+    flex-direction: column;
+    align-self: flex-end;
+    align-content: center;
+    justify-content: center;
+
+    .published{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      margin-bottom: 15px;
+      
+      p{
+        align-self: center;
       }
-      &:hover path {
-        fill: $light-green;
+
+      .authorPost{
+        margin-left: 10px;
+        font-weight: bold;
+      }
+
+      .postLink{
+        font-size: 14px;
+        margin-left: 5px;
+      }
+    }
+
+    .share {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-self: flex-end;
+      .iconFooter {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        path {
+          fill: #343434;
+        }
+        &:hover path {
+          fill: $light-green;
+        }
       }
     }
   }
+
+
+
+  
 }
 
 @media (min-width: 530px) {
   .newDescription {
     &__img {
       height: 300px;
+    }
+    &__share{
+      flex-direction: row;
+      .published{
+        margin-bottom: 0;
+        margin-right: 40px;
+      }
     }
   }
 }
