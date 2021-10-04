@@ -8,7 +8,6 @@ const NewPage = (props) => {
   const { pageContext } = props
 
   const { data } = pageContext
-  console.log(props)
 
   return (
     <>
