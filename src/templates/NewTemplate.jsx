@@ -8,7 +8,6 @@ const NewPage = (props) => {
   const { pageContext } = props
 
   const { data } = pageContext
-  console.log(props)
 
   return (
     <>
@@ -26,8 +25,8 @@ const NewPage = (props) => {
         title={data.title}
         text={data.content}
         img={data.image}
-        authorPost = {data.post.name}
-        linkPost = {data.post.link}
+        authorPost={data.post.name}
+        linkPost={data.post.link}
       />
     </>
   )
