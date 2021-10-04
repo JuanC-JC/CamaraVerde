@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby'
-import { GatsbyImage, getImage, getSrc } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import '../../styles/components/Home/NewCard.scss'
 
 export default function NewCard(props) {

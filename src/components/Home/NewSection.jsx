@@ -50,7 +50,7 @@ export default function NewSection() {
           )
         }
       </div>
-      <Link target='_blank' to='http://facebook.com' className='button button--orange'>Ver más noticias</Link>
+      <Link target='_blank' to='/noticias/1' className='button button--orange'>Ver más noticias</Link>
 
     </section>
   )
