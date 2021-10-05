@@ -94,7 +94,7 @@ export default function Experience() {
 
       </div>
 
-      <button className="button button--orange">Más Proyectos</button>
+      <Link className="button button--orange">Más Proyectos</Link>
 
 
     </section >
