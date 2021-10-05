@@ -1,5 +1,6 @@
 @import '../styles/vars.scss';
 
+
 .paginationIndex{
   display: flex;
   align-self: center;
@@ -7,17 +8,31 @@
   align-items: center;
 
   .indexNumber{
+    font-weight: bold ;
     padding: 10px;
+    cursor: pointer;
     margin-right: 20px;
     &:first-child{
       background-color: aqua;
     }
     &:hover{
-      background-color:$light-green;
+      // background-color:$light-green;
+      color:$light-green;
     }
     
   }
-  .previous{
-    margin-right:10px;
+
+  .icon{
+    width: 22px;
+    height: 15px;
+    background-image: url('../images/icons/next.svg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
   }
+  .previous{
+    margin-right:20px;
+    transform: rotate(-180deg);
+  }
+  
 }
