@@ -12,15 +12,28 @@
     padding: 10px;
     cursor: pointer;
     margin-right: 20px;
-    &:first-child{
-      background-color: aqua;
-    }
+    color: black;
+    border-radius:2px;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+
     &:hover{
       // background-color:$light-green;
       color:$light-green;
     }
+
+    &--selected{
+      background-color: $second-green;
+      color:white;
+    }
     
   }
+
 
   .icon{
     width: 22px;
@@ -29,7 +42,9 @@
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
+    cursor: pointer;
   }
+
   .previous{
     margin-right:20px;
     transform: rotate(-180deg);

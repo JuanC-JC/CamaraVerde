@@ -79,7 +79,7 @@ exports.createPages = async ({ graphql, actions }) => {
     data: { newsFiles },
   } = newsQuery;
 
-  newsFiles.nodos = newsFiles.nodos.concat(newsFiles.nodos);
+  newsFiles.nodos = [...newsFiles.nodos, ...newsFiles.nodos, ...newsFiles.nodos , ...newsFiles.nodos , ...newsFiles.nodos, ...newsFiles.nodos, ...newsFiles.nodos, ...newsFiles.nodos,  ...newsFiles.nodos, ...newsFiles.nodos, ...newsFiles.nodos]
 
   const {
     data: { experienceFiles },
@@ -107,7 +107,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const postsPerPage = 6;
   const numPagesNews = Math.ceil(newsFiles.nodos.length / postsPerPage);
-  const numPagesExperiences = Math.ceil(newsFiles.nodos.length / postsPerPage);
+  const numPagesExperiences = Math.ceil(experienceFiles.nodos.length / postsPerPage);
 
   for (let i = 0; i < numPagesNews; i++) {
     createPage({

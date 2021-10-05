@@ -39,7 +39,7 @@ export default function NewsTemplate(props) {
         }
       </div>
 
-      <PaginationIndex numbersPerView={5} indexPage={pageContext.indexPage} maxPages={pageContext.pages} />
+      <PaginationIndex route='noticias' numbersPerView={5} indexPage={pageContext.indexPage} maxPages={pageContext.pages} />
     </>
 
 

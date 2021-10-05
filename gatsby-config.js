@@ -32,18 +32,27 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "content",
-        path: "./content/",
+        name: "noticias",
+        path: "./content/noticias",
       },
+      __key: "noticias",
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: "experiencias",
+        path: "./content/experiencias",
       },
-      __key: "pages",
+      __key: "experiencias",
     },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "pages",
+    //     path: "./src/pages/",
+    //   },
+    //   __key: "pages",
+    // },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

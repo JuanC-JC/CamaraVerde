@@ -7,6 +7,8 @@ import ExperiencesBanner from '../images/headerBanner_2.jpg'
 
 import '../styles/templates/experiencesTemplate.scss'
 
+import PaginationIndex from '../components/paginationIndex';
+
 
 const ExperienceCard = ({ experience }) => {
 
@@ -20,8 +22,11 @@ const ExperienceCard = ({ experience }) => {
 }
 
 
-export default function ExperiencesTemplate({ pageContext: { files } }) {
+export default function ExperiencesTemplate({ pageContext: { files, indexPage, pages } }) {
 
+
+  console.log(indexPage, pages)
+  
   return (
     <>
       <HeaderBanner
@@ -43,6 +48,8 @@ export default function ExperiencesTemplate({ pageContext: { files } }) {
           })
         }
       </div>
+    
+      <PaginationIndex route='experiencias' numbersPerView={5} indexPage={indexPage} maxPages={pages} />
     </>
   );
 };
