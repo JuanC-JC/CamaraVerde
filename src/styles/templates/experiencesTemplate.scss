@@ -1,0 +1,68 @@
+.experiencesContainer {
+  margin: 60px auto;
+  width: 90%;
+  max-width: 1040px;
+  display: grid;
+  gap: 40px;
+}
+
+//card ExperienceCard
+.experiencesContainer {
+  .experienceCard {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0 0 0 0;
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      z-index: -1;
+    }
+
+    &:hover {
+      .button {
+        opacity: 1;
+      }
+    }
+
+    &__img {
+      position: absolute;
+      height: 100%;
+      z-index: -1;
+    }
+
+    h3 {
+      color: white;
+      transform: translateY(40px);
+      margin-bottom: 20px;
+    }
+
+    .button {
+      margin-bottom: 20px;
+      transition: all 0.3s;
+      transform: translateY(60px);
+      opacity: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .experiencesContainer {
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+  }
+
+  .experienceContainer {
+    .experienceCard {
+      height: 350px;
+    }
+  }
+}

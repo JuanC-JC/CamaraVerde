@@ -3,12 +3,18 @@ const path = require("path");
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
+  //Import templates
   const newTemplate = path.resolve(`src/templates/NewTemplate.jsx`);
+  const newsTemplate = path.resolve(`src/templates/NewsTemplate.jsx`);
+
   const experienceTemplate = path.resolve(
     `src/templates/ExperienceTemplate.jsx`
   );
-  const newsTemplate = path.resolve(`src/templates/NewsTemplate.jsx`);
+  const experiencesTemplate = path.resolve(
+    `src/templates/ExperiencesTemplate.jsx`
+  );
 
+  //graphql Queries
   const newsQuery = await graphql(`
     query getNews {
       newsFiles: allMdx(filter: { fileAbsolutePath: { regex: "/noticias/" } }) {
@@ -68,10 +74,18 @@ exports.createPages = async ({ graphql, actions }) => {
     throw experienceQuery.errors;
   }
 
+  //Desctructuring data
   const {
     data: { newsFiles },
   } = newsQuery;
 
+  const {
+    data: { experienceFiles },
+  } = experienceQuery;
+
+  //Create individual pages view
+
+  //> noticia/{idNoticia}
   newsFiles.nodos.forEach((element) => {
     createPage({
       path: `noticia/${element.id}`,
@@ -80,21 +94,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  const postsPerPage = 2;
-  const numPages = Math.ceil(newsFiles.nodos.length / postsPerPage);
-
-  for (let i = 0; i < numPages; i++) {
-    createPage({
-      path: `noticias/${i + 1}`,
-      component: newsTemplate,
-      context: newsFiles.nodos.slice(i * postsPerPage, (i + 1) * postsPerPage),
-    });
-  }
-
-  const {
-    data: { experienceFiles },
-  } = experienceQuery;
-
+  //> experiencia/{idExperiencia}
   experienceFiles.nodos.forEach((element) => {
     createPage({
       path: `experiencia/${element.id}`,
@@ -102,4 +102,31 @@ exports.createPages = async ({ graphql, actions }) => {
       context: element,
     });
   });
+
+  const postsPerPage = 6;
+  const numPagesNews = Math.ceil(newsFiles.nodos.length / postsPerPage);
+  const numPagesExperiences = Math.ceil(newsFiles.nodos.length / postsPerPage);
+
+  for (let i = 0; i < numPagesNews; i++) {
+    createPage({
+      path: `noticias/${i + 1}`,
+      component: newsTemplate,
+      context: {
+        files: newsFiles.nodos.slice(i * postsPerPage, (i + 1) * postsPerPage),
+      },
+    });
+  }
+
+  for (let i = 0; i < numPagesExperiences; i++) {
+    createPage({
+      path: `experiencias/${i + 1}`,
+      component: experiencesTemplate,
+      context: {
+        files: experienceFiles.nodos.slice(
+          i * postsPerPage,
+          (i + 1) * postsPerPage
+        ),
+      },
+    });
+  }
 };

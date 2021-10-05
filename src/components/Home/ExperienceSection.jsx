@@ -90,20 +90,6 @@ export default function Experience() {
 
             )
           }
-          {/* <SwiperSlide>
-            <div className='experienceCard'>
-              <img className='experienceCard__img' src={imgExperience1} alt="" />
-              <h3>Lorem Ipsum dolor sit ameth</h3>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='experienceCard'>
-              <img className='experienceCard__img' src={imgExperience2} alt="" />
-              <h3>Lorem Ipsum dolor sit ameth</h3>
-            </div>
-          </SwiperSlide> */}
-
-
         </Swiper>
 
       </div>

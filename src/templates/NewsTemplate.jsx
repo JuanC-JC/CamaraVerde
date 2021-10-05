@@ -8,8 +8,7 @@ import '../styles/templates/newsTemplates.scss';
 
 
 export default function NewsTemplate(props) {
-  const { pageContext } = props
-  const data = Object.values(pageContext)
+  const { pageContext: { files } } = props
 
   return (
 
@@ -23,7 +22,7 @@ export default function NewsTemplate(props) {
       <div className='newsContainer'>
 
         {
-          data.map(news => {
+          files.map(news => {
             return (
               <NewCard
                 key={news.id}
@@ -34,9 +33,6 @@ export default function NewsTemplate(props) {
                 text={news.data.content}
                 notification={news.data.convocatoria}
               />
-
-
-
             )
           })
         }
