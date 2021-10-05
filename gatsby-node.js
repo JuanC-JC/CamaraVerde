@@ -75,9 +75,11 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   //Desctructuring data
-  const {
+  let {
     data: { newsFiles },
   } = newsQuery;
+
+  newsFiles.nodos = newsFiles.nodos.concat(newsFiles.nodos);
 
   const {
     data: { experienceFiles },
@@ -113,6 +115,8 @@ exports.createPages = async ({ graphql, actions }) => {
       component: newsTemplate,
       context: {
         files: newsFiles.nodos.slice(i * postsPerPage, (i + 1) * postsPerPage),
+        pages: numPagesNews,
+        indexPage: i + 1,
       },
     });
   }
@@ -126,6 +130,8 @@ exports.createPages = async ({ graphql, actions }) => {
           i * postsPerPage,
           (i + 1) * postsPerPage
         ),
+        pages: numPagesExperiences,
+        indexPage: i + 1,
       },
     });
   }

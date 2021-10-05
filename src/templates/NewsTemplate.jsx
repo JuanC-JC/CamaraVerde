@@ -8,7 +8,8 @@ import '../styles/templates/newsTemplates.scss';
 
 
 export default function NewsTemplate(props) {
-  const { pageContext: { files } } = props
+
+  const { pageContext } = props
 
   return (
 
@@ -22,7 +23,7 @@ export default function NewsTemplate(props) {
       <div className='newsContainer'>
 
         {
-          files.map(news => {
+          pageContext.files.map(news => {
             return (
               <NewCard
                 key={news.id}
@@ -38,8 +39,7 @@ export default function NewsTemplate(props) {
         }
       </div>
 
-      <PaginationIndex />
-
+      <PaginationIndex numbersPerView={5} indexPage={pageContext.indexPage} maxPages={pageContext.pages} />
     </>
 
 
