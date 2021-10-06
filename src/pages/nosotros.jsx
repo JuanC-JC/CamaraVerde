@@ -29,7 +29,7 @@ export default function UsPage() {
         imagePath={MainImage}
         gtImage={image}
         title={`Cámara Verde de la Amazorinoquía`}
-        text={`Somos la FUNDACIÓN CÁMARA VERDE DE LA AMAZORINOQUÍA - CVA, organización social y ambiental sin Ánimo de Lucro, fundada y liderada por mujeres, con sede principal en la ciudad de Villavicencio y una red de profesionales a lo largo de los 10 departamentos que componen la Amazorinoquia Colombiana`}
+        text={`Somos la <b> FUNDACIÓN CÁMARA VERDE DE LA AMAZORINOQUÍA - CVA </b>, organización social y ambiental sin Ánimo de Lucro, fundada y liderada por mujeres, con sede principal en la ciudad de Villavicencio y una red de profesionales a lo largo de los 10 departamentos que componen la Amazorinoquia Colombiana`}
       />
       <Alcance />
       <Pilares />

@@ -25,8 +25,6 @@ export default function DynamicIntroduction({ title, imagePath, image, text, lef
           </linearGradient>
         </defs>
 
-
-
         <defs>
           <clipPath id="svgPathUsMobile">
             {
@@ -45,10 +43,8 @@ export default function DynamicIntroduction({ title, imagePath, image, text, lef
       <div className="dynamicIntroduction__infoContainer">
         <div className="dynamicIntroduction__text">
           <h1>{title}</h1>
-          <p>{text}</p>
+          <p  dangerouslySetInnerHTML={{__html:text}}></p>
         </div>
-
-
 
         <div className='dynamicIntroduction__img'>
           <GatsbyImage
