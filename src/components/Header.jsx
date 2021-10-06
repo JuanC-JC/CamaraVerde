@@ -26,13 +26,13 @@ export default function Header() {
       <nav className={`header__navigation ${isOpenMenuMobile && 'header__navigation--visibility'}`}>
         <ul>
           <li>
-            <Link to='/nosotros'>Nosotros</Link>
+            <Link onClick={toggleMenu} to='/nosotros'>Nosotros</Link>
           </li>
           <li>
-            <Link to='/empresas' >Empresarios Verdes</Link>
+            <Link onClick={toggleMenu} to='/empresas' >Empresarios Verdes</Link>
           </li>
           <li>
-            <Link to='/tienda'>Tienda</Link>
+            <Link onClick={toggleMenu} to='/tienda'>Tienda</Link>
           </li>
         </ul>
       </nav>
