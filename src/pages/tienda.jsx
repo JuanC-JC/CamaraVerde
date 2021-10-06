@@ -1,6 +1,7 @@
 import React from 'react';
+import PageNotAvaliable from '../components/PageNotAvaliable';
 //componentes
-import Store from '../components/Store/Store'
+// import Store from '../components/PageNotAvaliable'
 
 //estilos e imagenes
 import '../styles/global.scss';
@@ -8,11 +9,10 @@ import '../styles/global.scss';
 
 
 export default function StorePage (){
+
   return(
     <>
-      {/* <Header/> */}
-      <Store/>
-      {/* <Footer/> */}
+      <PageNotAvaliable title={'Pronto disponible'} text={'muy pronto conocerás más acerca de nuestros productos'}/>
     </>
   )
 }

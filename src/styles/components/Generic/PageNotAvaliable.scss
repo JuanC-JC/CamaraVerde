@@ -1,0 +1,46 @@
+@import '../../vars.scss';
+
+.pageNotAvaliable{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0 ;
+  align-items: center ;
+
+  &__text{
+    text-align: center;
+    margin-bottom: 30px;
+
+    h1{
+      color: $main-green;
+    }
+
+    .button{
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }
+
+  &__img{
+    width: 100%;
+    max-width: 600px ;
+  }
+}
+
+@media(min-width:910px){
+  .pageNotAvaliable{
+    flex-direction: row;
+    align-items: center;
+    &__text{
+      width: 50%;
+    }
+
+    &__img{
+      width: 50%;
+    }
+  }
+
+
+}
