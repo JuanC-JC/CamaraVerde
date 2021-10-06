@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Map from "../map/Map";
+import Map from "../Map/Map";
 import "../../styles/components/Home/RegionSection.scss";
 
 const departments = [
