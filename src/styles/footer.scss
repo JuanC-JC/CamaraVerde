@@ -5,13 +5,23 @@
   margin-top: auto;
   background: linear-gradient(
     180deg,
-    rgba(233, 235, 231, 0) 0%,
-    rgba(233, 235, 231, 0.52) 20.31%,
-    #e9ebe7 39.58%,
-    #dcdfd9 69.27%,
-    #c5cac0 84.37%,
-    #afb6a8 100%
+    rgba(201, 213, 200, 0) 0%,
+    rgba(203, 214, 202, 0.512195) 29.69%,
+    #cdd8cc 55.73%,
+    #cdd8cc 84.9%
   );
+  // border: 1px solid;
+
+  // border: solid 1px;
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(233, 235, 231, 0) 0%,
+  //   rgba(233, 235, 231, 0.52) 20.31%,
+  //   #e9ebe7 39.58%,
+  //   #dcdfd9 69.27%,
+  //   #c5cac0 84.37%,
+  //   #afb6a8 100%)
+
   .copyright {
     width: 100%;
     padding-top: 10px;
@@ -23,12 +33,11 @@
   }
 
   .top {
-    margin: 0 auto;
+    margin: 50px auto 20px;
     width: 90%;
     max-width: 1100px;
     display: grid;
     gap: 20px;
-    padding: 20px 0;
 
     .footer__logo {
       display: flex;

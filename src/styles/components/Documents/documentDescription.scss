@@ -1,21 +1,30 @@
-.documentDescription{
+@import "../../vars.scss";
+
+.documentDescription {
   width: 90%;
   max-width: 1030px;
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 130px;
-  & > p{
+  & > p {
     margin-bottom: 30px;
   }
-  .documents{
- 
-    .document{
+  .documents {
+    .document {
       display: flex;
       flex-direction: row;
       margin-bottom: 10px;
-      svg{
+      svg {
         margin-right: 10px;
         align-self: center;
+      }
+
+      .nameDocument {
+        cursor: pointer;
+
+        &:visited {
+          color: $main-black;
+        }
       }
     }
   }

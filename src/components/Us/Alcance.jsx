@@ -13,8 +13,7 @@ export default function Alcance() {
           <h2>Misión</h2>
         </div>
         <p className="alcanceCard__text">
-          Promover mecanismos para aumentar la capacidad en la conservación, protección, planificación y gestión eficaz en relación con
-          el cambio climático en la Amazorinoquia haciendo particular hincapié en las mujeres, niñas, niños y población vulnerable.
+          Diseñamos, promovemos y ejecutamos proyectos, actividades y mecanismos para aumentar la capacidad en la conservación, protección, planificación y gestión eficaz en relación con el cambio climático en la Amazorinoquia haciendo particular hincapié en las mujeres, niñas, niños y población vulnerable.
         </p>
       </div>
       <div className="alcanceCard">
@@ -23,8 +22,7 @@ export default function Alcance() {
           <h2>Visión</h2>
         </div>
         <p className="alcanceCard__text">
-          Ser una organización referente y canal prioritario para la mejora continua en la cultura, la educación, la sensibilización y la capacidad
-          humana e institucional respecto acciones que mitigen el cambio climático y promuevan los ods en la Amazorinoquía Colombiana
+          Ser una organización referente y canal prioritario para la mejora continua en la cultura, la educación, la sensibilización y la capacidad humana e institucional respecto a acciones que mitiguen el cambio climático y promuevan los ODS en la Amazorinoquía colombiana.
         </p>
       </div>
     </section>

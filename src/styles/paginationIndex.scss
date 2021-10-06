@@ -1,53 +1,49 @@
-@import '../styles/vars.scss';
+@import "../styles/vars.scss";
 
-
-.paginationIndex{
+.paginationIndex {
   display: flex;
   align-self: center;
   justify-content: center;
   align-items: center;
 
-  .indexNumber{
-    font-weight: bold ;
+  .indexNumber {
+    font-weight: bold;
     padding: 10px;
     cursor: pointer;
     margin-right: 20px;
     color: black;
-    border-radius:2px;
+    border-radius: 5px;
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none;
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 
-    &:hover{
+    &:hover {
       // background-color:$light-green;
-      color:$light-green;
+      color: $light-green;
     }
 
-    &--selected{
+    &--selected {
       background-color: $second-green;
-      color:white;
+      color: white;
     }
-    
   }
 
-
-  .icon{
-    width: 22px;
-    height: 15px;
-    background-image: url('../images/icons/next.svg');
+  .icon {
+    width: 18px;
+    height: 12px;
+    background-image: url("../images/icons/next.svg");
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
     cursor: pointer;
   }
 
-  .previous{
-    margin-right:20px;
+  .previous {
+    margin-right: 20px;
     transform: rotate(-180deg);
   }
-  
 }
