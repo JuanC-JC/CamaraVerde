@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import {translateDate} from '../../utils'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper'
 import 'swiper/css'
@@ -81,11 +80,7 @@ export default function Experience() {
                   key={experience.id + index}>
                   <div className='experienceCard'>
                     <GatsbyImage className='experienceCard__img' image={getImage(experience.data.galleryImages[0])} alt="" />
-                    <h3>
-                      { 
-                        translateDate(experience.data.title)
-                      }
-                    </h3>
+                    <h3>{experience.data.title}</h3>
                     <Link to={`experiencia/${experience.id}`} className='button button--small'>Ver mas</Link>
                   </div>
                 </SwiperSlide>
@@ -98,7 +93,7 @@ export default function Experience() {
 
       </div>
 
-      <Link className="button button--orange">Más Proyectos</Link>
+      <Link to='/experiencias/1' className="button button--orange">Más Experiencias</Link>
       
     </section >
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import DepartmentSVG from "./Department";
 import Country from "./Country";
+import '../../styles/components/Map/Map.scss'
 
 const Map = ({ selected, setSelection, departments }) => {
 
