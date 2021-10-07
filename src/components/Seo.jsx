@@ -23,7 +23,7 @@ export default function Seo({ lang, description, image, title, isPost, meta }) {
 
   const metaDescription = description || siteMetadata.description;
 
-  console.log(title)
+  // console.log(title)
   return (
     <Helmet
       htmlAttributes={{
@@ -38,7 +38,7 @@ export default function Seo({ lang, description, image, title, isPost, meta }) {
         },
         {
           property: `og:title`,
-          content: title || siteMetadata.title,
+          content: isPost ? `${title} | ${'Camara Verde'}` : siteMetadata.title
         },
         {
           property: `og:description`,
@@ -62,7 +62,7 @@ export default function Seo({ lang, description, image, title, isPost, meta }) {
         },
         {
           name: `twitter:title`,
-          content: title || siteMetadata.title ,
+          content: isPost ? `${title} | ${'Camara Verde'}` : siteMetadata.title
         },
         {
           name: `twitter:description`,
