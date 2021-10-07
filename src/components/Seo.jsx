@@ -2,13 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import testImage from '../../static/images/donateBackground.png'
+import {getSrc} from 'gatsby-plugin-image'
 
-
-
-//Referencia del elemeneto /images/donateBackground.png'
-export default function Seo({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+export default function Seo({ lang, description, image, title, isPost, meta }) {
+  const { site : {siteMetadata} } = useStaticQuery(
     graphql`
       query {
         site {
@@ -24,15 +21,16 @@ export default function Seo({ description, lang, meta, title }) {
     `
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description || siteMetadata.description;
 
+  console.log(title)
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={site.siteMetadata.title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={isPost ? `${title} | ${'Camara Verde'}` : siteMetadata.title}
+      // titleTemplate={`%s | ${siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -40,15 +38,19 @@ export default function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: site.siteMetadata.title,
+          content: title || siteMetadata.title,
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: description || siteMetadata.description,
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: isPost ? `article` : `website`
+        },
+        {
+          property: `og:image`,
+          content: image ? `${siteMetadata.siteUrl}${getSrc(image)}` : `${siteMetadata.siteUrl}${siteMetadata.image}`
         },
         {
           name: `twitter:card`,
@@ -56,20 +58,20 @@ export default function Seo({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: siteMetadata.author,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: title || siteMetadata.title ,
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: description || siteMetadata.description,
         },
         {
-          name: `og:image`,
-          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
-        }
+          name: `twitter:image`,
+          content: image ? `${siteMetadata.siteUrl}${getSrc(image)}` : `${siteMetadata.siteUrl}${siteMetadata.image}`
+        },
       ].concat(meta)}
     />
   );
@@ -85,5 +87,7 @@ Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  isPost: PropTypes.bool,
+  image: PropTypes.object,
 };

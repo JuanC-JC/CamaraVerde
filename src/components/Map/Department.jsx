@@ -17,7 +17,7 @@ export default function DepartmentSVG({ id, handlerClick, path, selected }) {
         id={id}
         onClick={handlerClick}
         d={path}
-        class='departmentVector'
+        className='departmentVector'
         fill="#00985F"
         stroke="white"
       />
