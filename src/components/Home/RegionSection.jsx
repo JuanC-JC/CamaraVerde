@@ -142,6 +142,8 @@ export default function RegionSection() {
 
   const setSelectInfo = (type) =>{
 
+    console.log(type)
+
     const typeInfo = type.dataset.typeInfo
 
     if(typeInfo !== selectedInfo){      
