@@ -1,18 +1,17 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import background from '../../images/Home/backgroundDefinition.svg';
+import shape from '../../images/Home/shapeDefinitionSection.svg';
 
 import '../../styles/components/Home/DefinitionSection.scss'
 
 //TODO: COLOCAR EL NOMBRE DEL AVE EN EL ALT 
-//TODO: VERIFICAR COLORES | DIMENSION | DISEÑO
 export default function Definition() {
   return (
     <section className='c-definition'>
 
       <div className='c-definition__text'>
 
-        <img src={background} alt='background' />
+        <img src={shape} alt='shape sección de definicion'/>
 
         <div className='definition__text'>
           <h3>Lorem Ipsum Task</h3>
