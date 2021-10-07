@@ -128,11 +128,10 @@ export default function RegionSection() {
 
 
   const setSelection = (e) => {
-    const department = findDepartment(e.currentTarget.id)
+    const department = findDepartment(e.target.id)
 
-    
     if(selectedDepartment !== department){      
-      setSelectedDepartment(findDepartment(e.currentTarget.id))
+      setSelectedDepartment(findDepartment(e.target.id))
   
       document.querySelector('.info__parrafoInfo').animate({
         maxHeight: [ '0px', '230px'], 
@@ -141,18 +140,17 @@ export default function RegionSection() {
   }
 
 
-  const setSelectInfo = (e) =>{
+  const setSelectInfo = (type) =>{
 
-    console.log(e)
-    // const typeInfo = e.currentTarget.dataset.typeInfo
+    const typeInfo = type.dataset.typeInfo
 
-    // if(typeInfo !== selectedInfo){      
-    //   setSelectedInfo(e.currentTarget.dataset.typeInfo)
+    if(typeInfo !== selectedInfo){      
+      setSelectedInfo(typeInfo)
   
-    //   document.querySelector('.info__parrafoInfo').animate({
-    //     maxHeight: [ '0px', '230px'], 
-    //   }, 500);
-    // }
+      document.querySelector('.info__parrafoInfo').animate({
+        maxHeight: [ '0px', '230px'], 
+      }, 500);
+    }
   }
 
   return (
