@@ -142,9 +142,7 @@ export default function RegionSection() {
 
   const setSelectInfo = (type) =>{
 
-    console.log(type)
-
-    const typeInfo = type.dataset.typeInfo
+    const typeInfo = type.dataset.typeinfo
 
     if(typeInfo !== selectedInfo){      
       setSelectedInfo(typeInfo)
@@ -171,17 +169,17 @@ export default function RegionSection() {
 
           <div className="info__grahpicsItems">
 
-            <svg onClick={(e)=>setSelectInfo(e.currentTarget)} data-typeInfo='history' className={`info__graphic ${selectedInfo === 'history' && 'info__graphic--selected'}`} width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg onClick={(e)=>setSelectInfo(e.currentTarget)} data-typeinfo='history' className={`info__graphic ${selectedInfo === 'history' && 'info__graphic--selected'}`} width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="25" cy="25" r="24" stroke="#2a5b4b" strokeWidth="2"/>
               <path d="M15.4703 23.6667C14.5062 25.339 13.9991 27.2356 14 29.1659C14.0009 31.0962 14.5097 32.9923 15.4754 34.6637C16.4411 36.3351 17.8296 37.723 19.5015 38.6879C21.1733 39.6528 23.0697 40.1608 25 40.1608C26.9303 40.1608 28.8267 39.6528 30.4985 38.6879C32.1704 37.723 33.5589 36.3351 34.5246 34.6637C35.4903 32.9923 35.9991 31.0962 36 29.1659C36.0009 27.2356 35.4938 25.339 34.5297 23.6667L25.0018 9L15.4685 23.6667H15.4703Z" stroke="#205033" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
 
-            <svg onClick={(e)=>setSelectInfo(e.currentTarget)} data-typeInfo='food' className={`info__graphic ${selectedInfo === 'food' && 'info__graphic--selected'}`} width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg onClick={(e)=>setSelectInfo(e.currentTarget)} data-typeinfo='food' className={`info__graphic ${selectedInfo === 'food' && 'info__graphic--selected'}`} width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="25" cy="25" r="24" stroke="#2a5b4b" strokeWidth="2"/>
               <path d="M21 28L13.0977 34C12.7644 35.5 13.0977 38.2 17.0977 37L22.5977 29.5006M22.5977 29.5006L23.597 30.5C28.597 28.5 28.597 36 32.597 37C35.797 37.8 36.2637 35.3333 36.097 34L27.7947 25.5M22.5977 29.5006L14.597 21.5C13.4304 19.6667 11.897 15.3 15.097 12.5L25.597 23.25M33.0977 12L27.0977 18C26.2639 18.8333 24.7965 21.05 25.597 23.25M25.597 23.25L27.7947 25.5M35.5977 15L29.5977 21M38.0977 17.5C36.0624 20.1667 31.1523 25.5 27.7947 25.5" stroke="#205033" strokeWidth="2"/>
             </svg>
 
-            <svg onClick={(e)=>setSelectInfo(e.currentTarget)} data-typeInfo='general' className={`info__graphic ${selectedInfo === 'general' && 'info__graphic--selected'}`} width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg onClick={(e)=>setSelectInfo(e.currentTarget)} data-typeinfo='general' className={`info__graphic ${selectedInfo === 'general' && 'info__graphic--selected'}`} width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="25" cy="25" r="24" stroke="#2a5b4b" strokeWidth="2"/>
               <path d="M25.1144 46.5V41C16.6144 39 4.94995 28.8 25.35 4" stroke="#2a5b4b" strokeWidth="2"/>
               <path d="M24.85 46.5V41C33.35 39 44.7484 28.8 24.3484 4" stroke="#2a5b4b" strokeWidth="2"/>
