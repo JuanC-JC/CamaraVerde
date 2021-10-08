@@ -29,7 +29,7 @@ export default function Seo({ lang, description, image, title, isPost, meta }) {
       htmlAttributes={{
         lang,
       }}
-      title={isPost ? `${title} | ${'Camara Verde'}` : siteMetadata.title}
+      title={isPost ? `${title} | ${'Cámara Verde de la Amazorinoquía'}` : siteMetadata.title}
       // titleTemplate={`%s | ${siteMetadata.title}`}
       meta={[
         {
@@ -38,7 +38,7 @@ export default function Seo({ lang, description, image, title, isPost, meta }) {
         },
         {
           property: `og:title`,
-          content: isPost ? `${title} | ${'Camara Verde'}` : siteMetadata.title
+          content: isPost ? `${title} | ${'Cámara Verde de la Amazorinoquía'}` : siteMetadata.title
         },
         {
           property: `og:description`,
@@ -62,7 +62,7 @@ export default function Seo({ lang, description, image, title, isPost, meta }) {
         },
         {
           name: `twitter:title`,
-          content: isPost ? `${title} | ${'Camara Verde'}` : siteMetadata.title
+          content: isPost ? `${title} | ${'Cámara Verde de la Amazorinoquía'}` : siteMetadata.title
         },
         {
           name: `twitter:description`,
