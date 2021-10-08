@@ -8,13 +8,13 @@ const NewPage = (props) => {
 
   const { pageContext } = props
 
-  
+
   const { data } = pageContext
-  
+
   return (
     <>
 
-      <SEO title={data.title} image={data.image} isPost/>
+      <SEO title={data.title} image={data.image} isPost description={data.content} />
       <HeaderBanner
         img={newsFund}
         title={'Noticias'}

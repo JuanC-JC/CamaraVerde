@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import {getSrc} from 'gatsby-plugin-image'
+import { getSrc } from 'gatsby-plugin-image'
 
 export default function Seo({ lang, description, image, title, isPost, meta }) {
-  const { site : {siteMetadata} } = useStaticQuery(
+  const { site: { siteMetadata } } = useStaticQuery(
     graphql`
       query {
         site {
@@ -23,7 +23,7 @@ export default function Seo({ lang, description, image, title, isPost, meta }) {
 
   const metaDescription = description || siteMetadata.description;
 
-  // console.log(title)
+
   return (
     <Helmet
       htmlAttributes={{
