@@ -4,6 +4,7 @@ import HeaderBanner from '../components/Headerbanner';
 import ExperienceDescription from '../components/Experience/ExperienceDescription'
 import newsFund from '../images/headerBanner_2.jpg'
 import {translateDate} from '../utils'
+import SEO from '../components/Seo'
 
 const ExperiencePage = (props) => {
   const { pageContext } = props
@@ -11,7 +12,7 @@ const ExperiencePage = (props) => {
 
   return (
     <>
-
+      <SEO title={data.title} image={data.image} isPost/>
       <HeaderBanner
         img={newsFund}
         title={'Experiencia'}

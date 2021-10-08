@@ -32,12 +32,12 @@ export default function NewDescription(props) {
 
       <div className='content'>
 
-        {newText.map(parrafo => (
+        {newText.map((parrafo,index) => (
           <>
-            <p>
+            <p key={`parrafo_${index}`}>
               {parrafo}
             </p>
-            <br />
+            <br key={`br_${index}`}/>
           </>
         ))}
 
@@ -48,14 +48,15 @@ export default function NewDescription(props) {
         <div className="published">
           <p>Publicado por:</p>
           {
-          linkPost  ?
+            linkPost  ?
             <Link className='postLink'to={linkPost} target='_blank'>
               <p>{authorPost}</p>
             </Link> 
             :
             <p className='authorPost'>
               {authorPost}
-              </p>}
+            </p>
+          }
         </div>
 
         <div className='share'>

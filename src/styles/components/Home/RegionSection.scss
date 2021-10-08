@@ -23,7 +23,7 @@
       top: -20px;
       left: 10px;
       content: "";
-      background: url(../../../images/IconFolderMap.svg) no-repeat center center;
+      background: url(../../../images/Region/iconFolderInfo.svg) no-repeat center center / contain;
       height: 50px;
       width: 50px;
       z-index: 1;
@@ -52,7 +52,8 @@
         overflow-x: hidden;
         max-height: 230px;
         padding: 0 10px;
-
+        // transition: all 0.2s;
+        // max-height: ;
         &::-webkit-scrollbar {
           // background-color: $third-green;
           // opacity: 0;
@@ -60,7 +61,7 @@
         }
 
         &::-webkit-scrollbar-thumb {
-          background-color: $third-green;
+          background-color: $main-green;
           border-radius: 5px;
         }
 
@@ -84,13 +85,27 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 40px;
-        width: 40px;
-        background: $third-green;
-        border-radius: 50%;
+        height: 50px;
+        width:50px;
+
+
+        &--selected{
+          circle{
+            fill: $main-green;
+          }
+          path{
+            stroke: white;
+          }
+        }
 
         &:hover {
-          opacity: 0.7;
+          circle{
+            fill: $light-green;
+            stroke: $light-green;
+          }
+          path{
+            stroke: white;
+          }
         }
       }
     }
