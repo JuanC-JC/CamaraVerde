@@ -23,6 +23,7 @@ export default function Pilares() {
           </p>
         </div>
 
+        {/* <button class='button button--white'>Ver mas</button> */}
       </div>
 
       <div className="pilarCard pilarCard--yellow pilarCard--right">
