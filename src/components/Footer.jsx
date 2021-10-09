@@ -89,7 +89,7 @@ export default function Footer() {
 
         <div className="footer__links">
           <div className="footer__blockTitle">Enlaces Rápidos</div>
-          <a href="/documents">Documentos legales</a>
+          <a href="/documentos">Documentos legales</a>
           <a href="">Politicas de tratamiento de datos</a>
         </div>
 
