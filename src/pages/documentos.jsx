@@ -13,7 +13,7 @@ import SEO from '../components/Seo'
 const NewPage = () => {
   return (
     <>
-      <SEO title={'Documentos Legales | Cámara Verde'} isPost />
+      <SEO title={'Documentos Legales'} isPost />
       <HeaderBanner
         img={newsFund}
         title={'Documentos'}
