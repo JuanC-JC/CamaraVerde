@@ -18,6 +18,8 @@ export default function IntroSection() {
         </defs>
       </svg>
 
+
+
       <svg className='intro__backgroundMobile' preserveAspectRatio="none" width="320" height="403" viewBox="0 0 320 403" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 0H320V375C320 375 251.713 403 159.502 403C67.2897 403 0 375 0 375V0Z" fill="url(#paint1_linear)" />
         <defs>
