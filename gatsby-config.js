@@ -45,14 +45,7 @@ module.exports = {
       },
       __key: "experiencias",
     },
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     name: "pages",
-    //     path: "./src/pages/",
-    //   },
-    //   __key: "pages",
-    // },
+
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

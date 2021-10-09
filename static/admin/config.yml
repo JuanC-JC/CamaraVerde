@@ -7,27 +7,6 @@ media_folder: static/assets
 public_folder: /static/assets
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    create: true
-    slug: "index"
-    media_folder: "assets"
-    public_folder: "assets"
-    path: "{{title}}/index"
-    editor:
-      preview: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - {
-          label: "Gallery",
-          name: "galleryImages",
-          widget: "list",
-          field: { label: "Image", name: "image", widget: "image" },
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
-
   - name: "noticias"
     label: "Noticias"
     folder: "content/noticias"
@@ -55,7 +34,12 @@ collections:
         widget: "object"
         fields:
           - { label: "Autor", name: "name", widget: "string" }
-          - { label: "Link de la publicación", name: "link", widget: "string", required: false }
+          - {
+              label: "Link de la publicación",
+              name: "link",
+              widget: "string",
+              required: false,
+            }
 
   - name: "experiencia"
     label: "Experiencia"
@@ -69,7 +53,20 @@ collections:
       preview: false
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - { label: "Fecha de publicación", name: "date", widget: "datetime" }
+
+      - label: "Fechas de la experiencia"
+        name: "date"
+        widget: "object"
+        fields:
+          - { label: "Fecha de Inicio", name: "init", widget: "datetime" }
+          - {
+              label: "Fecha de Finalización",
+              name: "finish",
+              default: "",
+              widget: "datetime",
+              required: false,
+            }
+
       - { label: "Contenido", name: "content", widget: "string" }
       - {
           label: "Imagenes",
@@ -93,3 +90,18 @@ collections:
         fields:
           - { label: "Nombre", name: "name", widget: "string" }
           - { label: "Cargo", name: "job", widget: "string" }
+
+      - {
+          label: "Socios - Aliados",
+          name: "galleryParners",
+          widget: "list",
+          min: 1,
+          max: 6,
+          field:
+            {
+              label: "Imagen",
+              name: "image",
+              choose_url: false,
+              widget: "image",
+            },
+        }
