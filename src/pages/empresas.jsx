@@ -20,20 +20,20 @@ export default function Companies() {
     }
   `)
 
+  const textDescription = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque risus penatibus facilisi gravida.Consectetur vitae lacinia orci, 
+  ipsum nisl dictumst scelerisque aliquet.At pellentesque neque varius in facilisis sed lectus.Rhoncus nunc semper et, nulla posuere diam
+  volutpat vel.Orci tellus nulla sit sed tellus turpis.`
 
   return (
     <>
-      <Seo title={'Empresarios Verdes | Cámara Verde de la Amazorinoquía'} />
+      <Seo title={'Empresarios Verdes'} image={MainImage} isPost description={textDescription} />
       <main className='companies'>
         <DynamicIntroduction
           imagePath={MainImage}
           gtImage={data.file.image}
           title={`¿Cómo puedo ayudar desde mi empresa?`}
           left={true}
-          text={`
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque risus penatibus facilisi gravida.Consectetur vitae lacinia orci, 
-        ipsum nisl dictumst scelerisque aliquet.At pellentesque neque varius in facilisis sed lectus.Rhoncus nunc semper et, nulla posuere diam
-        volutpat vel.Orci tellus nulla sit sed tellus turpis.`}
+          text={textDescription}
         />
 
         <HelpUs />
