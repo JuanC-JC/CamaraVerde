@@ -21,36 +21,38 @@ export default function Seo({ lang, description, image, title, isPost, meta }) {
     `
   );
 
-  const metaDescription = description || siteMetadata.description;
-
+  const seoDescription = description || siteMetadata.description;
+  const seoImage = image ? `${siteMetadata.siteUrl}${getSrc(image) || image}` : `${siteMetadata.siteUrl}${siteMetadata.image}`
+  const seoTitle = isPost ? `${title} | ${'Cámara Verde de la Amazorinoquía'}` : siteMetadata.title
+  const seoType = isPost ? `article` : `website`
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={isPost ? `${title} | ${'Cámara Verde de la Amazorinoquía'}` : siteMetadata.title}
+      title={seoTitle}
       // titleTemplate={`%s | ${siteMetadata.title}`}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: seoDescription,
         },
         {
           property: `og:title`,
-          content: isPost ? `${title} | ${'Cámara Verde de la Amazorinoquía'}` : siteMetadata.title
+          content: seoTitle
         },
         {
           property: `og:description`,
-          content: description || siteMetadata.description,
+          content: seoDescription,
         },
         {
           property: `og:type`,
-          content: isPost ? `article` : `website`
+          content: seoType
         },
         {
           property: `og:image`,
-          content: image ? `${siteMetadata.siteUrl}${getSrc(image)}` : `${siteMetadata.siteUrl}${siteMetadata.image}`
+          content: seoImage
         },
         {
           name: `twitter:card`,
@@ -62,15 +64,15 @@ export default function Seo({ lang, description, image, title, isPost, meta }) {
         },
         {
           name: `twitter:title`,
-          content: isPost ? `${title} | ${'Cámara Verde de la Amazorinoquía'}` : siteMetadata.title
+          content: seoTitle
         },
         {
           name: `twitter:description`,
-          content: description || siteMetadata.description,
+          content: seoDescription,
         },
         {
           name: `twitter:image`,
-          content: image ? `${siteMetadata.siteUrl}${getSrc(image)}` : `${siteMetadata.siteUrl}${siteMetadata.image}`
+          content: seoImage
         },
       ].concat(meta)}
     />
@@ -89,5 +91,8 @@ Seo.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
   isPost: PropTypes.bool,
-  image: PropTypes.object,
+  image: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string
+  ]),
 };
