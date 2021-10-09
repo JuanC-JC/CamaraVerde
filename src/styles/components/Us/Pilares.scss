@@ -61,6 +61,12 @@
     width: 120px;
     transition: all ease-in-out 300ms;
   }
+
+  &:nth-child(1){
+    img{
+      transform: scaleX(-1);
+    }
+  }
 }
 
 //Modificadores de color

@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../styles/components/Us/Pilares.scss'
 
-import imgPilar_1 from '../../images/Nosotros/pilares/imgPilar_1.jpg'
-import imgPilar_2 from '../../images/Nosotros/pilares/imgPilar_2.jpg'
-import imgPilar_3 from '../../images/Nosotros/pilares/imgPilar_3.jpg'
+import gender from '../../images/Nosotros/pilares/gender.jpg'
+import sostenibility from '../../images/Nosotros/pilares/sostenibility.jpg'
+import climate from '../../images/Nosotros/pilares/climate.jpg'
 
 export default function Pilares() {
   return (
@@ -12,7 +12,7 @@ export default function Pilares() {
       <h2>Descripción de lineas pilares</h2>
 
       <div className="pilarCard pilarCard--red">
-        <img src={imgPilar_1} alt="Imagen linea pilar igualdad de genero" />
+        <img src={gender} alt="Imagen linea pilar igualdad de genero" />
 
 
         <div className="pilarCard__text">
@@ -27,7 +27,7 @@ export default function Pilares() {
       </div>
 
       <div className="pilarCard pilarCard--yellow pilarCard--right">
-        <img src={imgPilar_2} alt="Imagen linea pilar igualdad de genero" />
+        <img src={sostenibility} alt="Imagen linea pilar igualdad de genero" />
 
 
         <div className="pilarCard__text">
@@ -37,11 +37,10 @@ export default function Pilares() {
           </p>
         </div>
 
-        {/* <button class='button button--white'>Ver mas</button> */}
       </div>
 
       <div className="pilarCard pilarCard--green">
-        <img src={imgPilar_3} alt="Imagen linea pilar igualdad de genero" />
+        <img src={climate} alt="Imagen linea pilar igualdad de genero" />
 
 
         <div className="pilarCard__text">
@@ -51,7 +50,6 @@ export default function Pilares() {
           </p>
         </div>
 
-        {/* <button class='button button--white'>Ver mas</button> */}
       </div>
     </section>
   );
