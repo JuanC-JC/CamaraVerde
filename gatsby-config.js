@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://camaraverde.netlify.app",
-    title: "Camara Verde Amazorinoquía",
+    title: "Cámara Verde Amazorinoquía",
     description:
-      "La fundacion camara verde de amazorinoquia, promueve mecanismos para aumentar la capacidad de conversacion, proteccion y gestion eficaz en relacion con el cambio climático en la Amazorinoquía ",
+      "La fundación Cámara Verde de Amazorinoquía, promueve mecanismos para aumentar la capacidad de conversación, protección y gestión eficaz en relación con el cambio climático en la Amazorinoquía ",
     author: "@CamaraVerde",
     image: "/images/donateBackground.png",
   },
