@@ -1,6 +1,8 @@
 ---
 title: Laguna del amor
-date: 2021-10-02T20:21:23.588Z
+dateRange:
+  finish: 2021-12-15T02:27:32.755Z
+  init: 2021-10-10T02:27:32.755Z
 content: >-
   Nunca  imaginé que ese idílico paraje estuviera tan cerca al centro del
   pueblo, son como ocho cuadras no más; ni que el lago del que me hablaron

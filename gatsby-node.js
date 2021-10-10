@@ -48,7 +48,6 @@ exports.createPages = async ({ graphql, actions }) => {
         nodos: nodes {
           id
           data: frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
             content
             team {
@@ -59,6 +58,15 @@ exports.createPages = async ({ graphql, actions }) => {
               childImageSharp {
                 gatsbyImageData(width: 900)
               }
+            }
+            galleryParners {
+              childImageSharp {
+                gatsbyImageData(width: 200)
+              }
+            }
+            dateRange {
+              init(formatString: "MMMM DD YYYY")
+              finish
             }
           }
         }
@@ -79,7 +87,19 @@ exports.createPages = async ({ graphql, actions }) => {
     data: { newsFiles },
   } = newsQuery;
 
-  newsFiles.nodos = [...newsFiles.nodos, ...newsFiles.nodos, ...newsFiles.nodos , ...newsFiles.nodos , ...newsFiles.nodos, ...newsFiles.nodos, ...newsFiles.nodos, ...newsFiles.nodos,  ...newsFiles.nodos, ...newsFiles.nodos, ...newsFiles.nodos]
+  newsFiles.nodos = [
+    ...newsFiles.nodos,
+    ...newsFiles.nodos,
+    ...newsFiles.nodos,
+    ...newsFiles.nodos,
+    ...newsFiles.nodos,
+    ...newsFiles.nodos,
+    ...newsFiles.nodos,
+    ...newsFiles.nodos,
+    ...newsFiles.nodos,
+    ...newsFiles.nodos,
+    ...newsFiles.nodos,
+  ];
 
   const {
     data: { experienceFiles },
@@ -107,7 +127,9 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const postsPerPage = 6;
   const numPagesNews = Math.ceil(newsFiles.nodos.length / postsPerPage);
-  const numPagesExperiences = Math.ceil(experienceFiles.nodos.length / postsPerPage);
+  const numPagesExperiences = Math.ceil(
+    experienceFiles.nodos.length / postsPerPage
+  );
 
   for (let i = 0; i < numPagesNews; i++) {
     createPage({

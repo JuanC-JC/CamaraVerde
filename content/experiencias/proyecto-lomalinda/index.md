@@ -1,6 +1,8 @@
 ---
 title: Proyecto Lomalinda
-date: 2021-10-01T22:20:53.699Z
+dateRange:
+  finish: 2021-12-15T02:27:32.755Z
+  init: 2021-10-10T02:27:32.755Z
 content: >-
   En Puerto Lleras, al sur del departamento del Meta, se encuentra ubicado el
   Parque Regional Natural Lomalinda, un lugar que ofrece al turista un sin

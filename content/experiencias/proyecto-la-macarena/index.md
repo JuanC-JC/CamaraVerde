@@ -1,6 +1,6 @@
 ---
 title: Proyecto La macarena
-date:
+dateRange:
   finish: ""
   init: 2021-10-10T02:27:32.755Z
 content: l Municipio La Macarena fue habitado por nativos especialmente del
