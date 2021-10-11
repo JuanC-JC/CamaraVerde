@@ -1,0 +1,20 @@
+.c-dropDownList {
+  max-width: 800px;
+  &-text {
+    padding: 10px 20px;
+    background-color: #f1f3f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-content {
+    display: flex;
+    // height: 0;
+    // background-color: aquamarine;
+    border: solid 1px;
+  }
+
+  .visibility {
+    background-color: blue;
+  }
+}

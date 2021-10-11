@@ -3,7 +3,6 @@ import React from 'react';
 import HeaderBanner from '../components/Headerbanner';
 import ExperienceDescription from '../components/Experience/ExperienceDescription'
 import newsFund from '../images/headerBanner_2.jpg'
-import { translateDate } from '../utils'
 import SEO from '../components/Seo'
 
 const ExperiencePage = (props) => {
@@ -22,10 +21,11 @@ const ExperiencePage = (props) => {
 
       <ExperienceDescription
         key={data.id}
-        // date={translateDate(data.date)}
+        date={data.dateRange}
         title={data.title}
         content={data.content}
         galleryImages={data.galleryImages}
+        galleryParners={data.galleryParners}
         team={data.team}
       />
 

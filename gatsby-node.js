@@ -65,7 +65,7 @@ exports.createPages = async ({ graphql, actions }) => {
               }
             }
             dateRange {
-              init(formatString: "MMMM DD YYYY")
+              init(formatString: "MMMM DD, YYYY")
               finish
             }
           }

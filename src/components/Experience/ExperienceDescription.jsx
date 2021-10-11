@@ -1,5 +1,7 @@
 import React from 'react';
+import { translateDate, transformDate } from '../../utils'
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+import DropDownList from './DropDownList';
 import '../../styles/components/Experience/ExperienceDescription.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -17,22 +19,24 @@ export default function ExperienceDescription(props) {
 
   const newContent = content.split('\n\n')
 
+
   return (
     <div className='experienceDescription'>
-      <div className='date'>{date}</div>
+      {date.finish === '' ? <div className='notification'>En Ejecución</div> : <div className='notification'>Finalizado</div>}
+
       <h2>{title}</h2>
 
       <div className='content'>
-        
-        {newContent.map(parrafo=>(
+
+        {newContent.map(parrafo => (
           <>
             <p>
               {parrafo}
             </p>
-            <br/>
+            <br />
           </>
         ))}
-        
+
       </div>
 
       <div className='c-gallery'>
@@ -73,24 +77,43 @@ export default function ExperienceDescription(props) {
 
       </div>
 
-      <div className='c-team'>
+      <div className='c-dateRange'>
+        <div className='dateRange'>
+          <div className='dateRange__text'>Fecha de Inicio:</div>
+          <div className='dateRange__date'>{translateDate(date.init)}</div>
+        </div>
+        <div className='dateRange'>
+          <div className='dateRange__text'>Fecha de Finalización:</div>
+          {date.finish !== '' && <div className='dateRange__date'>{transformDate(date.finish)}</div>}
+
+        </div>
+      </div >
+
+      <div className="dataSheet">
         <h3>Ficha Tecnica</h3>
 
-        <div className='c-team-names'>
-          {
-            team.map(person =>
-              <div className='person'>
-                <div className='team-name'>{person.name}</div>
-                <div className='team-job'>{person.job}</div>
-              </div>
-            )
-          }
+        <div className='c-team'>
+
+
+          {/* <div className='c-team-names'>
+            {
+              team.map(person =>
+                <div className='person'>
+                  <div className='team-name'>{person.name}</div>
+                  <div className='team-job'>{person.job}</div>
+                </div>
+              )
+            }
+          </div> */}
         </div>
+
+        <DropDownList title={'Equipo de trabajo'} />
+
+
       </div>
 
 
-
-    </div>
+    </div >
   )
 
 }
