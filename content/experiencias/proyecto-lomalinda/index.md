@@ -15,18 +15,6 @@ content: >-
 
 
   “En Lomalinda, el turista además de disponer de caminatas y apreciar más de 160 especies de aves que se pueden avistar en esta zona, se ofrecen otros atractivos como, por ejemplo, un recorrido a las islas que hay en medio de la laguna, o una vuelta en balsa por el borde de esta”, señala.
-activities: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate
-  tristique malesuada ipsum cursus. Suspendisse commodo sed in massa fusce
-  suspendisse ullamcorper ornare. Eu pulvinar vestibulum, egestas nam eu. Lacus,
-  purus ultrices orci, nulla. Quis pretium euismod at gravida in vitae euismod
-  nec pulvinar. In pharetra mattis auctor ipsum amet pellentesque. Nec, urna,
-  nisl mauris nulla arcu imperdiet. Sed quisque aliquet blandit duis varius sed.
-  Dictum id aliquet ac tellus ullamcorper id. Lorem ut netus amet libero
-  interdum amet non pharetra. Magna duis nisi dui elementum ac. Viverra lorem
-  dignissim pellentesque gravida pellentesque dui purus. Pharetra gravida ornare
-  quam ut praesent morbi rhoncus amet enim. Adipiscing sed sit posuere magna
-  mattis purus elit in. Orci eget imperdiet ante ut ultrices lectus. Ut sodales
-  habitant mattis pulvinar sit viverra at feugiat.
 galleryImages:
   - assets/lomalinda-02.jpeg
   - assets/lomalinda.jpeg
@@ -38,6 +26,19 @@ team:
     job: relaciones
   - name: isabela jimenez
     job: desarrolladora
+activities: Hola me llamo pirata Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit. Vulputate tristique malesuada ipsum cursus. Suspendisse
+  commodo sed in massa fusce suspendisse ullamcorper ornare. Eu pulvinar
+  vestibulum, egestas nam eu. Lacus, purus ultrices orci, nulla. Quis pretium
+  euismod at gravida in vitae euismod nec pulvinar. In pharetra mattis auctor
+  ipsum amet pellentesque. Nec, urna, nisl mauris nulla arcu imperdiet. Sed
+  quisque aliquet blandit duis varius sed. Dictum id aliquet ac tellus
+  ullamcorper id. Lorem ut netus amet libero interdum amet non pharetra. Magna
+  duis nisi dui elementum ac. Viverra lorem dignissim pellentesque gravida
+  pellentesque dui purus. Pharetra gravida ornare quam ut praesent morbi rhoncus
+  amet enim. Adipiscing sed sit posuere magna mattis purus elit in. Orci eget
+  imperdiet ante ut ultrices lectus. Ut sodales habitant mattis pulvinar sit
+  viverra at feugiat.
 galleryPartners:
   - assets/logo.png
   - assets/logo.png
