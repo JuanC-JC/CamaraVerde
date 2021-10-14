@@ -4,7 +4,7 @@ dateRange:
   finish: ""
   init: 2021-10-10T02:27:32.755Z
 date:
-  init: 2021-10-14T00:11:22.670Z
+  init: 2021-10-13T00:11:22.670Z
   finish: ""
 content: l Municipio La Macarena fue habitado por nativos especialmente del
   grupo indígena los Guayaberos quienes se encontraban asentados en las márgenes
