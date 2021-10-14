@@ -3,6 +3,9 @@ title: Laguna del amor
 dateRange:
   finish: 2021-12-15T02:27:32.755Z
   init: 2021-10-10T02:27:32.755Z
+date:
+  init: 2021-10-14T01:55:37.590Z
+  finish: ""
 content: >-
   Nunca  imaginé que ese idílico paraje estuviera tan cerca al centro del
   pueblo, son como ocho cuadras no más; ni que el lago del que me hablaron
@@ -21,6 +24,7 @@ content: >-
 galleryImages:
   - assets/sin-marco.jpg
   - assets/descarga.jpg
+  - assets/descarga.jpg
 team:
   - name: aidy roa
     job: directora
@@ -28,4 +32,6 @@ team:
     job: relaciones
   - name: isabela jimenez
     job: desarrolladora
+galleryParners:
+  - assets/logo.png
 ---
