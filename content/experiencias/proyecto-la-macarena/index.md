@@ -3,6 +3,9 @@ title: Proyecto La macarena
 dateRange:
   finish: ""
   init: 2021-10-10T02:27:32.755Z
+date:
+  init: 2021-10-14T00:11:22.670Z
+  finish: ""
 content: l Municipio La Macarena fue habitado por nativos especialmente del
   grupo indígena los Guayaberos quienes se encontraban asentados en las márgenes
   del Río Guayabero y Guaviare dentro del sitio conocido como Angosturas I. La
@@ -41,5 +44,5 @@ team:
   - name: diwudiowediuewuduwed
     job: dwedweduuweduewudew
 galleryParners:
-  - assets/logocor-20.gif
+  - assets/logo.png
 ---
