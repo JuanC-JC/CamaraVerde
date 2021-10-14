@@ -17,14 +17,6 @@
 
   .visibility {
     display: flex;
-    max-height: 350px;
-  }
-}
-
-@media (min-width: 768px) {
-  .c-dropDownList {
-    .visibility {
-      max-height: 300px;
-    }
+    max-height: 400px;
   }
 }

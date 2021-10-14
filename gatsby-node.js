@@ -59,7 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 gatsbyImageData(width: 900)
               }
             }
-            galleryParners {
+            galleryPartners {
               childImageSharp {
                 gatsbyImageData(width: 200)
               }

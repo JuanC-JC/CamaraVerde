@@ -40,7 +40,7 @@ team:
     job: dwhduwehudwduhuwd
   - name: diwudiowediuewuduwed
     job: dwedweduuweduewudew
-galleryParners:
+galleryPartners:
   - assets/logo.png
   - assets/logo.png
   - assets/logo.png

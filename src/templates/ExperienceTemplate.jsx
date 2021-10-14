@@ -24,7 +24,7 @@ const ExperiencePage = (props) => {
         title={data.title}
         content={data.content}
         galleryImages={data.galleryImages}
-        galleryParners={data.galleryParners}
+        galleryPartners={data.galleryPartners}
         team={data.team}
       />
 

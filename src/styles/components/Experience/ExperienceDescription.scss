@@ -10,6 +10,10 @@
     width: 84px;
     margin-bottom: 25px;
   }
+  .inAction {
+    background-color: $light-green;
+    width: 105px;
+  }
 
   .c-gallery {
     display: flex;
@@ -91,13 +95,14 @@
       }
     }
 
-    .c-parners {
-      .parners {
+    .c-partners {
+      .g-partners {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         width: 100%;
-        .parner__img {
+        .partner__img {
           width: 250px;
           height: 80px;
           margin-bottom: 20px;
@@ -128,9 +133,11 @@
     }
 
     .dataSheet {
-      .c-parners {
-        .parners {
-          flex-wrap: wrap;
+      .c-partners {
+        .g-partners {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          gap: 20px;
         }
       }
     }
@@ -141,6 +148,9 @@
   .experienceDescription {
     .notification {
       width: 102px;
+    }
+    .inAction {
+      width: 120px;
     }
   }
 }

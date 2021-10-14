@@ -15,14 +15,14 @@ import 'swiper/css/navigation';
 SwiperCore.use([Navigation]);
 
 export default function ExperienceDescription(props) {
-  const { title, date, content, galleryImages, team, galleryParners } = props
+  const { title, date, content, galleryImages, team, galleryPartners } = props
 
   const newContent = content.split('\n\n')
 
 
   return (
     <div className='experienceDescription'>
-      {date.finish === '' ? <div className='notification'>En Ejecución</div> : <div className='notification'>Finalizado</div>}
+      {date.finish === '' ? <div className='notification inAction'>En Ejecución</div> : <div className='notification'>Finalizado</div>}
 
       <h2>{title}</h2>
 
@@ -107,12 +107,12 @@ export default function ExperienceDescription(props) {
           </DropDownList>
         </div>
 
-        <div className="c-parners">
+        <div className="c-partners">
           <DropDownList title={'Socios y cooperantes'}>
-            <div className="parners">
+            <div className="g-partners">
               {
-                galleryParners.map((parner, index) =>
-                  <GatsbyImage key={index} className='parner__img' image={getImage(parner)} alt={'Socio y asociado'} />
+                galleryPartners.map((partner, index) =>
+                  <GatsbyImage key={index} className='partner__img' image={getImage(partner)} alt={'Socio y asociado'} />
                 )
               }
             </div>

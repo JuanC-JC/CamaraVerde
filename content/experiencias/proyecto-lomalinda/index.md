@@ -26,7 +26,7 @@ team:
     job: relaciones
   - name: isabela jimenez
     job: desarrolladora
-galleryParners:
+galleryPartners:
   - assets/logo.png
   - assets/logo.png
   - assets/logo.png
