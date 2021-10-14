@@ -55,7 +55,7 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
 
       - label: "Fechas de la experiencia"
-        name: "date"
+        name: "dateRange"
         widget: "object"
         fields:
           - { label: "Fecha de Inicio", name: "init", widget: "datetime" }
