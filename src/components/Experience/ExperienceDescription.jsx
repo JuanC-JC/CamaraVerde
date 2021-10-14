@@ -28,7 +28,7 @@ export default function ExperienceDescription(props) {
 
       <div className='content'>
 
-        {newContent.map(parrafo => (
+        {newContent.map((parrafo) => (
           <>
             <p>
               {parrafo}
@@ -96,8 +96,8 @@ export default function ExperienceDescription(props) {
           <DropDownList title={'Equipo de trabajo'}>
             <div className='c-team-names'>
               {
-                team.map(person =>
-                  <div className='person'>
+                team.map((person, index) =>
+                  <div className='person' key={index}>
                     <div className='team-name'>{person.name}</div>
                     <div className='team-job'>{person.job}</div>
                   </div>
@@ -109,11 +109,13 @@ export default function ExperienceDescription(props) {
 
         <div className="c-parners">
           <DropDownList title={'Socios y cooperantes'}>
-            {
-              galleryParners.map(parner =>
-                <div>{parner}</div>
-              )
-            }
+            <div className="parners">
+              {
+                galleryParners.map((parner, index) =>
+                  <GatsbyImage key={index} className='parner__img' image={getImage(parner)} alt={'Socio y asociado'} />
+                )
+              }
+            </div>
 
           </DropDownList>
         </div>
