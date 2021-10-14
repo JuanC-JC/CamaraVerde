@@ -93,8 +93,10 @@ export default function ExperienceDescription(props) {
           <div className='dateRange__date'>{translateDate(date.init)}</div>
         </div>
         <div className='dateRange'>
-          <div className='dateRange__text'>Fecha de Finalización:</div>
-          {date.finish !== '' && <div className='dateRange__date'>{transformDate(date.finish)}</div>}
+          {date.finish !== '' && <>
+            <div className='dateRange__text'>Fecha de Finalización:</div>
+            <div className='dateRange__date'>{transformDate(date.finish)}</div>
+          </>}
 
         </div>
       </div >
