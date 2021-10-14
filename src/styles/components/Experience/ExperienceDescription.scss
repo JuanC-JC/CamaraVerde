@@ -97,7 +97,6 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        background: pink;
         .parner__img {
           width: 250px;
           height: 80px;
@@ -126,6 +125,14 @@
     .c-dateRange {
       flex-direction: row;
       justify-content: space-around;
+    }
+
+    .dataSheet {
+      .c-parners {
+        .parners {
+          flex-wrap: wrap;
+        }
+      }
     }
   }
 }

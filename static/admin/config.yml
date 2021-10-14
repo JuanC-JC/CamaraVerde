@@ -72,7 +72,7 @@ collections:
           label: "Imagenes",
           name: "galleryImages",
           widget: "list",
-          min: 3,
+          min: 2,
           max: 6,
           field:
             {
