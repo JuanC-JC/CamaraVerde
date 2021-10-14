@@ -4,7 +4,7 @@ import '../../styles/components/Experience/dropDownList.scss'
 
 
 export default function DropDownList(props) {
-  const { title, content, children } = props
+  const { title, children } = props
   const container = useRef()
   const [isOpenContent, setIsOpenContent] = useState(false)
 
@@ -12,6 +12,7 @@ export default function DropDownList(props) {
   const togleContent = () => {
     setIsOpenContent(!isOpenContent)
   }
+
 
   return (
     <div className='c-dropDownList'>

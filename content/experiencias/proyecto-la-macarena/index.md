@@ -56,12 +56,6 @@ activities: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate
   quam ut praesent morbi rhoncus amet enim. Adipiscing sed sit posuere magna
   mattis purus elit in. Orci eget imperdiet ante ut ultrices lectus. Ut sodales
   habitant mattis pulvinar sit viverra at feugiat.
-date:
-  init: 2021-10-13T00:11:22.670Z
-  finish: ""
-dateRange:
-  finish: ""
-  init: 2021-10-10T02:27:32.755Z
 galleryPartners:
   - assets/logo.png
   - assets/logo.png
