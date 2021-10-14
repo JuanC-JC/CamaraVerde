@@ -45,4 +45,6 @@ team:
     job: dwedweduuweduewudew
 galleryParners:
   - assets/logo.png
+  - assets/logo.png
+  - assets/logo.png
 ---
