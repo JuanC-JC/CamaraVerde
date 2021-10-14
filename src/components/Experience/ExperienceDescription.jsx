@@ -15,10 +15,11 @@ import 'swiper/css/navigation';
 SwiperCore.use([Navigation]);
 
 export default function ExperienceDescription(props) {
-  const { title, date, content, galleryImages, team, galleryPartners } = props
+  const { title, date, content, galleryImages, team, galleryPartners, activities } = props
 
   const newContent = content.split('\n\n')
 
+  console.log(activities)
 
   return (
     <div className='experienceDescription'>
@@ -122,7 +123,9 @@ export default function ExperienceDescription(props) {
 
         <div className="c-activities">
           <DropDownList title={'Actividades'}>
-
+            {
+              <div>{activities}</div>
+            }
           </DropDownList>
         </div>
       </div>

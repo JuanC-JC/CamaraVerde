@@ -18,6 +18,18 @@ content: >-
 
 
   Caminé hasta la casa de la finca más cercana donde el joven mayordomo trajo silla de brazos y dos tintos. Conversamos un buen rato mientras escuchábamos la algarabía de los loros y contemplábamos las ‘Pavas Hediondas’: aves grandes de plumas sueltas y vistosas en su cabeza.
+activities: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate
+  tristique malesuada ipsum cursus. Suspendisse commodo sed in massa fusce
+  suspendisse ullamcorper ornare. Eu pulvinar vestibulum, egestas nam eu. Lacus,
+  purus ultrices orci, nulla. Quis pretium euismod at gravida in vitae euismod
+  nec pulvinar. In pharetra mattis auctor ipsum amet pellentesque. Nec, urna,
+  nisl mauris nulla arcu imperdiet. Sed quisque aliquet blandit duis varius sed.
+  Dictum id aliquet ac tellus ullamcorper id. Lorem ut netus amet libero
+  interdum amet non pharetra. Magna duis nisi dui elementum ac. Viverra lorem
+  dignissim pellentesque gravida pellentesque dui purus. Pharetra gravida ornare
+  quam ut praesent morbi rhoncus amet enim. Adipiscing sed sit posuere magna
+  mattis purus elit in. Orci eget imperdiet ante ut ultrices lectus. Ut sodales
+  habitant mattis pulvinar sit viverra at feugiat.
 galleryImages:
   - assets/sin-marco.jpg
   - assets/descarga.jpg

@@ -91,6 +91,7 @@ collections:
           - { label: "Nombre", name: "name", widget: "string" }
           - { label: "Cargo", name: "job", widget: "string" }
 
+      - { label: "Actividades", name: "activities", widget: "string" }
       - {
           label: "Socios - Aliados",
           name: "galleryPartners",

@@ -25,6 +25,7 @@ const ExperiencePage = (props) => {
         content={data.content}
         galleryImages={data.galleryImages}
         galleryPartners={data.galleryPartners}
+        activicties={data.activicties}
         team={data.team}
       />
 

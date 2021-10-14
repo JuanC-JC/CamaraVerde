@@ -50,6 +50,7 @@ exports.createPages = async ({ graphql, actions }) => {
           data: frontmatter {
             title
             content
+            activities
             team {
               job
               name
