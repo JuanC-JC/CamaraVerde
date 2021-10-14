@@ -1,5 +1,7 @@
 .c-dropDownList {
   max-width: 800px;
+  margin-bottom: 5px;
+
   &-text {
     padding: 10px 20px;
     background-color: #f1f3f3;
@@ -8,13 +10,13 @@
     align-items: center;
   }
   &-content {
-    display: flex;
-    // height: 0;
-    // background-color: aquamarine;
-    border: solid 1px;
+    display: none;
+    padding: 20px;
+    max-height: 0;
   }
 
   .visibility {
-    background-color: blue;
+    display: flex;
+    max-height: 300px;
   }
 }

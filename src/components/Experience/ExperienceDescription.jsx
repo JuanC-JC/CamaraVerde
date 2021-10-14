@@ -15,7 +15,7 @@ import 'swiper/css/navigation';
 SwiperCore.use([Navigation]);
 
 export default function ExperienceDescription(props) {
-  const { title, date, content, galleryImages, team } = props
+  const { title, date, content, galleryImages, team, galleryParners } = props
 
   const newContent = content.split('\n\n')
 
@@ -90,26 +90,39 @@ export default function ExperienceDescription(props) {
       </div >
 
       <div className="dataSheet">
-        <h3>Ficha Tecnica</h3>
+        <h3>Ficha Técnica</h3>
 
         <div className='c-team'>
-
-
-          {/* <div className='c-team-names'>
-            {
-              team.map(person =>
-                <div className='person'>
-                  <div className='team-name'>{person.name}</div>
-                  <div className='team-job'>{person.job}</div>
-                </div>
-              )
-            }
-          </div> */}
+          <DropDownList title={'Equipo de trabajo'}>
+            <div className='c-team-names'>
+              {
+                team.map(person =>
+                  <div className='person'>
+                    <div className='team-name'>{person.name}</div>
+                    <div className='team-job'>{person.job}</div>
+                  </div>
+                )
+              }
+            </div>
+          </DropDownList>
         </div>
 
-        <DropDownList title={'Equipo de trabajo'} />
+        <div className="c-parners">
+          <DropDownList title={'Socios y cooperantes'}>
+            {
+              galleryParnes.map(parner =>
+                <div>{parner}</div>
+              )
+            }
 
+          </DropDownList>
+        </div>
 
+        <div className="c-activities">
+          <DropDownList title={'Actividades'}>
+
+          </DropDownList>
+        </div>
       </div>
 
 

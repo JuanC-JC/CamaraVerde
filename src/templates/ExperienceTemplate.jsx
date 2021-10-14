@@ -8,7 +8,6 @@ import SEO from '../components/Seo'
 const ExperiencePage = (props) => {
   const { pageContext } = props
   const { data } = pageContext
-  console.log(props)
 
   return (
     <>
