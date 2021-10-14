@@ -110,7 +110,7 @@ export default function ExperienceDescription(props) {
         <div className="c-parners">
           <DropDownList title={'Socios y cooperantes'}>
             {
-              galleryParnes.map(parner =>
+              galleryParners.map(parner =>
                 <div>{parner}</div>
               )
             }
