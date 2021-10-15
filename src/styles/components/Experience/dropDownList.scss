@@ -12,7 +12,7 @@
   }
   &-content {
     display: flex;
-    transition: max-height 1s ease;
+    transition: max-height 500ms ease-in-out;
     overflow: hidden;
     max-height: 0;
 
@@ -23,10 +23,10 @@
 
   .visibility {
     max-height: 800px;
-    transition: max-height 1.5s ease-in;
   }
 
   .arrow {
+    cursor: pointer;
     &:hover path {
       fill: $light-green;
     }
