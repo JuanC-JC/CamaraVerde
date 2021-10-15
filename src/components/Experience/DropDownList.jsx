@@ -20,7 +20,7 @@ export default function DropDownList(props) {
       <div className='c-dropDownList-text'>
         <h4>{title}</h4>
         <svg className='arrow' onClick={togleContent} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 7L12 13L18 7L20 9L12 17L4 9L6 7Z" fill="#343434" />
+          {isOpenContent ? <path d="M4 15L12 7L20 15L18 17L12 11L6 17L4 15Z" fill="#343434" /> : <path d="M6 7L12 13L18 7L20 9L12 17L4 9L6 7Z" fill="#343434" />}
         </svg>
       </div>
 
@@ -32,3 +32,5 @@ export default function DropDownList(props) {
     </div>
   )
 }
+
+
