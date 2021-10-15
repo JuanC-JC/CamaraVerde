@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderBanner from '../components/Headerbanner'
 import NewDescription from '../components/News/NewDescription'
 import newsFund from '../images/headerBanner_1.jpg';
-import SEO from '../components/Seo';
+import Seo from '../components/Seo';
 
 const NewPage = (props) => {
 
@@ -14,7 +14,7 @@ const NewPage = (props) => {
   return (
     <>
 
-      <SEO title={data.title} image={data.image} isPost description={data.content} />
+      <Seo title={data.title} image={data.image} isPost description={data.content} />
       <HeaderBanner
         img={newsFund}
         title={'Noticias'}

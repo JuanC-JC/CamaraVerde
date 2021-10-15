@@ -35,7 +35,7 @@ export const transformDate = (date) => {
     "Diciembre",
   ];
 
-  let result = date.split("T")[0].replace(/\-/g, ",");
+  let result = date.split("T")[0].replace(/-/g, ",");
 
   let newDate = new Date(result);
 

@@ -3,7 +3,7 @@ import React from 'react';
 import HeaderBanner from '../components/Headerbanner';
 import ExperienceDescription from '../components/Experience/ExperienceDescription'
 import newsFund from '../images/headerBanner_2.jpg'
-import SEO from '../components/Seo'
+import Seo from '../components/Seo'
 
 const ExperiencePage = (props) => {
   const { pageContext } = props
@@ -11,7 +11,7 @@ const ExperiencePage = (props) => {
 
   return (
     <>
-      <SEO title={data.title} image={data.image} isPost />
+      <Seo title={data.title} image={data.image} isPost />
       <HeaderBanner
         img={newsFund}
         title={'Experiencia'}

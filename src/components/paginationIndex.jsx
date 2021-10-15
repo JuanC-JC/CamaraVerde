@@ -1,4 +1,4 @@
-import React, {useCallback, useState, useRef} from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'gatsby';
 import '../styles/paginationIndex.scss'
 
@@ -6,7 +6,7 @@ function indexOfPagination(pagination, currentPage, pages) {
 
   if (pages <= pagination) {
 
-    return {type:'without', list:Array.from({ length: pages }, (_, i) => i + 1)}
+    return { type: 'without', list: Array.from({ length: pages }, (_, i) => i + 1) }
 
   } else {
 
@@ -17,7 +17,7 @@ function indexOfPagination(pagination, currentPage, pages) {
       type = 'initial'
       puntoInicial = 1
     }
-    
+
     else if ((pages - currentPage) > Math.floor(pagination / 2)) {
       type = 'middle'
       puntoInicial = currentPage - (Math.ceil(pagination / 2) - 1)
@@ -29,36 +29,36 @@ function indexOfPagination(pagination, currentPage, pages) {
     }
 
 
-    return {type, list:Array.from({ length: pagination }, (_, i) => i + puntoInicial)}
+    return { type, list: Array.from({ length: pagination }, (_, i) => i + puntoInicial) }
   }
 }
 
-function movePagination(pagination,currentPage,pages){
+function movePagination(pagination, currentPage, pages) {
 
   //currentPage es el inicio de la base
-  if(pages <= pagination){
-    return {type:'without', list:Array.from({ length: pages }, (_, i) => i + 1)}
+  if (pages <= pagination) {
+    return { type: 'without', list: Array.from({ length: pages }, (_, i) => i + 1) }
   }
 
-  else{
+  else {
     let puntoInicial = 1
     let type
 
-    if(currentPage === 1){
+    if (currentPage === 1) {
       type = 'initial'
       puntoInicial = 1
     }
 
-    else if((pages - currentPage) >= pagination){
+    else if ((pages - currentPage) >= pagination) {
       type = 'middle'
       puntoInicial = currentPage
 
-    }else{
+    } else {
       type = 'end'
-      puntoInicial = pages - (pagination -1)
+      puntoInicial = pages - (pagination - 1)
     }
 
-    return {type, list:Array.from({ length: pagination }, (_, i) => i + puntoInicial)}
+    return { type, list: Array.from({ length: pagination }, (_, i) => i + puntoInicial) }
 
 
   }
@@ -74,8 +74,8 @@ export default function PaginationIndex({ route, numbersPerView, indexPage, maxP
 
   const previousPagination = () => {
 
-    setPositionPagination(positionPagination-1)
-    setPagination(movePagination(numbersPerView,pagination.list[0] - 1, maxPages))
+    setPositionPagination(positionPagination - 1)
+    setPagination(movePagination(numbersPerView, pagination.list[0] - 1, maxPages))
 
   }
 
@@ -83,30 +83,30 @@ export default function PaginationIndex({ route, numbersPerView, indexPage, maxP
 
   const nextPagination = () => {
 
-    setPositionPagination(positionPagination+1)
-    setPagination(movePagination(numbersPerView,pagination.list[0] +1 , maxPages))
+    setPositionPagination(positionPagination + 1)
+    setPagination(movePagination(numbersPerView, pagination.list[0] + 1, maxPages))
   }
 
 
   return (
     <div className="paginationIndex">
 
-        {
-          (pagination.type === "end" || pagination.type === 'middle') &&
-            <div onClick={previousPagination} className='icon previous'></div>
-        }
+      {
+        (pagination.type === "end" || pagination.type === 'middle') &&
+        <div onClick={previousPagination} className='icon previous'></div>
+      }
 
       {
-        pagination.list.map((index,i) => {
+        pagination.list.map((index, i) => {
           return (
-            <Link ref={nodo => elementos.current[i] = nodo} to={`/${route}/${index}`} key={index} className={`indexNumber ${ index == indexPage && 'indexNumber--selected'}`}>{index}</Link>
+            <Link ref={nodo => elementos.current[i] = nodo} to={`/${route}/${index}`} key={index} className={`indexNumber ${index === indexPage && 'indexNumber--selected'}`}>{index}</Link>
           )
         })
       }
 
       {
         (pagination.type === 'initial' || pagination.type === 'middle') &&
-          <div onClick={nextPagination} className='icon next'></div>
+        <div onClick={nextPagination} className='icon next'></div>
       }
 
 

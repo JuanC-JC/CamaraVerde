@@ -85,7 +85,7 @@ export default function DonateSection() {
         <div className='donate__options'>
           {
             donationOptions.map((option) => {
-              const image = images.find(image => image.name == option.urlImg)
+              const image = images.find(image => image.name === option.urlImg)
 
               return (
                 <DonationOption
