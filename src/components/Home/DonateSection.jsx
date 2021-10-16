@@ -14,7 +14,7 @@ const donationOptions = [
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
     urlImg: 'imageDonation01',
     textBotton: 'Inscribete',
-    link: 'http://facebook.com'
+    link: '/'
   },
   {
     id: '2',
@@ -22,7 +22,7 @@ const donationOptions = [
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
     urlImg: 'imageDonation02',
     textBotton: 'Inscribete',
-    link: 'http://facebook.com'
+    link: '/'
   },
   {
     id: '3',
@@ -30,7 +30,7 @@ const donationOptions = [
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
     urlImg: 'imageDonation03',
     textBotton: 'Inscribete',
-    link: 'http://facebook.com'
+    link: '/'
   },
   {
     id: '4',
@@ -38,7 +38,7 @@ const donationOptions = [
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
     urlImg: 'imageDonation04',
     textBotton: 'Inscribete',
-    link: 'http://facebook.com'
+    link: '/'
   }
 ]
 
