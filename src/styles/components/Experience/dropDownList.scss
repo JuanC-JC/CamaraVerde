@@ -1,0 +1,34 @@
+@import "../../vars.scss";
+
+.c-dropDownList {
+  margin-bottom: 5px;
+
+  &-text {
+    padding: 10px 20px;
+    background-color: #f1f3f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-content {
+    display: flex;
+    transition: max-height 500ms ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+
+    & > div {
+      padding: 20px;
+    }
+  }
+
+  .visibility {
+    max-height: 800px;
+  }
+
+  .arrow {
+    cursor: pointer;
+    &:hover path {
+      fill: $light-green;
+    }
+  }
+}

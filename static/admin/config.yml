@@ -55,7 +55,7 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
 
       - label: "Fechas de la experiencia"
-        name: "date"
+        name: "dateRange"
         widget: "object"
         fields:
           - { label: "Fecha de Inicio", name: "init", widget: "datetime" }
@@ -72,7 +72,7 @@ collections:
           label: "Imagenes",
           name: "galleryImages",
           widget: "list",
-          min: 3,
+          min: 2,
           max: 6,
           field:
             {
@@ -91,9 +91,10 @@ collections:
           - { label: "Nombre", name: "name", widget: "string" }
           - { label: "Cargo", name: "job", widget: "string" }
 
+      - { label: "Actividades", name: "activities", widget: "string" }
       - {
           label: "Socios - Aliados",
-          name: "galleryParners",
+          name: "galleryPartners",
           widget: "list",
           min: 1,
           max: 6,

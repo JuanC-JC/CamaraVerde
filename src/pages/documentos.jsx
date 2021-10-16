@@ -5,7 +5,7 @@ import DocumentDescription from '../components/Documents/DocumentsDescription';
 //estilos e imagenes
 import '../styles/global.scss';
 import newsFund from '../images/headerBanner_3.jpg';
-import SEO from '../components/Seo'
+import Seo from '../components/Seo'
 
 
 
@@ -13,7 +13,7 @@ import SEO from '../components/Seo'
 const NewPage = () => {
   return (
     <>
-      <SEO title={'Documentos Legales'} isPost />
+      <Seo title={'Documentos Legales'} isPost />
       <HeaderBanner
         img={newsFund}
         title={'Documentos'}

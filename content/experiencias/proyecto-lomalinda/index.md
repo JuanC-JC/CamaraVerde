@@ -18,6 +18,7 @@ content: >-
 galleryImages:
   - assets/lomalinda-02.jpeg
   - assets/lomalinda.jpeg
+  - assets/lomalinda.jpeg
 team:
   - name: aidy roa
     job: directora
@@ -25,4 +26,24 @@ team:
     job: relaciones
   - name: isabela jimenez
     job: desarrolladora
+activities: Hola me llamo pirata Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit. Vulputate tristique malesuada ipsum cursus. Suspendisse
+  commodo sed in massa fusce suspendisse ullamcorper ornare. Eu pulvinar
+  vestibulum, egestas nam eu. Lacus, purus ultrices orci, nulla. Quis pretium
+  euismod at gravida in vitae euismod nec pulvinar. In pharetra mattis auctor
+  ipsum amet pellentesque. Nec, urna, nisl mauris nulla arcu imperdiet. Sed
+  quisque aliquet blandit duis varius sed. Dictum id aliquet ac tellus
+  ullamcorper id. Lorem ut netus amet libero interdum amet non pharetra. Magna
+  duis nisi dui elementum ac. Viverra lorem dignissim pellentesque gravida
+  pellentesque dui purus. Pharetra gravida ornare quam ut praesent morbi rhoncus
+  amet enim. Adipiscing sed sit posuere magna mattis purus elit in. Orci eget
+  imperdiet ante ut ultrices lectus. Ut sodales habitant mattis pulvinar sit
+  viverra at feugiat.
+galleryPartners:
+  - assets/logo.png
+  - assets/logo.png
+  - assets/logo.png
+  - assets/logo.png
+  - assets/logo.png
+  - assets/logo.png
 ---

@@ -50,6 +50,7 @@ exports.createPages = async ({ graphql, actions }) => {
           data: frontmatter {
             title
             content
+            activities
             team {
               job
               name
@@ -59,13 +60,13 @@ exports.createPages = async ({ graphql, actions }) => {
                 gatsbyImageData(width: 900)
               }
             }
-            galleryParners {
+            galleryPartners {
               childImageSharp {
                 gatsbyImageData(width: 200)
               }
             }
             dateRange {
-              init(formatString: "MMMM DD YYYY")
+              init(formatString: "MMMM DD, YYYY")
               finish
             }
           }

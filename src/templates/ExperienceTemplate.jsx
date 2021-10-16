@@ -3,17 +3,15 @@ import React from 'react';
 import HeaderBanner from '../components/Headerbanner';
 import ExperienceDescription from '../components/Experience/ExperienceDescription'
 import newsFund from '../images/headerBanner_2.jpg'
-import { translateDate } from '../utils'
-import SEO from '../components/Seo'
+import Seo from '../components/Seo'
 
 const ExperiencePage = (props) => {
   const { pageContext } = props
   const { data } = pageContext
-  console.log(props)
 
   return (
     <>
-      <SEO title={data.title} image={data.image} isPost />
+      <Seo title={data.title} image={data.image} isPost />
       <HeaderBanner
         img={newsFund}
         title={'Experiencia'}
@@ -22,10 +20,12 @@ const ExperiencePage = (props) => {
 
       <ExperienceDescription
         key={data.id}
-        // date={translateDate(data.date)}
+        date={data.dateRange}
         title={data.title}
         content={data.content}
         galleryImages={data.galleryImages}
+        galleryPartners={data.galleryPartners}
+        activities={data.activities}
         team={data.team}
       />
 
