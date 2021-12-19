@@ -39,7 +39,7 @@ export default function IntroSection() {
 
           <h1>Cámara <br /> verde  de la <br /> Amazorinoquia</h1>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum aliquam elit faucibus cursus. Egestas massa magna porttitor eget.</p>
+        <p>Conectamos comunidades y generamos cambios para lograr un desarrollo sostenible, aportando en la construcción de una sociedad equitativa, incluyente y participativa en cada uno de departamentos que componen la Amazorinoquia.</p>
 
         <div className="intro__buttons">
           <button className="button button--small button--orange">Apoyanos</button>

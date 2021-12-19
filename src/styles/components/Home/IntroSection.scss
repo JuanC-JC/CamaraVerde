@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 480px;
+    max-width: 600px;
 
     br {
       display: none;
@@ -39,7 +39,6 @@
 
     p {
       color: $main-white;
-      max-width: 400px;
     }
   }
 
@@ -61,6 +60,7 @@
     width: 100%;
     top: -50px;
     z-index: -1;
+    min-height: 480px;
   }
 
   &__backgroundDesktop {
@@ -113,7 +113,7 @@
 
     &__text {
       text-align: left;
-      margin-left: 20px;
+      margin-left: 60px;
 
       br {
         display: block;
