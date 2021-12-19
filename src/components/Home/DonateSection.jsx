@@ -10,8 +10,8 @@ import '../../styles/components/Home/DonateSection.scss';
 const donationOptions = [
   {
     id: '1',
-    title: 'Afiliate',
-    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
+    title: 'Empresas Verdes',
+    paragraph: 'Te orientamos, asesoramos y convertimos tu proceso empresarial en un modelo con propósito que se adapte a las oportunidades del nuevo mundo sostenible. ',
     urlImg: 'imageDonation01',
     textBotton: 'Inscribete',
     link: '/'
@@ -19,15 +19,15 @@ const donationOptions = [
   {
     id: '2',
     title: 'Dona',
-    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
+    paragraph: 'Se parte de este gran proyecto, ayúdanos en la protección y conservación de la flora, fauna y comunidades de la Amazorinoquia colombiana.',
     urlImg: 'imageDonation02',
-    textBotton: 'Inscribete',
+    textBotton: 'Dona',
     link: '/'
   },
   {
     id: '3',
     title: 'Voluntariado',
-    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
+    paragraph: 'No importa si eres o no profesional, o si tienes experiencia, lo que importa es tu deseo de ACTUAR, únete a nuestro equipo.',
     urlImg: 'imageDonation03',
     textBotton: 'Inscribete',
     link: '/'
@@ -35,9 +35,9 @@ const donationOptions = [
   {
     id: '4',
     title: 'Ideas verdes',
-    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id varius ut sit a ipsum nam et ut.',
+    paragraph: 'Creemos y apoyamos las ideas y negocios verdes que transforman las comunidades y sus entornos, postula tu proceso para ayuda técnica o financiera.',
     urlImg: 'imageDonation04',
-    textBotton: 'Inscribete',
+    textBotton: 'Postulate',
     link: '/'
   }
 ]
@@ -71,9 +71,10 @@ export default function DonateSection() {
         />
 
         <div className="definition__text">
-          <h2>¿Te gustaría ayudarnos?</h2>
-          <p>Al igual que tú, muchas personas alrededor del mundo buscan una solución para proteger la vida silvestre, detener la deforestación, promover energías renovables y empoderar a las comunidades para la conservación de sus recursos. Puedes hacer parte de esta comunidad de más de 6 millones de miembros en 100 países.</p>
-          <Link target='_blank' to='/' className='button button--orange'>Realiza una donación</Link>
+          <h2>Es el momento de actuar apoyanos</h2>
+          <p>Estamos en la crisis ambiental y social más importante que ha enfrentado la humanidad en su historia, estamos cerca al punto de no retorno.</p>
+          <p>Tu apoyo es importante para tu futuro, haz click en <b>QUIERO ACTUAR</b>, elige tu rol y déjanos tus datos, pronto nuestro equipo te contactará.</p>
+          <Link target='_blank' to='/' className='button button--orange'>Quiero actuar</Link>
         </div>
 
       </div>
