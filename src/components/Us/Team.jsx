@@ -1,6 +1,8 @@
 import React from 'react';
 
-import imgTeam_1 from '../../images/Nosotros/team/imgTeam_1.png';
+import imgTeam_2 from '../../images/Nosotros/team/imgTeam_1.png';
+import imgTeam_1 from '../../images/Nosotros/team/jessicaBetancur.jpg';
+import imgTeam from '../../images/Nosotros/team/aidyRoa.jpeg'
 
 import '../../styles/components/Us/Team.scss'
 export default function Team() {
@@ -10,44 +12,50 @@ export default function Team() {
       <div className="team__cardsContainer">
         <div className="cardTeam">
           <div className="cardTeam__imgContainer">
-            <img src={imgTeam_1} alt="" />
+            <img src={imgTeam} alt="" />
             <div className="cardTeam__title">
-              Ludwig Van Beethoven
+              Aidy Roa
             </div>
           </div>
 
           <p className="cardTeam__text">
-            Ing. Ambiental
+            <b>Ing. Ambiental</b>
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna risus massa aliquam in enim suspendisse
+            Fundadora y Directora Ejecutiva de la Cámara Verde Amazorinoquía. Investigadora del
+Observatorio Regional ODS de la Universidad de los Andes. Miembro activo del
+Observatorio Popular de Género de Villavicencio, Columnista ocasional de El Cuarto
+Mosquetero.
           </p>
         </div>
+
         <div className="cardTeam">
           <div className="cardTeam__imgContainer">
             <img src={imgTeam_1} alt="" />
             <div className="cardTeam__title">
-              Ludwig Van Beethoven
+              Jessica Betancur
             </div>
           </div>
 
           <p className="cardTeam__text">
-            Ing. Ambiental
+            <b>Ing. Ambiental</b>
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna risus massa aliquam in enim suspendisse
+            Co-Fundadora y Directora de Tecnología de Información y Comunicación con enfoque ambiental, investigadora en la temática ambiente, mujer y territorio del observatorio popular de genero de Villavicencio,
           </p>
         </div>
         <div className="cardTeam">
           <div className="cardTeam__imgContainer">
-            <img src={imgTeam_1} alt="" />
+            <img src={imgTeam_2} alt="" />
             <div className="cardTeam__title">
-              Ludwig Van Beethoven
+              Leidy Agudelo
             </div>
           </div>
 
           <p className="cardTeam__text">
-            Ing. Ambiental
+            <b>Administradora de empresas</b>
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna risus massa aliquam in enim suspendisse
+            Co-Fundadora y directora Social, desplazada y víctima del conflicto armado, promotora de
+            los derechos de las poblaciones de especial protección constitucional, minorías, poblaciones
+            en situación de vulnerabilidad, exclusión y discriminación;
           </p>
         </div>
       </div>

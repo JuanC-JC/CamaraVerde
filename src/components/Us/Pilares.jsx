@@ -14,28 +14,21 @@ export default function Pilares() {
       <div className="pilarCard pilarCard--red">
         <img src={gender} alt="Imagen linea pilar igualdad de genero" />
 
-
         <div className="pilarCard__text">
           <h3>5 - Igualdad de genero</h3>
-          <p>Vestibulum id auctor in integer. Facilisi at varius eros integer non nibh id euismod.
-            Luctus nunc sed nibh in vitae venenatis sit porttitor. Enim erat sed eget nulla vitae gravida.
-            Urna, id suspendisse id nibh non dignissim accumsan.
-          </p>
         </div>
 
-        {/* <button class='button button--white'>Ver mas</button> */}
+        <button class='button button--white'>Ver mas</button>
       </div>
 
       <div className="pilarCard pilarCard--yellow pilarCard--right">
         <img src={sostenibility} alt="Imagen linea pilar igualdad de genero" />
 
-
         <div className="pilarCard__text">
           <h3>11 - Ciudad y comunidades sostenibles</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dapibus sed ac condimentum non. Sed sem turpis euismod viverra
-            nam ut in in vitae.
-          </p>
         </div>
+
+        <button class='button button--white'>Ver mas</button>
 
       </div>
 
@@ -45,12 +38,13 @@ export default function Pilares() {
 
         <div className="pilarCard__text">
           <h3>13 - Acción por el clima</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dapibus sed ac condimentum non. Sed sem turpis euismod viverra
-            nam ut in in vitae.
-          </p>
         </div>
+
+        <button class='button button--white'>Ver mas</button>
 
       </div>
     </section>
   );
 };
+
+//TODO CAMBIAR EL ESTILO DE LOS BOTONES
