@@ -14,7 +14,7 @@ export default function DonationOption(props) {
         className='donationOption__img' />
       <h3>{title}</h3>
       <p>{paragraph}</p>
-      <Link target='_blank' className='button button--outline' to={link}>{textBotton}</Link>
+      <a target='_blank' className='button button--outline' href={link}>{textBotton}</a>
     </div>
   )
 }

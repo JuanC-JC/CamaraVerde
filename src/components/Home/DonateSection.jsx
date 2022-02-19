@@ -14,7 +14,7 @@ const donationOptions = [
     paragraph: 'Te orientamos, asesoramos y convertimos tu proceso empresarial en un modelo con propósito que se adapte a las oportunidades del nuevo mundo sostenible. ',
     urlImg: 'imageDonation01',
     textBotton: 'Inscribete',
-    link: '/'
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLScDbl7n3g36rfBsfyCAViOeDpdMXCc1WbVenDuD0pP6LrNr6g/viewform'
   },
   {
     id: '2',
@@ -22,7 +22,7 @@ const donationOptions = [
     paragraph: 'Sé parte de este gran proyecto, ayúdanos en la protección y conservación de la flora, fauna y comunidades de la Amazorinoquia colombiana.',
     urlImg: 'imageDonation02',
     textBotton: 'Dona',
-    link: '/'
+    link: '',
   },
   {
     id: '3',
@@ -30,7 +30,7 @@ const donationOptions = [
     paragraph: 'No importa si eres o no profesional, o si tienes experiencia, lo que importa es tu deseo de ACTUAR, únete a nuestro equipo.',
     urlImg: 'imageDonation03',
     textBotton: 'Inscribete',
-    link: '/'
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLScQCOOeFTLKEQvjz3Dj328HquNAVWzVYn2pFJsJxQpqmQyt1w/viewform'
   },
   {
     id: '4',
@@ -38,7 +38,7 @@ const donationOptions = [
     paragraph: 'Creemos y apoyamos las ideas y negocios verdes que transforman las comunidades y sus entornos, postúla tu proceso para ayuda técnica o financiera.',
     urlImg: 'imageDonation04',
     textBotton: 'Postulate',
-    link: '/'
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSe8pfEf-HzpB6f7_AyidL4wXNM8qaUecG6yS2tTGo8zjKYCHQ/viewform'
   }
 ]
 

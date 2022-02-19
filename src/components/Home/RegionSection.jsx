@@ -45,7 +45,7 @@ const departments = [
   },
 
   {
-    name: "Guainia",
+    name: "Guainía",
     info: {
       description: "Guainía (idioma yurí: Tierra de muchas aguas) es uno de los treinta y dos departamentos que, junto con Bogotá, Distrito Capital, forman la República de Colombia. Su capital es Inírida. Está ubicado al este del país, en la región Amazonia, limitando al norte con Vichada, al este con Venezuela, al sur con Brasil, al suroeste con Vaupés y al oeste con Guaviare. Con 72 238 km² es el quinto departamento más extenso —por detrás de Amazonas, Vichada, Caquetá y Meta—",
       hydrography: "hidrografia -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra integer tristique nibh nisl libero sed sit aenean. Suspendisse egestas erat vitae placerat egestas magna ipsum tortor et.",
@@ -55,7 +55,7 @@ const departments = [
       "M498.762 272L496.262 271L491.762 263.5L485.762 267.5L482.262 267L478.762 266L471.762 266.5L469.262 266L464.262 267L461.262 269C460.862 269.8 459.095 271.333 458.262 272L449.262 273.5H446.262L442.762 276V277L437.762 276L434.262 277H410.762V280L405.762 281.5L401.262 283H397.262L399.262 286.5H395.262V288L389.262 286.5L386.262 288L389.262 290.5V294L383.762 295L381.762 297.5L383.762 300.5V303L370.762 308L365.762 311L356.762 314L362.262 316L364.762 318.5L370.262 323L372.762 324L376.262 324.5L378.262 323.5L381.762 325L384.762 324L388.762 324.5L391.762 323L394.762 323.5V325L391.762 328L390.762 330L388.262 334.5L390.762 337L395.762 339L397.262 340L401.762 340.5L404.762 341C404.362 340.2 405.095 339.667 405.762 339.5L407.762 338.5L409.762 338L412.262 338.5L417.262 337L422.262 338.5L452.762 337L476.262 336L477.762 335L474.262 334.5L472.262 333V331.5L474.262 329.5L473.262 327.5H474.762L475.762 328.5L477.762 329.5L478.762 332L482.762 336L487.262 335L492.262 333L496.762 330.5L497.762 327.5L501.262 324.5L506.762 323H510.762L513.762 326.5L518.262 332L521.762 336L524.262 342.5L523.262 348L524.262 353H526.762L534.762 350L533.262 348H534.762L533.262 346.5C531.928 344.333 529.162 339.8 528.762 339C528.362 338.2 526.595 333 525.762 330.5C524.762 329.333 522.562 326.7 521.762 325.5C520.962 324.3 521.428 323.333 521.762 323L517.262 319.5L518.262 315.5L506.762 307.5L504.762 306L501.262 305.5L499.262 302L491.262 300.5L487.262 302V300L494.762 296C495.428 295.167 496.962 293.4 497.762 293C498.562 292.6 506.428 286.5 510.262 283.5L511.262 281L506.762 278.5L503.762 275L501.262 271L498.762 272Z",
   },
   {
-    name: "Caqueta",
+    name: "Caquetá",
     info: {
       description: "Caquetá es uno de los treinta y dos departamentos que, junto con Bogotá, Distrito Capital, forman la República de Colombia. Su capital es Florencia. Está ubicado al sur del país, en la región Amazonia, limitando al norte con Meta y Guaviare, al noreste con Vaupés, al sur con Amazonas y Putumayo, y al oeste con Cauca y Huila. Con 88 965 km² es el tercer departamento más extenso —por detrás de Amazonas y Vichada—.",
       hydrography: "hidrografia -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra integer tristique nibh nisl libero sed sit aenean. Suspendisse egestas erat vitae placerat egestas magna ipsum tortor et.",
@@ -75,7 +75,7 @@ const departments = [
       "M236.762 325L238.262 348L238.762 351L241.262 352.5L242.262 354.5L246.762 357L248.762 361L254.262 365L261.262 368L265.762 368.5L268.762 366L271.262 365L274.262 361L275.762 359.5L277.762 360L280.762 359L287.762 362.5H291.762L294.762 368L298.762 370.5L299.762 373.5L306.262 375L312.262 377.5L311.762 375L314.262 373L318.762 370.5L320.762 366.5L324.762 365L327.762 364L328.262 360.5L332.762 361L329.762 355L332.762 351L335.262 345.5V342L340.262 343L343.262 342L349.762 339.5L353.762 339L356.762 335H360.762H366.762L374.262 333.5L385.262 331L390.762 330L391.762 328L394.762 325V323.5L391.762 323L388.762 324.5L384.762 324L381.762 325L378.262 323.5L376.262 324.5L372.762 324L370.262 323L364.762 318.5L362.262 316L356.762 314L365.762 311L370.762 308L369.762 305.5L364.762 304.5V307L362.262 308.5L359.762 307H356.762L355.762 305.5H350.262L347.262 304.5L341.262 305.5H338.762L336.262 304.5L332.762 306H328.762L325.762 307H320.762L317.762 306L309.762 309L306.262 308.5L301.262 306L298.762 307.5L299.262 311L293.762 309L282.262 313.5L279.762 315.5L269.762 317.5L262.762 321.5L249.262 324H240.262L236.762 325Z",
   },
   {
-    name: "Vaupes",
+    name: "Vaupés",
     info: {
       description: "Vaupés es uno de los treinta y dos departamentos que, junto con Bogotá, Distrito Capital, forman la República de Colombia. Su capital es Mitú. Está ubicado al sureste del país, en la región Amazonía, limitando al norte con el Guaviare y Guainía, al este con Brasil, al sur con Amazonas y al oeste con el Caquetá. Con unos 43 000 habitantes en 2015 es el segundo departamento menos poblado —por delante de Guainía— y con 0,79 hab/km²",
       hydrography: "hidrografia -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra integer tristique nibh nisl libero sed sit aenean. Suspendisse egestas erat vitae placerat egestas magna ipsum tortor et.",

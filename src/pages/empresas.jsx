@@ -20,14 +20,12 @@ export default function Companies() {
     }
   `)
 
-  const textDescription = `Con el fin de que nuestras acciones por conservar y
-  hacer un uso sostenible de la biodiversidad, tengan mayor impacto en toda la
-  población, realizamos alianzas con diferentes sectores entendiendo que la unión
-  hace la fuerza.
-  
-  Por eso, si haces parte de una organización, empresa, compañia, u otro, te
-  invitamos a que te comuniques con nosotros y conozcas nuestras opciones para
-  poder generar alianzas que propendan por el cuidado del medio ambiente.`
+  const textDescription = `
+      Con el objetivo que nuestras acciones por conservar y hacer un uso sostenible de la biodiversidad tengan un mayor impacto 
+      en toda la población, realizamos alianzas con diferentes sectores entendiendo que la unión hace la fuerza. Por eso, si haces 
+      parte de una organización,empresa, compañía, entre otras, te invitamos a que te comuniques con nosotros y conozcas nuestras 
+      opciones para poder generar alianzas que propendan por el cuidado del medio ambiente.
+  `
 
   return (
     <>

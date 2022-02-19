@@ -38,7 +38,13 @@ export default function Header() {
       </nav>
 
       <div className="header__buttons">
-        <Link className="button button--small button--orange" to='/'>Alerta verde</Link>
+        <Link 
+          className="button button--small button--orange" 
+          to='https://docs.google.com/forms/d/e/1FAIpQLSfgpIpq7Uk4ETJIrgivgWxvCGoFfm0FOz8AwHVgCaya9r0APw/viewform'
+          target='_blank'
+          >
+            Alerta verde
+          </Link>
         <Link className="button button--small " to='/'>Apoyanos</Link>
       </div>
 
