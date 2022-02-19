@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-export default function DepartmentSVG({ id, handlerClick, path, selected }) {
+export default function DepartmentSVG({ id, handlerClick, path, selected, color }) {
 
   const elemento = useRef(null)
   const [box, setBox] = useState(null)
@@ -18,7 +18,7 @@ export default function DepartmentSVG({ id, handlerClick, path, selected }) {
         onClick={handlerClick}
         d={path}
         className='departmentVector'
-        fill="#00985F"
+        fill={color || "#00985F"}
         stroke="white"
       />
 
@@ -28,7 +28,7 @@ export default function DepartmentSVG({ id, handlerClick, path, selected }) {
           <path
             id={'departmentClone'}
             d={path}
-            fill="#00985F"
+            fill= {color || "#00985F"}
             stroke="white"
           />
 

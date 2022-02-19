@@ -6,7 +6,6 @@
   #svgPointerMap {
     display: none;
   }
-
   .departmentVector {
     cursor: pointer;
     -webkit-touch-callout: none;
@@ -24,8 +23,9 @@
 
   #departmentClone {
     transform: translateY(-5px);
+    // opacity: 1;
+    // fill: #c7ffdd;
     opacity: 1;
-    fill: #c7ffdd;
 
     &::after {
       position: absolute;
