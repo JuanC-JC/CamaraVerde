@@ -23,6 +23,7 @@ const Map = ({ selected, setSelection, departments }) => {
             key={department.name}
             id={department.name}
             path={department.path}
+            color={department.color}
             selected={department.name == selected.name} />
         )
         )
