@@ -52,7 +52,7 @@ export default function Experience() {
 
   return (
     <section className='experience'>
-      <h2 className="experience__title">Experiencia</h2>
+      <h2 className="experience__title">Experiencias</h2>
 
       <div ref={carousel} className="experience__carousel">
 

@@ -31,15 +31,15 @@ export default function IntroSection() {
       </svg>
 
       <div className="intro__text">
-
+        
         <div className="intro__textCompanyLogo">
-
-
           <img src={iconCV} alt="icono camara verde amazorinoquia" />
-
           <h1>Cámara <br /> verde  de la <br /> Amazorinoquia</h1>
         </div>
-        <p>Conectamos comunidades y generamos cambios para lograr un desarrollo sostenible, aportando en la construcción de una sociedad equitativa, incluyente y participativa en cada uno de departamentos que componen la Amazorinoquia.</p>
+
+        <p>Conectamos comunidades y generamos cambios para lograr un desarrollo sostenible, aportando en la construcción de una sociedad equitativa,
+          incluyente y participativa en cada uno de departamentos que componen la Amazorinoquia.
+        </p>
 
         <div className="intro__buttons">
           <button className="button button--small button--orange">Apoyanos</button>
@@ -53,7 +53,10 @@ export default function IntroSection() {
         className='intro__ilustration'
         src='../../images/Home/ilustrationJaguar.png'
         placeholder='blurred'
-        alt='ilustracion jaguar' />
+        alt='Ilustracion Jaguar (Panthera Onca)' 
+        title='Jaguar (Panthera Onca)'
+      />
+
     </section>
   );
 };

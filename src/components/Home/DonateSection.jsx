@@ -19,7 +19,7 @@ const donationOptions = [
   {
     id: '2',
     title: 'Dona',
-    paragraph: 'Se parte de este gran proyecto, ayúdanos en la protección y conservación de la flora, fauna y comunidades de la Amazorinoquia colombiana.',
+    paragraph: 'Sé parte de este gran proyecto, ayúdanos en la protección y conservación de la flora, fauna y comunidades de la Amazorinoquia colombiana.',
     urlImg: 'imageDonation02',
     textBotton: 'Dona',
     link: '/'
@@ -35,7 +35,7 @@ const donationOptions = [
   {
     id: '4',
     title: 'Ideas verdes',
-    paragraph: 'Creemos y apoyamos las ideas y negocios verdes que transforman las comunidades y sus entornos, postula tu proceso para ayuda técnica o financiera.',
+    paragraph: 'Creemos y apoyamos las ideas y negocios verdes que transforman las comunidades y sus entornos, postúla tu proceso para ayuda técnica o financiera.',
     urlImg: 'imageDonation04',
     textBotton: 'Postulate',
     link: '/'
@@ -71,7 +71,7 @@ export default function DonateSection() {
         />
 
         <div className="definition__text">
-          <h2>Es el momento de actuar apoyanos</h2>
+          <h2>Es el momento de actuar apóyanos</h2>
           <p>Estamos en la crisis ambiental y social más importante que ha enfrentado la humanidad en su historia, estamos cerca al punto de no retorno.</p>
           <p>Tu apoyo es importante para tu futuro, haz click en <b>QUIERO ACTUAR</b>, elige tu rol y déjanos tus datos, pronto nuestro equipo te contactará.</p>
           <Link target='_blank' to='/' className='button button--orange'>Quiero actuar</Link>
