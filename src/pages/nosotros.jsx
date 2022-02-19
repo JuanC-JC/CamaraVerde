@@ -23,7 +23,12 @@ export default function UsPage() {
     }
   `)
 
-  const textDescription = `Somos la <b> FUNDACIÓN CÁMARA VERDE DE LA AMAZORINOQUÍA - CVA</b>, organización social y ambiental sin Ánimo de Lucro, fundada y liderada por mujeres, con sede principal en la ciudad de Villavicencio y una red de profesionales a lo largo de los 10 departamentos que componen la Amazorinoquia Colombiana.`
+  const textDescription = `
+    Somos la <b> FUNDACIÓN CÁMARA VERDE DE LA AMAZORINOQUÍA - CVA </b>,
+    organización social y ambiental sin Ánimo de Lucro, fundada y liderada por mujeres,
+    la cual cuenta con una red de profesionales a lo largo de los 10 departamentos que componen 
+    la Amazorinoquía colombiana y cuya sede principal se encuentra en la ciudad de Villavicencio.
+  `
 
   return (
     <>
@@ -42,3 +47,4 @@ export default function UsPage() {
     </>
   );
 };
+

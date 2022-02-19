@@ -9,13 +9,13 @@ export default function Pilares() {
   return (
     <section className='pilares'>
 
-      <h2>Descripción de lineas pilares</h2>
+      <h2>Descripción de líneas pilares</h2>
 
       <div className="pilarCard pilarCard--red">
         <img src={gender} alt="Imagen linea pilar igualdad de genero" />
 
         <div className="pilarCard__text">
-          <h3>5 - Igualdad de genero</h3>
+          <h3>5 - Igualdad de género</h3>
         </div>
 
         <button class='button button--white'>Ver mas</button>

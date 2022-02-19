@@ -2,7 +2,7 @@
 
 .team {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 
   &__cardsContainer {
@@ -23,6 +23,8 @@
     height: 235px;
     border-radius: 50%;
     object-fit: 250%;
+    border: 1px solid $third-green;
+    object-fit:contain;
   }
 }
 
@@ -76,6 +78,7 @@
     position: absolute;
     bottom: 0;
     z-index: 1;
+    border-radius: 7px;
   }
 
   &__text {
