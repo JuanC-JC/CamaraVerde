@@ -1,10 +1,20 @@
 import React from 'react';
+import { Link } from 'gatsby'
 import iconCV from '../../images/General/iconCV.svg';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import '../../styles/components/Home/IntroSection.scss'
 
+
 export default function IntroSection() {
+
+  const sendWaMessage = (number, textMessage) => {
+    console.log('EJECUCION DE ESTO')
+    const message = `https://wa.me/57${number}?text=${encodeURIComponent(textMessage)}`
+  
+    window.open(message, '_blank').focus()
+  }
+
   return (
     <section className="intro">
 
@@ -42,9 +52,17 @@ export default function IntroSection() {
         </p>
 
         <div className="intro__buttons">
-          <button className="button button--small button--orange">Apoyanos</button>
-          <button className="button button--small">Alerta verde</button>
-          <button className="button button--small button--outline">Contactanos</button>
+          <button className="button button--small button--orange">Apóyanos</button>
+          <Link  
+            className="button button--small"
+            to='https://docs.google.com/forms/d/e/1FAIpQLSfgpIpq7Uk4ETJIrgivgWxvCGoFfm0FOz8AwHVgCaya9r0APw/viewform'
+            target='_blank'
+          >
+            Alerta verde
+          </Link>
+          <button 
+            onClick={()=>sendWaMessage('3112081395', 'Hola, estoy interesado en conocer más sobre la Fundación. Gracias')}
+            className="button button--small button--outline">Contáctanos</button>
         </div>
       </div>
 
