@@ -15,7 +15,7 @@ export default function Definition() {
         <div className='definition__text'>
           <h3>En la <b>Fundación Cámara Verde de la Amazorinoquía - CVA</b></h3>
           <p>
-            trabajamos en la consolidación de procesos orientados en la seguridad y soberanía alimentaria, la cultura de paz y equidad, 
+            Trabajamos en la consolidación de procesos orientados en la seguridad y soberanía alimentaria, la cultura de paz y equidad, 
             la construcción de ciudades y comunidades sostenibles, la gobernanza ambiental y el ordenamiento territorial con enfoque en equidad de género.
           </p>
         </div>

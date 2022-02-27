@@ -19,7 +19,7 @@ const list = [
   },
   {
     image: Image02,
-    title: '',
+    title: 'Sembrando Futuro',
     description: `
             A través del programa “Sembrando Futuro” que va enfocado en la realización de huertas urbanas, se busca abarcar una de las principales problemáticas 
             que han estado presentes a nivel mundial y se incrementaron a raíz de la pandemia generada por COVID - 19, las cuales son: afectaciones en la salud y 
@@ -42,7 +42,7 @@ const list = [
 export default function HelpUs() {
   return (
     <section className='helpUs'>
-      <h2>Cómo puedo ayudar desde mi empresa?</h2>
+      <h2>¿Cómo puedo ayudar desde mi empresa?</h2>
 
       {
         list.map(elemento=>(

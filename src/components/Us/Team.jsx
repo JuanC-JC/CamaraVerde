@@ -1,8 +1,8 @@
 import React from 'react';
 
-import imgTeam_2 from '../../images/Nosotros/team/imgTeam_1.png';
-import imgTeam_1 from '../../images/Nosotros/team/jessicaBetancur.jpg';
-import imgTeam from '../../images/Nosotros/team/aidyRoa.jpeg'
+import leidyAgudeloImg from '../../images/Nosotros/team/agudeloBetancur.jpg';
+import jessicaBetancurImg from '../../images/Nosotros/team/jessicaBetancur.jpg';
+import aidyRoaImg from '../../images/Nosotros/team/aidyRoa.jpeg'
 
 import '../../styles/components/Us/Team.scss'
 
@@ -10,7 +10,7 @@ import '../../styles/components/Us/Team.scss'
 const teamList = [
   {
     name: 'Aidy Roa',
-    img: imgTeam,
+    img: aidyRoaImg,
     profession: 'Ingeniera Ambiental',
     description: `Fundadora y Directora Ejecutiva de la Cámara Verde Amazorinoquía. Investigadora del
                   Observatorio Regional ODS de la Universidad de los Andes. Miembro activo del
@@ -19,7 +19,7 @@ const teamList = [
   },
   {
     name: 'Jessica Betancur',
-    img: imgTeam_1,
+    img: jessicaBetancurImg,
     profession: 'Ingeniera Ambiental',
     description:  `
                   Co-Fundadora y Directora de Tecnología de Información y Comunicación con Enfoque Ambiental.
@@ -28,7 +28,7 @@ const teamList = [
   },
   {
     name: 'Leidy Agudelo',
-    img: imgTeam_2,
+    img: leidyAgudeloImg,
     profession: 'Admin. de Empresas',
     description: `
                   Co-Fundadora y Directora Social, desplazada y víctima del conflicto armado, promotora de los derechos de las poblaciones
@@ -39,7 +39,7 @@ const teamList = [
 export default function Team() {
   return (
     <div className='team'>
-      <h2>Nuestro equipo</h2>
+      <h2>Nuestro Equipo</h2>
       <div className="team__cardsContainer">
 
         {

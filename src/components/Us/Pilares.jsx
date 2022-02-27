@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'gatsby';
 import '../../styles/components/Us/Pilares.scss'
 
 import gender from '../../images/Nosotros/pilares/gender.jpg'
@@ -18,7 +19,12 @@ export default function Pilares() {
           <h3>5 - Igualdad de género</h3>
         </div>
 
-        <button class='button button--white'>Ver mas</button>
+        <Link  
+          to={'https://www.un.org/sustainabledevelopment/es/gender-equality/'} 
+          class='button button--white'
+          target='_blank'
+          >Ver más
+        </Link>
       </div>
 
       <div className="pilarCard pilarCard--yellow pilarCard--right">
@@ -28,7 +34,12 @@ export default function Pilares() {
           <h3>11 - Ciudad y comunidades sostenibles</h3>
         </div>
 
-        <button class='button button--white'>Ver mas</button>
+        <Link  
+          to={'https://www.un.org/sustainabledevelopment/es/cities/'} 
+          class='button button--white'
+          target='_blank'
+          >Ver más
+        </Link>
 
       </div>
 
@@ -40,7 +51,12 @@ export default function Pilares() {
           <h3>13 - Acción por el clima</h3>
         </div>
 
-        <button class='button button--white'>Ver mas</button>
+        <Link  
+          to={'https://www.un.org/sustainabledevelopment/es/climate-change-2/'} 
+          class='button button--white'
+          target='_blank'
+          >Ver más
+        </Link>
 
       </div>
     </section>

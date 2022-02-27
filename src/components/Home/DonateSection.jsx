@@ -35,7 +35,7 @@ const donationOptions = [
   {
     id: '4',
     title: 'Ideas verdes',
-    paragraph: 'Creemos y apoyamos las ideas y negocios verdes que transforman las comunidades y sus entornos, postúla tu proceso para ayuda técnica o financiera.',
+    paragraph: 'Creemos y apoyanós las ideas y negocios verdes que transforman las comunidades y sus entornos, postúla tu proceso para ayuda técnica o financiera.',
     urlImg: 'imageDonation04',
     textBotton: 'Postulate',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSe8pfEf-HzpB6f7_AyidL4wXNM8qaUecG6yS2tTGo8zjKYCHQ/viewform'
@@ -74,7 +74,7 @@ export default function DonateSection() {
           <h2>Es el momento de actuar apóyanos</h2>
           <p>Estamos en la crisis ambiental y social más importante que ha enfrentado la humanidad en su historia, estamos cerca al punto de no retorno.</p>
           <p>Tu apoyo es importante para tu futuro, haz click en <b>QUIERO ACTUAR</b>, elige tu rol y déjanos tus datos, pronto nuestro equipo te contactará.</p>
-          <Link target='_blank' to='/' className='button button--orange'>Quiero actuar</Link>
+          <Link target='_blank' to='https://docs.google.com/forms/d/e/1FAIpQLScQCOOeFTLKEQvjz3Dj328HquNAVWzVYn2pFJsJxQpqmQyt1w/viewform' className='button button--orange'>Quiero actuar</Link>
         </div>
 
       </div>
