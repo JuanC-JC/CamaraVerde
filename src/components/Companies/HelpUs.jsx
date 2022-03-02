@@ -1,7 +1,7 @@
 import React from 'react';
-import Image01 from '../../images/Companies/HelpUs/image_01.png'
-import Image02 from '../../images/Companies/HelpUs/image_02.png'
-import Image03 from '../../images/Companies/HelpUs/image_03.png'
+import Image01 from '../../images/Companies/HelpUs/image_01.jpg'
+import Image02 from '../../images/Companies/HelpUs/image_02.jpg'
+import Image03 from '../../images/Companies/HelpUs/image_03.jpg'
 import '../../styles/components/Companies/HelpUs.scss'
 
 import {CardHelpUs} from './CardHelpUs'
