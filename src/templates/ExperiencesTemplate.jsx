@@ -24,9 +24,6 @@ const ExperienceCard = ({ experience }) => {
 
 export default function ExperiencesTemplate({ pageContext: { files, indexPage, pages } }) {
 
-
-  console.log(indexPage, pages)
-  
   return (
     <>
       <HeaderBanner

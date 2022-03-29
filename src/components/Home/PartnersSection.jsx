@@ -20,7 +20,6 @@ export default function PartnersSection() {
         }
       }  
   `)
-  console.log(data)
 
   return (
     <div className='partners'>

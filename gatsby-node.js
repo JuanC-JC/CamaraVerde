@@ -88,20 +88,6 @@ exports.createPages = async ({ graphql, actions }) => {
     data: { newsFiles },
   } = newsQuery;
 
-  newsFiles.nodos = [
-    ...newsFiles.nodos,
-    ...newsFiles.nodos,
-    ...newsFiles.nodos,
-    ...newsFiles.nodos,
-    ...newsFiles.nodos,
-    ...newsFiles.nodos,
-    ...newsFiles.nodos,
-    ...newsFiles.nodos,
-    ...newsFiles.nodos,
-    ...newsFiles.nodos,
-    ...newsFiles.nodos,
-  ];
-
   const {
     data: { experienceFiles },
   } = experienceQuery;
