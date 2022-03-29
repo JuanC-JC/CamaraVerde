@@ -1,21 +1,26 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import '../../styles/components/Documents/documentDescription.scss'
 
 export default function DocumentDescription() {
   return (
     <div className="documentDescription">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing amet eu morbi integer. Mauris urna massa integer faucibus turpis arcu gravida magna fames.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing amet eu morbi integer. Mauris urna massa integer faucibus turpis arcu gravida magna fames.</p>
+      <p>Documentos asociados: </p>
       <div className='documents'>
         <div className='document'>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.9539 0.670683C15.9443 0.508158 15.8755 0.354795 15.7604 0.239674C15.6452 0.124553 15.4919 0.055678 15.3293 0.0461096C8.98779 -0.327338 3.91017 1.58477 1.74494 5.16003C0.994204 6.38573 0.624402 7.80678 0.682429 9.24294C0.729712 10.569 1.11646 11.9074 1.83119 13.2286L0.194719 14.8651C0.0700423 14.9898 0 15.1589 0 15.3352C0 15.5115 0.0700423 15.6806 0.194719 15.8053C0.319395 15.93 0.488492 16 0.664811 16C0.84113 16 1.01023 15.93 1.1349 15.8053L2.77138 14.1688C4.09257 14.8835 5.43105 15.2704 6.75707 15.3176C6.84989 15.3209 6.94213 15.3226 7.0342 15.3226C8.37724 15.3264 9.6949 14.9568 10.8401 14.2551C14.4152 12.0898 16.3269 7.01148 15.954 0.670683H15.9539ZM10.1513 13.1179C8.25493 14.2665 6.01067 14.2817 3.75843 13.1818L11.1068 5.83338C11.2315 5.70871 11.3015 5.53961 11.3015 5.36329C11.3015 5.18697 11.2315 5.01788 11.1068 4.8932C10.9821 4.76852 10.813 4.69848 10.6367 4.69848C10.4604 4.69848 10.2913 4.76852 10.1666 4.8932L2.81816 12.2417C1.71834 9.98942 1.73355 7.74516 2.88215 5.84884C4.72222 2.81065 9.09773 1.14618 14.6548 1.34512C14.8537 6.90237 13.1892 11.278 10.1513 13.1179Z" fill="#92D669" />
           </svg>
 
-          <Link className='nameDocument' to="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Link>
+          <a 
+            className='nameDocument' 
+            href="/ESTATUTOS CVA.pdf"
+            target={'_blank'}
+            rel='noreferrer'>
+              Estatutos Camara Verde
+          </a>
         </div>
 
-        <div className='document'>
+        {/* <div className='document'>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.9539 0.670683C15.9443 0.508158 15.8755 0.354795 15.7604 0.239674C15.6452 0.124553 15.4919 0.055678 15.3293 0.0461096C8.98779 -0.327338 3.91017 1.58477 1.74494 5.16003C0.994204 6.38573 0.624402 7.80678 0.682429 9.24294C0.729712 10.569 1.11646 11.9074 1.83119 13.2286L0.194719 14.8651C0.0700423 14.9898 0 15.1589 0 15.3352C0 15.5115 0.0700423 15.6806 0.194719 15.8053C0.319395 15.93 0.488492 16 0.664811 16C0.84113 16 1.01023 15.93 1.1349 15.8053L2.77138 14.1688C4.09257 14.8835 5.43105 15.2704 6.75707 15.3176C6.84989 15.3209 6.94213 15.3226 7.0342 15.3226C8.37724 15.3264 9.6949 14.9568 10.8401 14.2551C14.4152 12.0898 16.3269 7.01148 15.954 0.670683H15.9539ZM10.1513 13.1179C8.25493 14.2665 6.01067 14.2817 3.75843 13.1818L11.1068 5.83338C11.2315 5.70871 11.3015 5.53961 11.3015 5.36329C11.3015 5.18697 11.2315 5.01788 11.1068 4.8932C10.9821 4.76852 10.813 4.69848 10.6367 4.69848C10.4604 4.69848 10.2913 4.76852 10.1666 4.8932L2.81816 12.2417C1.71834 9.98942 1.73355 7.74516 2.88215 5.84884C4.72222 2.81065 9.09773 1.14618 14.6548 1.34512C14.8537 6.90237 13.1892 11.278 10.1513 13.1179Z" fill="#92D669" />
           </svg>
@@ -29,7 +34,7 @@ export default function DocumentDescription() {
           </svg>
 
           <Link className='nameDocument' to='/'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Link>
-        </div>
+        </div> */}
       </div>
     </div>
   )
