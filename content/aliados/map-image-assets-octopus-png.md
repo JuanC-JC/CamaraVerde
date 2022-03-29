@@ -1,0 +1,3 @@
+---
+image: assets/octopus.png
+---
