@@ -24,6 +24,14 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "static-assets",
+        path: "./static/assets",
+      },
+      __key: "static-assets",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "images",
         path: "./src/images/",
       },

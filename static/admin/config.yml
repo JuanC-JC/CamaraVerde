@@ -106,18 +106,3 @@ collections:
               widget: "image",
             },
         }
-
-  - name: "aliados"
-    label: "Aliados"
-    folder: "content/aliados"
-    create: true
-    slug: ""
-    editor:
-      preview: false
-    fields:
-      - {
-          label: "Imagen",
-          name: "image",
-          choose_url: false,
-          widget: "image",
-        }
